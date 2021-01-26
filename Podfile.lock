@@ -1,0 +1,16 @@
+PODS:
+  - SwiftyShadow (1.7.0)
+
+DEPENDENCIES:
+  - SwiftyShadow
+
+SPEC REPOS:
+  trunk:
+    - SwiftyShadow
+
+SPEC CHECKSUMS:
+  SwiftyShadow: d2697c62eb83759b7806466e3ea29de24c772c29
+
+PODFILE CHECKSUM: 2432cf98efe339fc3418170a5754c7776272b7ae
+
+COCOAPODS: 1.10.0

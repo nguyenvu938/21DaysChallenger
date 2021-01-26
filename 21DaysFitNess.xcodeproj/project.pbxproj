@@ -3,10 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4EDD575C93A2C7F7077520DA /* Pods_21DaysFitNess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7BFEF9632D9A65404EE7B9B /* Pods_21DaysFitNess.framework */; };
+		E71F884025AC0B8E000C38E0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F883F25AC0B8E000C38E0 /* MainViewController.swift */; };
+		E71F884925BE7C1A000C38E0 /* ProgramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F884825BE7C1A000C38E0 /* ProgramViewController.swift */; };
+		E71F886225BFD59B000C38E0 /* ProgramCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F886125BFD59B000C38E0 /* ProgramCollectionViewCell.swift */; };
+		E71F886625BFD8F5000C38E0 /* ProgramData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F886525BFD8F5000C38E0 /* ProgramData.swift */; };
+		E71F887125C004EE000C38E0 /* PlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F887025C004EE000C38E0 /* PlanViewController.swift */; };
 		E7FD5C8125ABF67300CFFB1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FD5C8025ABF67300CFFB1E /* AppDelegate.swift */; };
 		E7FD5C8325ABF67300CFFB1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FD5C8225ABF67300CFFB1E /* SceneDelegate.swift */; };
 		E7FD5C8525ABF67300CFFB1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FD5C8425ABF67300CFFB1E /* ViewController.swift */; };
@@ -16,6 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10DCB233FE3CB533DDE4ABF0 /* Pods-21DaysFitNess.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-21DaysFitNess.debug.xcconfig"; path = "Target Support Files/Pods-21DaysFitNess/Pods-21DaysFitNess.debug.xcconfig"; sourceTree = "<group>"; };
+		E71F883F25AC0B8E000C38E0 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E71F884825BE7C1A000C38E0 /* ProgramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramViewController.swift; sourceTree = "<group>"; };
+		E71F886125BFD59B000C38E0 /* ProgramCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramCollectionViewCell.swift; sourceTree = "<group>"; };
+		E71F886525BFD8F5000C38E0 /* ProgramData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramData.swift; sourceTree = "<group>"; };
+		E71F887025C004EE000C38E0 /* PlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanViewController.swift; sourceTree = "<group>"; };
 		E7FD5C7D25ABF67300CFFB1E /* 21DaysFitNess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 21DaysFitNess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7FD5C8025ABF67300CFFB1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7FD5C8225ABF67300CFFB1E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +36,8 @@
 		E7FD5C8925ABF67600CFFB1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7FD5C8C25ABF67600CFFB1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7FD5C8E25ABF67600CFFB1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EACE3BCE26E0C955827C7020 /* Pods-21DaysFitNess.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-21DaysFitNess.release.xcconfig"; path = "Target Support Files/Pods-21DaysFitNess/Pods-21DaysFitNess.release.xcconfig"; sourceTree = "<group>"; };
+		F7BFEF9632D9A65404EE7B9B /* Pods_21DaysFitNess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_21DaysFitNess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +45,56 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EDD575C93A2C7F7077520DA /* Pods_21DaysFitNess.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		183BF0C1E6BDB7CA5A948D98 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				10DCB233FE3CB533DDE4ABF0 /* Pods-21DaysFitNess.debug.xcconfig */,
+				EACE3BCE26E0C955827C7020 /* Pods-21DaysFitNess.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5455756BDC6CADBF058B8AE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7BFEF9632D9A65404EE7B9B /* Pods_21DaysFitNess.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E71F883A25ABFCEE000C38E0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E71F883F25AC0B8E000C38E0 /* MainViewController.swift */,
+				E71F884825BE7C1A000C38E0 /* ProgramViewController.swift */,
+				E71F886125BFD59B000C38E0 /* ProgramCollectionViewCell.swift */,
+				E71F887025C004EE000C38E0 /* PlanViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E71F886425BFD8D9000C38E0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E71F886525BFD8F5000C38E0 /* ProgramData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		E7FD5C7425ABF67300CFFB1E = {
 			isa = PBXGroup;
 			children = (
 				E7FD5C7F25ABF67300CFFB1E /* 21DaysFitNess */,
 				E7FD5C7E25ABF67300CFFB1E /* Products */,
+				183BF0C1E6BDB7CA5A948D98 /* Pods */,
+				5455756BDC6CADBF058B8AE1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +112,8 @@
 				E7FD5C8025ABF67300CFFB1E /* AppDelegate.swift */,
 				E7FD5C8225ABF67300CFFB1E /* SceneDelegate.swift */,
 				E7FD5C8425ABF67300CFFB1E /* ViewController.swift */,
+				E71F886425BFD8D9000C38E0 /* Models */,
+				E71F883A25ABFCEE000C38E0 /* ViewController */,
 				E7FD5C8625ABF67300CFFB1E /* Main.storyboard */,
 				E7FD5C8925ABF67600CFFB1E /* Assets.xcassets */,
 				E7FD5C8B25ABF67600CFFB1E /* LaunchScreen.storyboard */,
@@ -74,9 +129,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E7FD5C9125ABF67600CFFB1E /* Build configuration list for PBXNativeTarget "21DaysFitNess" */;
 			buildPhases = (
+				B5D35DF5B919FCC1E335231E /* [CP] Check Pods Manifest.lock */,
 				E7FD5C7925ABF67300CFFB1E /* Sources */,
 				E7FD5C7A25ABF67300CFFB1E /* Frameworks */,
 				E7FD5C7B25ABF67300CFFB1E /* Resources */,
+				0EE731ED5C3FFB34D73FBF97 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,13 +189,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0EE731ED5C3FFB34D73FBF97 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-21DaysFitNess/Pods-21DaysFitNess-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-21DaysFitNess/Pods-21DaysFitNess-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-21DaysFitNess/Pods-21DaysFitNess-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5D35DF5B919FCC1E335231E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-21DaysFitNess-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E7FD5C7925ABF67300CFFB1E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E7FD5C8525ABF67300CFFB1E /* ViewController.swift in Sources */,
+				E71F884025AC0B8E000C38E0 /* MainViewController.swift in Sources */,
+				E71F884925BE7C1A000C38E0 /* ProgramViewController.swift in Sources */,
+				E71F886225BFD59B000C38E0 /* ProgramCollectionViewCell.swift in Sources */,
 				E7FD5C8125ABF67300CFFB1E /* AppDelegate.swift in Sources */,
+				E71F887125C004EE000C38E0 /* PlanViewController.swift in Sources */,
+				E71F886625BFD8F5000C38E0 /* ProgramData.swift in Sources */,
 				E7FD5C8325ABF67300CFFB1E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +387,7 @@
 		};
 		E7FD5C9225ABF67600CFFB1E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10DCB233FE3CB533DDE4ABF0 /* Pods-21DaysFitNess.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +406,7 @@
 		};
 		E7FD5C9325ABF67600CFFB1E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EACE3BCE26E0C955827C7020 /* Pods-21DaysFitNess.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
