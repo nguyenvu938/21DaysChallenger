@@ -125,6 +125,7 @@ class PlanViewController: UIViewController {
         containerView.addSubview(imageView)
     }
     
+    
     func setupLayout() {
         containerView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
         containerView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
