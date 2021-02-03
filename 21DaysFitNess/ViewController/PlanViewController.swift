@@ -91,9 +91,50 @@ class PlanViewController: UIViewController {
         return label
     }()
     
-    let imageView: UIImageView = {
+    let subView: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.layer.cornerRadius = 24
+        view.backgroundColor = UIColor(red: 0.89, green: 0.94, blue: 0.98, alpha: 1.00)
+        view.layer.borderWidth = 2
+        view.layer.borderColor = UIColor(red: 1.00, green: 1.00, blue: 1.00, alpha: 1.00).cgColor
+        return view
+    }()
+    
+    let titleImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
+    }()
+    
+    let subImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
+    }()
+    
+    let label: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.numberOfLines = 0
+        label.textColor = UIColor(red: 0.20, green: 0.27, blue: 0.41, alpha: 1.00)
+        label.font = UIFont.boldSystemFont(ofSize: 18)
+        return label
+    }()
+    
+    let subLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "21 days left"
+        label.font = UIFont(name: "Lato", size: 12)
+        label.textColor = UIColor(red: 0.59, green: 0.59, blue: 0.59, alpha: 1.00)
+        return label
+    }()
+    
+    let progessBarImageView: UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
+        image.image = UIImage(named: "progess bar")
         return image
     }()
 
@@ -108,6 +149,14 @@ class PlanViewController: UIViewController {
         setupLayout()
         
         view.backgroundColor = UIColor(red: 0.89, green: 0.94, blue: 0.98, alpha: 1.00)
+        
+        let tapMenu = UITapGestureRecognizer(target: self, action: #selector(openMenu))
+        menuImageView.addGestureRecognizer(tapMenu)
+        menuImageView.isUserInteractionEnabled = true
+        
+        let tapSetting = UITapGestureRecognizer(target: self, action: #selector(openSetting))
+        settingImageView.addGestureRecognizer(tapSetting)
+        settingImageView.isUserInteractionEnabled = true
     }
     
     func addSubview() {
@@ -122,7 +171,12 @@ class PlanViewController: UIViewController {
         containerView.addSubview(label3)
         containerView.addSubview(label4)
         containerView.addSubview(label5)
-        containerView.addSubview(imageView)
+        containerView.addSubview(subView)
+        subView.addSubview(titleImageView)
+        subView.addSubview(subImageView)
+        subView.addSubview(label)
+        subView.addSubview(subLabel)
+        subView.addSubview(progessBarImageView)
     }
     
     
@@ -164,6 +218,38 @@ class PlanViewController: UIViewController {
         label5.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 315).isActive = true
         label5.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 25).isActive = true
         
+        subView.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 349).isActive = true
+        subView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 24).isActive = true
+        subView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -24).isActive = true
+        subView.heightAnchor.constraint(equalToConstant: 156).isActive = true
         
+        titleImageView.topAnchor.constraint(equalTo: subView.topAnchor, constant: 22).isActive = true
+        titleImageView.trailingAnchor.constraint(equalTo: subView.trailingAnchor, constant: -16).isActive = true
+        
+        label.topAnchor.constraint(equalTo: subView.topAnchor, constant: 18).isActive = true
+        label.leadingAnchor.constraint(equalTo: subView.leadingAnchor, constant: 23).isActive = true
+        label.widthAnchor.constraint(equalToConstant: 160).isActive = true
+        
+        subImageView.topAnchor.constraint(equalTo: subView.topAnchor, constant: 61).isActive = true
+        subImageView.leadingAnchor.constraint(equalTo: subView.leadingAnchor, constant: 23).isActive = true
+        
+        subLabel.bottomAnchor.constraint(equalTo: subView.bottomAnchor, constant: -22).isActive = true
+        subLabel.leadingAnchor.constraint(equalTo: subView.leadingAnchor, constant: 23).isActive = true
+        
+        progessBarImageView.centerXAnchor.constraint(equalTo: subView.centerXAnchor, constant: 0).isActive = true
+        progessBarImageView.bottomAnchor.constraint(equalTo: subView.bottomAnchor, constant: -3).isActive = true
+    }
+    
+    @objc func openMenu() {
+        let menuVC = MenuViewController()
+        let navigation = UINavigationController(rootViewController: menuVC)
+        self.present(navigation, animated: true, completion: nil)
+    }
+    
+    @objc func openSetting() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let settingVC = storyboard.instantiateViewController(identifier: "SettingViewController") as! SettingViewController
+        settingVC.modalPresentationStyle = .fullScreen
+        self.present(settingVC, animated: true, completion: nil)
     }
 }

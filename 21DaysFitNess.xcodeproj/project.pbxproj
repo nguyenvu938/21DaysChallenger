@@ -13,6 +13,13 @@
 		E71F886225BFD59B000C38E0 /* ProgramCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F886125BFD59B000C38E0 /* ProgramCollectionViewCell.swift */; };
 		E71F886625BFD8F5000C38E0 /* ProgramData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F886525BFD8F5000C38E0 /* ProgramData.swift */; };
 		E71F887125C004EE000C38E0 /* PlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F887025C004EE000C38E0 /* PlanViewController.swift */; };
+		E71F887625C1299B000C38E0 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F887525C1299B000C38E0 /* MenuViewController.swift */; };
+		E71F887F25C12C95000C38E0 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F887D25C12C95000C38E0 /* MenuTableViewCell.swift */; };
+		E71F888025C12C95000C38E0 /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E71F887E25C12C95000C38E0 /* MenuTableViewCell.xib */; };
+		E71F888325C1333B000C38E0 /* MenuData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F888225C1333B000C38E0 /* MenuData.swift */; };
+		E71F888625C14A91000C38E0 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F888525C14A91000C38E0 /* SettingViewController.swift */; };
+		E72719C825CAA0F100D5FA54 /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72719C725CAA0F100D5FA54 /* ReminderViewController.swift */; };
+		E72719CB25CAB57400D5FA54 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72719CA25CAB57400D5FA54 /* TimerViewController.swift */; };
 		E7FD5C8125ABF67300CFFB1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FD5C8025ABF67300CFFB1E /* AppDelegate.swift */; };
 		E7FD5C8325ABF67300CFFB1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FD5C8225ABF67300CFFB1E /* SceneDelegate.swift */; };
 		E7FD5C8525ABF67300CFFB1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FD5C8425ABF67300CFFB1E /* ViewController.swift */; };
@@ -28,6 +35,13 @@
 		E71F886125BFD59B000C38E0 /* ProgramCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramCollectionViewCell.swift; sourceTree = "<group>"; };
 		E71F886525BFD8F5000C38E0 /* ProgramData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramData.swift; sourceTree = "<group>"; };
 		E71F887025C004EE000C38E0 /* PlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanViewController.swift; sourceTree = "<group>"; };
+		E71F887525C1299B000C38E0 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		E71F887D25C12C95000C38E0 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		E71F887E25C12C95000C38E0 /* MenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
+		E71F888225C1333B000C38E0 /* MenuData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuData.swift; sourceTree = "<group>"; };
+		E71F888525C14A91000C38E0 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		E72719C725CAA0F100D5FA54 /* ReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
+		E72719CA25CAB57400D5FA54 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		E7FD5C7D25ABF67300CFFB1E /* 21DaysFitNess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 21DaysFitNess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7FD5C8025ABF67300CFFB1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7FD5C8225ABF67300CFFB1E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +90,12 @@
 				E71F884825BE7C1A000C38E0 /* ProgramViewController.swift */,
 				E71F886125BFD59B000C38E0 /* ProgramCollectionViewCell.swift */,
 				E71F887025C004EE000C38E0 /* PlanViewController.swift */,
+				E71F887525C1299B000C38E0 /* MenuViewController.swift */,
+				E71F887D25C12C95000C38E0 /* MenuTableViewCell.swift */,
+				E71F887E25C12C95000C38E0 /* MenuTableViewCell.xib */,
+				E71F888525C14A91000C38E0 /* SettingViewController.swift */,
+				E72719C725CAA0F100D5FA54 /* ReminderViewController.swift */,
+				E72719CA25CAB57400D5FA54 /* TimerViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -84,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				E71F886525BFD8F5000C38E0 /* ProgramData.swift */,
+				E71F888225C1333B000C38E0 /* MenuData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -183,6 +204,7 @@
 			files = (
 				E7FD5C8D25ABF67600CFFB1E /* LaunchScreen.storyboard in Resources */,
 				E7FD5C8A25ABF67600CFFB1E /* Assets.xcassets in Resources */,
+				E71F888025C12C95000C38E0 /* MenuTableViewCell.xib in Resources */,
 				E7FD5C8825ABF67300CFFB1E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,10 +262,16 @@
 				E71F884025AC0B8E000C38E0 /* MainViewController.swift in Sources */,
 				E71F884925BE7C1A000C38E0 /* ProgramViewController.swift in Sources */,
 				E71F886225BFD59B000C38E0 /* ProgramCollectionViewCell.swift in Sources */,
+				E72719C825CAA0F100D5FA54 /* ReminderViewController.swift in Sources */,
+				E71F887F25C12C95000C38E0 /* MenuTableViewCell.swift in Sources */,
+				E71F887625C1299B000C38E0 /* MenuViewController.swift in Sources */,
+				E71F888325C1333B000C38E0 /* MenuData.swift in Sources */,
 				E7FD5C8125ABF67300CFFB1E /* AppDelegate.swift in Sources */,
 				E71F887125C004EE000C38E0 /* PlanViewController.swift in Sources */,
+				E72719CB25CAB57400D5FA54 /* TimerViewController.swift in Sources */,
 				E71F886625BFD8F5000C38E0 /* ProgramData.swift in Sources */,
 				E7FD5C8325ABF67300CFFB1E /* SceneDelegate.swift in Sources */,
+				E71F888625C14A91000C38E0 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

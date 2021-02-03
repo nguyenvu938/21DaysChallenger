@@ -123,6 +123,23 @@ class ProgramViewController: UIViewController {
     @objc func onClick() {
         let planVC = PlanViewController()
         let navigation = UINavigationController(rootViewController: planVC)
+        if indexSelected == 0 {
+            planVC.titleImageView.image = UIImage(named: "pic2")
+            planVC.label.text = "FAT BURNING EXERCISE"
+            planVC.subImageView.image = UIImage(named: "rec2")
+        } else if indexSelected == 1 {
+            planVC.titleImageView.image = UIImage(named: "pic3")
+            planVC.label.text = "WAIST EXERCISE"
+            planVC.subImageView.image = UIImage(named: "rec3")
+        } else if indexSelected == 2 {
+            planVC.titleImageView.image = UIImage(named: "pic4")
+            planVC.label.text = "LEG FAT BURNING EXERCISE"
+            planVC.subImageView.image = UIImage(named: "rec4")
+        } else if indexSelected == 3 {
+            planVC.titleImageView.image = UIImage(named: "pic5")
+            planVC.label.text = "HIP EXERCISE"
+            planVC.subImageView.image = UIImage(named: "rec5")
+        }
         navigation.modalPresentationStyle = .fullScreen
         self.present(navigation, animated: true, completion: nil)
     }
