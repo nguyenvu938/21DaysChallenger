@@ -20,6 +20,10 @@
 		E71F888625C14A91000C38E0 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F888525C14A91000C38E0 /* SettingViewController.swift */; };
 		E72719C825CAA0F100D5FA54 /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72719C725CAA0F100D5FA54 /* ReminderViewController.swift */; };
 		E72719CB25CAB57400D5FA54 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72719CA25CAB57400D5FA54 /* TimerViewController.swift */; };
+		E76DE19925CB974D00A373BD /* ChallengerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76DE19825CB974D00A373BD /* ChallengerViewController.swift */; };
+		E76DE19D25CBA0D200A373BD /* ChallengerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76DE19B25CBA0D200A373BD /* ChallengerCollectionViewCell.swift */; };
+		E76DE19E25CBA0D200A373BD /* ChallengerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E76DE19C25CBA0D200A373BD /* ChallengerCollectionViewCell.xib */; };
+		E76DE1A125CBA83200A373BD /* DayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76DE1A025CBA83200A373BD /* DayData.swift */; };
 		E7FD5C8125ABF67300CFFB1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FD5C8025ABF67300CFFB1E /* AppDelegate.swift */; };
 		E7FD5C8325ABF67300CFFB1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FD5C8225ABF67300CFFB1E /* SceneDelegate.swift */; };
 		E7FD5C8525ABF67300CFFB1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FD5C8425ABF67300CFFB1E /* ViewController.swift */; };
@@ -42,6 +46,10 @@
 		E71F888525C14A91000C38E0 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		E72719C725CAA0F100D5FA54 /* ReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
 		E72719CA25CAB57400D5FA54 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		E76DE19825CB974D00A373BD /* ChallengerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengerViewController.swift; sourceTree = "<group>"; };
+		E76DE19B25CBA0D200A373BD /* ChallengerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengerCollectionViewCell.swift; sourceTree = "<group>"; };
+		E76DE19C25CBA0D200A373BD /* ChallengerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChallengerCollectionViewCell.xib; sourceTree = "<group>"; };
+		E76DE1A025CBA83200A373BD /* DayData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayData.swift; sourceTree = "<group>"; };
 		E7FD5C7D25ABF67300CFFB1E /* 21DaysFitNess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 21DaysFitNess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7FD5C8025ABF67300CFFB1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7FD5C8225ABF67300CFFB1E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +104,9 @@
 				E71F888525C14A91000C38E0 /* SettingViewController.swift */,
 				E72719C725CAA0F100D5FA54 /* ReminderViewController.swift */,
 				E72719CA25CAB57400D5FA54 /* TimerViewController.swift */,
+				E76DE19825CB974D00A373BD /* ChallengerViewController.swift */,
+				E76DE19B25CBA0D200A373BD /* ChallengerCollectionViewCell.swift */,
+				E76DE19C25CBA0D200A373BD /* ChallengerCollectionViewCell.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -105,6 +116,7 @@
 			children = (
 				E71F886525BFD8F5000C38E0 /* ProgramData.swift */,
 				E71F888225C1333B000C38E0 /* MenuData.swift */,
+				E76DE1A025CBA83200A373BD /* DayData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -204,6 +216,7 @@
 			files = (
 				E7FD5C8D25ABF67600CFFB1E /* LaunchScreen.storyboard in Resources */,
 				E7FD5C8A25ABF67600CFFB1E /* Assets.xcassets in Resources */,
+				E76DE19E25CBA0D200A373BD /* ChallengerCollectionViewCell.xib in Resources */,
 				E71F888025C12C95000C38E0 /* MenuTableViewCell.xib in Resources */,
 				E7FD5C8825ABF67300CFFB1E /* Main.storyboard in Resources */,
 			);
@@ -265,12 +278,15 @@
 				E72719C825CAA0F100D5FA54 /* ReminderViewController.swift in Sources */,
 				E71F887F25C12C95000C38E0 /* MenuTableViewCell.swift in Sources */,
 				E71F887625C1299B000C38E0 /* MenuViewController.swift in Sources */,
+				E76DE19925CB974D00A373BD /* ChallengerViewController.swift in Sources */,
 				E71F888325C1333B000C38E0 /* MenuData.swift in Sources */,
 				E7FD5C8125ABF67300CFFB1E /* AppDelegate.swift in Sources */,
 				E71F887125C004EE000C38E0 /* PlanViewController.swift in Sources */,
 				E72719CB25CAB57400D5FA54 /* TimerViewController.swift in Sources */,
 				E71F886625BFD8F5000C38E0 /* ProgramData.swift in Sources */,
+				E76DE19D25CBA0D200A373BD /* ChallengerCollectionViewCell.swift in Sources */,
 				E7FD5C8325ABF67300CFFB1E /* SceneDelegate.swift in Sources */,
+				E76DE1A125CBA83200A373BD /* DayData.swift in Sources */,
 				E71F888625C14A91000C38E0 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
