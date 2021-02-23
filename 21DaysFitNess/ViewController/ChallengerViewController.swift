@@ -112,9 +112,21 @@ class ChallengerViewController: UIViewController {
         let layout = UICollectionViewFlowLayout()
         layout.estimatedItemSize = CGSize(width: 100, height: 100)
         layout.scrollDirection = UICollectionView.ScrollDirection.vertical
+        var cellWidth = 0
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            cellWidth = Int(UIScreen.main.bounds.width) - 10
+        } else {
+            cellWidth = Int(UIScreen.main.bounds.width) - 10
+        }
+        layout.itemSize = CGSize(width: cellWidth, height: (cellWidth * 120) / 90)
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
+        layout.scrollDirection = UICollectionView.ScrollDirection.vertical
+        layout.minimumInteritemSpacing = 0.0
         let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
-        collectionView.register(ChallengerCollectionViewCell.self, forCellWithReuseIdentifier: "ChallengerCollectionViewCell")
+        
+        let nib1 = UINib(nibName: "PROSONCLVCell", bundle: nil)
+        collectionView.register(nib1, forCellWithReuseIdentifier: "PROSONCLVCell")
         collectionView.backgroundColor = UIColor(red: 0.89, green: 0.94, blue: 0.98, alpha: 1.00)
 //        collectionView.showsVerticalScrollIndicator = false
         return collectionView
@@ -136,6 +148,22 @@ class ChallengerViewController: UIViewController {
         let tapSetting = UITapGestureRecognizer(target: self, action: #selector(openSetting))
         settingImageView.addGestureRecognizer(tapSetting)
         settingImageView.isUserInteractionEnabled = true
+        
+        let layout = UICollectionViewFlowLayout()
+        layout.estimatedItemSize = CGSize(width: 100, height: 100)
+        layout.scrollDirection = UICollectionView.ScrollDirection.vertical
+        var cellWidth = 0
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            cellWidth = Int(UIScreen.main.bounds.width) - 10
+        } else {
+            cellWidth = Int(UIScreen.main.bounds.width) - 10
+        }
+        layout.itemSize = CGSize(width: cellWidth, height: (cellWidth * 120) / 90)
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
+        layout.scrollDirection = UICollectionView.ScrollDirection.vertical
+        layout.minimumInteritemSpacing = 0.0
+        collectionView.collectionViewLayout = layout
+
     }
     
     func setupLayout() {
@@ -255,7 +283,7 @@ extension ChallengerViewController: UICollectionViewDelegate, UICollectionViewDa
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ChallengerCollectionViewCell", for: indexPath) as! ChallengerCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PROSONCLVCell", for: indexPath) as! PROSONCLVCell
        // cell.dayLabel.text = days[indexPath.row].label
         return cell
     }
