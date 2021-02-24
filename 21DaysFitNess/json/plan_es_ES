@@ -1,0 +1,450 @@
+[
+    {
+        "pic_path": "td/01.gif",
+        "tts_text": "Coloca sus pies al ancho de los hombros y, con los brazos extendidos al frente, flexiona las rodillas y baja el cuerpo como si estuviera sentado.
+Endeja las piernas. Repita esta acción. Este ejercicio puede tonificar los músculos de los muslos y las nalgas.",
+        "task_name": "SQUATS",
+        "task_type": "",
+        "tts_advice": "Toma una respiración profunda mientras bajas y exhala cuando esté arriba||puedes hacer esto con una mancuerna de mano para aumentar el desafío||Si todavía no es un desafío suficiente, intenta ponerle en cuclillas un poco más abajo||¿demasiado duro? Puede separar más los pies para ayudarte a mantener el equilibrio||este ejercicio puede tonificar casi todos los músculos de la parte inferior del cuerpo y mejorar su capacidad de equilibrio||su rodilla debe ser la dirección de los de s dedos de pie consistente",
+        "tts_speed": 0,
+        "task_mode": 0,
+        "duration": 2,
+        "id": 0
+    },
+    {
+        "pic_path": "td/02.gif",
+        "tts_text": "Se pone de pie frente a la pared a una distancia de una zancada, luego inclina hacia adelante y extiende sus manos frente a su cuerpo y en la pared. Doble los codos, acerca su cuerpo a la pared y usa los brazos para empujar su cuerpo hacia atrás, tal como lo haría en una flexión tradicional. Asegúrese de mantener el cuerpo recto y los pies en la misma posición.",
+        "task_name": "EMPUJADORES DE PARED",
+        "task_type": "",
+        "tts_advice": "Por favor, de pie frente a la pared||Este ejercicio se centra principalmente en su pecho y brazos||Asegúrese de mantener el cuerpo recto y contraer los músculos abdominales mientras hace ejercicio||inhala mientras sus brazos se están flexionando||exhalar mientras estira los brazos||¿Demasiado fácil? Pruebe flexiones tradicionales en un cojín si le apetece un desafío",
+        "tts_speed": 0,
+        "task_mode": 0,
+        "duration": 2,
+        "id": 1
+    },
+    {
+        "pic_path": "td/03.gif",
+        "tts_text": "Acuéstese de costado, con la cabeza apoyada en el brazo derecho. Sus piernas deben apilarse una encima de la otra. Levanta la pata superior lo más alto posible, antes de devolverla a la posición inicial. Repita esta acción. Tenga en cuenta que su pierna debe mantenerse recta durante todo el ejercicio. Esta acción puede ejercitar los músculos de su cadera.",
+        "task_name": "Acóstase al lado izquierda",
+        "task_type": "",
+        "tts_advice": "Por favor haz esto en la estera||Este ejercicio es bueno para sus caderas y muslos||mantenga sus pies mirando hacia adelante||Por favor, recuerde mantener las piernas rectas durante el ejercicio||Para darle un desafío mayor, agrega pesas a sus tobillos",
+        "tts_speed": 0,
+        "task_mode": 0,
+        "duration": 2,
+        "id": 2
+    },
+    {
+        "pic_path": "td/04.gif",
+        "tts_text": "Acuéstese de costado, con la cabeza apoyada en el brazo izquierdo. Sus piernas deben apilarse una encima de la otra. Levanta la pata superior lo más alto posible, antes de devolverla a la posición inicial. Repita esta acción. Tenga en cuenta que su pierna debe mantenerse recta durante todo el ejercicio. Esta acción puede ejercitar los músculos de su cadera.",
+        "task_name": "Acóstase al lado y eleva la pierna derecha",
+        "task_type": "",
+        "tts_advice": "Por favor haz esto en la estera||Este ejercicio es bueno para tus caderas y muslos||mantén tus pies hacia adelante||Por favor, recuerde mantener las piernas rectas durante el ejercicio||Para darte un desafío mayor, agrega pesas a tus tobillos",
+        "tts_speed": 0,
+        "task_mode": 0,
+        "duration": 2,
+        "id": 3
+    },
+    {
+        "pic_path": "td/05.gif",
+        "tts_text": "Acuéstese en el suelo con la espalda apoyada en el piso y las rodillas dobladas. Sus pies también deberían estar tocando el suelo y sus brazos a cada lado de tu cuerpo. A continuación, levanta las nalgas hacia arriba y hacia abajo. Repite esta acción. El ejercicio de puente fortalece todo el abdomen, la parte inferior de la espalda y los músculos de las nalgas.",
+        "task_name": "BUTT BRIDGE",
+        "task_type": "",
+        "tts_advice": "Por favor, ponga los pies en la anchura de los hombros mat apart||este ejercicio es bueno para la zona lumbar||este ejercicio puede ser un buen ejercicio a sus caderas",
+        "tts_speed": 0,
+        "task_mode": 0,
+        "duration": 2,
+        "id": 4
+    },
+    {
+        "pic_path": "td/06.gif",
+        "tts_text": "Coloca los pies separados al ancho de los hombros. Levanta los brazos en alto y junta sus manos sobre su cabeza.",
+        "task_name": "CLAPS SOBRE LA CABEZA",
+        "task_type": "",
+        "tts_advice": "Estira sus brazos cuando entrenes||este ejercicio puede relajarse y estirar los hombros||este ejercicio puede resolver su músculo deltoides||inhala al levantar los brazos, exhala al bajarlos",
+        "tts_speed": 0,
+        "task_mode": 0,
+        "duration": 2,
+        "id": 5
+    },
+    {
+        "pic_path": "td/07.png",
+        "tts_text": "Acuéstese boca abajo con los dedos de los pies y los antebrazos apoyados en el suelo. Mantenga el cuerpo recto y mantenga esta posición todo el tiempo que pueda.
+ Este ejercicio fortalece el abdomen, la espalda y los hombros.",
+        "task_name": "TABLÓN",
+        "task_type": "t",
+        "tts_advice": "Esta acción puede ejercitar sus músculos centrales||Mantenga su cuerpo en posición vertical, apriete su abdomen y sus nalgas, no permita que sus nalgas se hundan o sobresalgan. Respira naturalmente||esta posición es muy buena para su columna vertebral||Si está luchando por mantener esta posición, puede colocar sus rodillas en una colchoneta y cruzar los pies en el aire; si el ejercicio es demasiado fácil para ti, puede colocar pesas en tu espalda",
+        "tts_speed": 0,
+        "task_mode": 0,
+        "duration": 1,
+        "id": 6
+    },
+    {
+        "pic_path": "td/08.gif",
+        "tts_text": "Acuéstese sobre su estómago con los brazos extendidos sobre su cabeza. Levanta una pierna y el brazo en el lado opuesto de su cuerpo al mismo tiempo, luego bájelos. ",
+        "task_name": "NADADOR Y SUPERMAN",
+        "task_type": "",
+        "tts_advice": "Este entrenamiento puede fortalecer sus caderas y su espalda baja||respira mientras levantas la pierna y el brazo, exhala a medida que descienden||¿Demasiado fácil? Intenta levantar ambos brazos y piernas al mismo tiempo",
+        "tts_speed": 0,
+        "task_mode": 0,
+        "duration": 2,
+        "id": 7
+    },
+    {
+        "pic_path": "td/09.gif",
+        "tts_text": "Coloca ambos pies a ancho de hombros. Levanta una rodilla para tocar el otro lado del codo. Regresa a la posición inicial y repite la acción en el otro lado.",
+        "task_name": "CRUNCHES DE BICICLETAS",
+        "task_type": "",
+        "tts_advice": "Apretando su abdomen cada vez que rueda su vientre||puedes sentir sus músculos centrales apretando||esta acción puede ejercitar sus músculos centrales, tensar sus abdominales mientras entrena",
+        "tts_speed": 0,
+        "task_mode": 0,
+        "duration": 3,
+        "id": 8
+    },
+    {
+        "pic_path": "td/10.gif",
+        "tts_text": "Coloca los pies separados al ancho de los hombros, y se dobla en una posición en cuclillas antes de usar las manos para suspenderlo en el suelo y saltar hacia atrás, colocando las piernas en un movimiento de retroceso del pedal,. Hace un push-up y luego invierte los pasos anteriores y salta hacia arriba. Repite esta acción.",
+        "task_name": "BURPEES",
+        "task_type": "",
+        "tts_advice": "Este ejercicio entrena más del 70 por ciento de los grupos musculares del cuerpo||trata de completar cada paso con fluidez||si siente que el ejercicio es demasiado fácil, intenta acelerar sus acciones",
+        "tts_speed": 0,
+        "task_mode": 0,
+        "duration": 6,
+        "id": 9
+    },
+    {
+        "pic_path": "td/11.gif",
+        "tts_text": "Siéntate en el suelo con las piernas ligeramente levantadas. Tu parte superior del cuerpo debe estar inclinada hacia atrás. Levante una pierna a la vez, doblándola en la rodilla. Avanza y aplaude con las manos juntas en el espacio debajo de la pierna doblada. Cambia las piernas y repite los pasos anteriores.",
+        "task_name": "CRUNCHES CLAPPING",
+        "task_type": "",
+        "tts_advice": "Exhale mientras levanta las rodillas y respire mientras las baja||Si lucha con este ejercicio, pruébalo con los pies en el suelo||este ejercicio puede entrenar sus músculos abdominales, mira hacia adelante",
+        "tts_speed": 0,
+        "task_mode": 0,
+        "duration": 3,
+        "id": 10
+    },
+    {
+        "pic_path": "td/12.gif",
+        "tts_text": "Descansa las rodillas en el suelo y extiende su parte superior del cuerpo por delante de las piernas, con las manos directamente debajo de los hombros apoyadas en el suelo.
+ Sus rodillas deben colocarse justo debajo de sus nalgas. Luego, dobla la pierna izquierda 90 grados y levántala hacia un lado de su cuerpo, luego vuelve a bajar. Repite esta acción.",
+        "task_name": "FUEGO HIDRANTE IZQUIERDA",
+        "task_type": "",
+        "tts_advice": "Este ejercicio puede tensar los músculos de sus muslos y glúteos||este ejercicio entrena sus nalgas, piernas y abdomen||Recuerda mantener los brazos rectos; no olvide contraer el abdomen||Asegúrate de no doblar su espalda",
+        "tts_speed": 0,
+        "task_mode": 0,
+        "duration": 2,
+        "id": 11
+    },
+    {
+        "pic_path": "td/13.gif",
+        "tts_text": "Descansa las rodillas en el suelo y extiende su parte superior del cuerpo por delante de las piernas, con las manos directamente debajo de los hombros apoyadas en el suelo.
+ Sus rodillas deben colocarse justo debajo de sus nalgas. Luego, dobla la pierna derecha 90 grados y levántala hacia un lado de su cuerpo, luego vuelve a bajar. Repite esta acción.",
+        "task_name": "FUEGO HYDRANT DERECHO",
+        "task_type": "",
+        "tts_advice": "Este ejercicio puede tensar los músculos de tus muslos y glúteos||este ejercicio entrena tus nalgas, piernas y abdomen||Recuerda mantener los brazos rectos; no olvides contraer el abdomen||Asegúrate de no doblar tu espalda",
+        "tts_speed": 0,
+        "task_mode": 0,
+        "duration": 2,
+        "id": 12
+    },
+    {
+        "pic_path": "td/14.gif",
+        "tts_text": "Túmbate en el suelo, mirando al techo. Dobla las piernas y coloca los brazos en ambos lados de su cuerpo.
+ Levanta ligeramente la parte superior de su cuerpo, permitiéndole bajar y tocar sus talones con sus manos.",
+        "task_name": "TOCAR TALON",
+        "task_type": "",
+        "tts_advice": "Asegúrese de que su parte inferior del cuerpo permanezca en el suelo||Este ejercicio trabaja sus músculos centrales. Inhale al llegar para tocar su tobillo, exhale mientras se recuesta",
+        "tts_speed": 0,
+        "task_mode": 0,
+        "duration": 3,
+        "id": 13
+    },
+    {
+        "pic_path": "td/15.gif",
+        "tts_text": "Descansa las rodillas en el suelo y extiende su parte superior del cuerpo por delante de las piernas, con las manos directamente debajo de los hombros apoyadas en el suelo.
+ Sus rodillas deben colocarse justo debajo de sus nalgas. Luego, dobla la pierna derecha 90 grados y levántala hacia un lado de su cuerpo, luego vuelve a bajar sin tocar el suelo. Repite esta acción.",
+        "task_name": "BOCADILLOS DERECHO",
+        "task_type": "",
+        "tts_advice": "Por favor haz esto en la estera||Esta acción puede tensar sus caderas y también ejercitar sus piernas||Mantenga la rodilla doblada a 90 grados||Contrae sus músculos abdominales tanto como pueda||Trata de no levantar la pierna más arriba que su cadera||Exhale mientras levanta su pierna",
+        "tts_speed": 0,
+        "task_mode": 0,
+        "duration": 2,
+        "id": 14
+    },
+    {
+        "pic_path": "td/16.gif",
+        "tts_text": "Descansa las rodillas en el suelo y extiende su parte superior del cuerpo por delante de las piernas, con las manos directamente debajo de los hombros apoyadas en el suelo.
+ Sus rodillas deben colocarse justo debajo de sus nalgas. Luego, dobla la pierna derecha 90 grados y levántala hacia un lado de su cuerpo, luego vuelve a bajar sin tocar el suelo. Repite esta acción.",
+        "task_name": "BOLSAS DE BURRO IZQUIERDA",
+        "task_type": "",
+        "tts_advice": "Por favor haz esto en la estera||Esta acción puede tensar tus caderas y también ejercitar tus piernas||Mantenga la rodilla doblada a 90 grados||Contrae tus músculos abdominales tanto como puedas||Trate de no levantar la pierna más arriba que su cadera||Exhale mientras levanta su pierna",
+        "tts_speed": 0,
+        "task_mode": 0,
+        "duration": 2,
+        "id": 15
+    },
+    {
+        "pic_path": "td/17.gif",
+        "tts_text": "Acuéstese sobre su espalda, con los brazos apoyados a ambos lados de su cuerpo. Levanta las piernas y trata de mantenerlas rectas. Levanta ligeramente la pierna y, en sucesión rápida, alterna entre levantar y bajar sus piernas derecha e izquierda.",
+        "task_name": "TIJERAS",
+        "task_type": "",
+        "tts_advice": "Intenta no usar sus manos para impulsar sus piernas||Contrae sus músculos abdominales",
+        "tts_speed": 0,
+        "task_mode": 0,
+        "duration": 2,
+        "id": 16
+    },
+    {
+        "pic_path": "td/18.gif",
+        "tts_text": "Acuéstese en el suelo con las manos levantadas detrás de las orejas.
+ Levanta ligeramente la parte superior del cuerpo y simultáneamente levanta la rodilla derecha hacia el pecho. A continuación, estira la pierna izquierda para que se desplace por encima del suelo mientras gira la parte superior del cuerpo hacia la derecha, llevando el codo izquierdo hacia la rodilla derecha, de modo que el codo del brazo izquierdo y la rodilla derecha estén cerca. Repite esta acción, cambiando al otro lado.",
+        "task_name": "CRUJIDOS DE BICICLETA",
+        "task_type": "",
+        "tts_advice": "Mantenga su cuello relajado mientras hace este ejercicio||Mantenga sus manos detrás de sus oídos y sus brazos lo más atrás posible. No cruces los dedos||Debería poder sentir sus músculos abdominales contrayendo||si puedes ver sus codos, por favor abre el cofre||Asegúrate de respirar naturalmente durante el proceso de entrenamiento: inhala mientras levantas la rodilla y el codo, exhala mientras los bajas",
+        "tts_speed": 0,
+        "task_mode": 0,
+        "duration": 2,
+        "id": 17
+    },
+    {
+        "pic_path": "td/19.gif",
+        "tts_text": "Comienza en la posición de cuclillas, antes de ocupar su núcleo y propulsarse saltando en el acto. Repite la acción. Este es un buen ejercicio general de calentamiento.",
+        "task_name": "SALTAR SQUATS",
+        "task_type": "",
+        "tts_advice": "Cuando saltas, intenta saltar lo más alto posible||A medida que hace sentadillas, mantenga su muslo paralelo al suelo||Mira hacia delante mientras se pone en cuclillas y mantenga la espalda recta",
+        "tts_speed": 0,
+        "task_mode": 0,
+        "duration": 2,
+        "id": 18
+    },
+    {
+        "pic_path": "td/20.gif",
+        "tts_text": "Párese con sus dos piernas un gran paso de distancia. Doblándose ligeramente, dé un paso grande y lento hacia la izquierda.
+ Sus dedos de los pies deben apuntar hacia adelante. Extiende su rodilla derecha, poniendo todo su peso sobre la pierna izquierda, colocando la rodilla izquierda y la cadera en una estocada lateral. Regresa a la posición inicial y repite esta acción, esta vez con la otra pierna tomando la delantera.",
+        "task_name": "LONGITUDES LATERALES",
+        "task_type": "",
+        "tts_advice": "Inhale mientras se lanza, exhale mientras regresa||Contrae tus músculos abdominales||sus dedos de los pies deben seguir adelante||Casi todos los músculos de la pierna se beneficiarán de este ejercicio||¿Fácil? Intenta extender y elevar su brazo mientras se abalanza||Este ejercicio puede endurecer sus músculos abdominales",
+        "tts_speed": 0,
+        "task_mode": 0,
+        "duration": 4,
+        "id": 19
+    },
+    {
+        "pic_path": "td/21.gif",
+        "tts_text": "Coloca los pies separados al ancho de los hombros y coloca las manos sobre la cintura. Extiende su pierna izquierda hacia adelante con los muslos bajados y ambas rodillas dobladas en un ángulo de 90 grados. Luego regresa a la posición inicial y repite los pasos anteriores para la otra pierna. Esta acción puede endurecer el glúteo mayor y los músculos del muslo.",
+        "task_name": "PULMONES",
+        "task_type": "",
+        "tts_advice": "Inhale mientras baja, exhale cuando vuelva a subir||Lleve pesas con ambas manos para aumentar la dificultad de este ejercicio||¿Las rodillas se sienten doloridas? Intenta aumentar la distancia entre sus pies||Dale a sus piernas un gran entrenamiento con este exericise",
+        "tts_speed": 0,
+        "task_mode": 0,
+        "duration": 6,
+        "id": 20
+    },
+    {
+        "pic_path": "td/22.gif",
+        "tts_text": "Coloca los pies un poco más separados que el ancho de los hombros con los dedos de los pies hacia afuera y las manos a cada lado del cuerpo. Luego, ponte en cuclillas hasta que tus muslos estén paralelos al suelo. Extiende tus brazos frente a tu cuerpo mientras te pones en cuclillas.
+ Tus rodillas no deberían salir más allá de tus dedos. Regrese a una posición de pie y repita los pasos anteriores.",
+        "task_name": "PLIE SQUATS",
+        "task_type": "",
+        "tts_advice": "Mantenga sus ojos hacia adelante||Sus manos deben estar a la altura del hombro; Asegúrase de que las rodillas y los dedos de los pies estén orientados en la misma dirección",
+        "tts_speed": 0,
+        "task_mode": 0,
+        "duration": 2,
+        "id": 21
+    },
+    {
+        "pic_path": "td/23.gif",
+        "tts_text": "Coloca los pies juntos y firmemente en el suelo con los brazos a ambos lados de su cuerpo. Salta y extiende sus piernas hacia afuera, simultáneamente levanta sus manos sobre su cabeza.
+ Salta de vuelta a la posición original, con los pies juntos, los brazos hacia atrás al costado de su cuerpo. Repite esta acción. Este movimiento ejercita todos los principales grupos musculares en el cuerpo.",
+        "task_name": "Jumping Jack",
+        "task_type": "",
+        "tts_advice": "Tenga cuidado de enderezar completamente los brazos mientras salta||Mantenga la espalda recta en todo momento||Las tomas de salto calientan el cuerpo y ejercitan todos los principales grupos musculares",
+        "tts_speed": 0,
+        "task_mode": 0,
+        "duration": 2,
+        "id": 22
+    },
+    {
+        "pic_path": "td/24.png",
+        "tts_text": "Coloca su espalda plana contra una pared y desliza su cuerpo hacia abajo de la pared en una posición achatada hasta que sus muslos estén paralelos al suelo.
+ Coloca las manos en las caderas, pero no las use para sostenerse. La pared se sienta principalmente ejercitar los muslos.",
+        "task_name": "SITUACIÓN EN LA PARED",
+        "task_type": "t",
+        "tts_advice": "Tu espalda debe estar plana contra la pared||Asegúrate de que tus muslos estén paralelos al suelo||La pared se sienta principalmente ejercitar los músculos del muslo",
+        "tts_speed": 0,
+        "task_mode": 0,
+        "duration": 1,
+        "id": 23
+    },
+    {
+        "pic_path": "td/25.gif",
+        "tts_text": "Acuéstese en el piso y doble las piernas. Mantenga los pies planos en el suelo. Cruza los brazos y colócalos sobre tu pecho, luego levanta lentamente la parte superior de tu cuerpo hasta que esté a 30 grados del suelo. Regrese a la posición inicial y repita los pasos anteriores. Este ejercicio soluciona los músculos rectos abdominales y oblicuos abdominales.",
+        "task_name": "CRUNCHES DE BRAZO CRUZADO",
+        "task_type": "",
+        "tts_advice": "A medida que eleva la parte superior de su cuerpo, sus músculos abdominales se contraerán||Este ejercicio puede mejorar el poder de los músculos centrales",
+        "tts_speed": 0,
+        "task_mode": 0,
+        "duration": 3,
+        "id": 24
+    },
+    {
+        "pic_path": "td/26.gif",
+        "tts_text": "Comienza desde una posición tradicional de flexión de brazos, pero con las rodillas en el suelo y los dos pies levantados y apuntando hacia el aire. Comienza a hacer flexiones en esta posición.",
+        "task_name": "KNEE PUSH-UPS",
+        "task_type": "",
+        "tts_advice": "Si tiene problemas con este ejercicio, intenta hacer flexiones más cortas||Intenta usar su brazo y su fuerza abdominal para completar sus flexiones",
+        "tts_speed": 0,
+        "task_mode": 0,
+        "duration": 3,
+        "id": 25
+    },
+    {
+        "pic_path": "td/27.gif",
+        "tts_text": "Recuéstese en el suelo, con las manos a ambos lados del cuerpo para recibir apoyo.
+ Teniendo cuidado de mantener las piernas rectas, levántelas hacia arriba hasta que las nalgas se eleven ligeramente del suelo.
+ Baje lentamente las piernas al piso antes de repetir esta acción.",
+        "task_name": "PIERNAS LEVANTADAS",
+        "task_type": "",
+        "tts_advice": "Intenta mantener sus piernas rectas||si lucha para completar este ejercicio, puede descansar las piernas en el suelo después de cada subida||esta acción efectivamente ejercita los músculos abdominales",
+        "tts_speed": 0,
+        "task_mode": 0,
+        "duration": 3,
+        "id": 26
+    },
+    {
+        "pic_path": "td/28.gif",
+        "tts_text": "Póngase en la posición de flexión, con los brazos tocando el suelo y levantándolo. Luego levanta su rodilla derecha hacia su pecho, enderece su pierna izquierda antes de cambiar rápidamente de pierna.
+ El alpinista ejercita múltiples grupos musculares a la vez.",
+        "task_name": "MONTAÑISTA",
+        "task_type": "",
+        "tts_advice": "Este ejercicio hace funcionar los músculos de las piernas y mejora la estabilidad del hombro||presta especial atención al área abdominal mientras hace este ejercicio||Contrae su abdomen para ejercitar los músculos centrales",
+        "tts_speed": 0,
+        "task_mode": 0,
+        "duration": 2,
+        "id": 27
+    },
+    {
+        "pic_path": "td/29.gif",
+        "tts_text": "Póngase a cuatro patas y apriete los músculos abdominales. Sus manos deben estar directamente debajo de los hombros y debe estar de cara al suelo.
+ Luego, extiende su pierna derecha y su brazo izquierdo lentamente, manteniendo la posición durante cinco segundos. Traiga la pierna y el brazo hacia atrás, volviendo a cuatro patas y luego siga los pasos anteriores para el otro brazo y pierna.",
+        "task_name": "AVE PERRO",
+        "task_type": "",
+        "tts_advice": "Mantenga su parte superior del cuerpo tan estable como sea posible||Su espalda debe permanecer recta en todo momento",
+        "tts_speed": 0,
+        "task_mode": 0,
+        "duration": 5,
+        "id": 28
+    },
+    {
+        "pic_path": "td/30.gif",
+        "tts_text": "Mantenga recta la parte superior de su cuerpo y comience a correr en el acto, tratando de levantar las rodillas.
+ Este es un buen ejercicio para los músculos de la pierna y la cadera, y puede mejorar la flexibilidad de la parte inferior del cuerpo.",
+        "task_name": "PASO ALTO",
+        "task_type": "",
+        "tts_advice": "Intenta levantar las rodillas||mantenga recta la parte superior de su cuerpo||El alto escalonamiento puede ejercitar los músculos de sus piernas y glúteos",
+        "tts_speed": 0,
+        "task_mode": 0,
+        "duration": 2,
+        "id": 29
+    },
+    {
+        "pic_path": "td/31.gif",
+        "tts_text": "Siéntese en el suelo, con las piernas flexionadas, los pies y las rodillas extendidos ligeramente hacia afuera y la parte superior del cuerpo inclinada hacia atrás. Asegure sus dedos y gire la parte superior de su cuerpo de un lado a otro..",
+        "task_name": "RULETA RUSA",
+        "task_type": "",
+        "tts_advice": "Sus ojos deberían mirar hacia adelante mientras completa este ejercicio||mantener la espalda recta||si se encuentra luchando, puede poner sus pies en el suelo",
+        "tts_speed": 0,
+        "task_mode": 0,
+        "duration": 3,
+        "id": 30
+    },
+    {
+        "pic_path": "td/32.gif",
+        "tts_text": "Coloca una mano en la pared y párese de cara a la pared. Envuelva su pie derecho alrededor de su tobillo izquierdo, luego levante lentamente su talón izquierdo hasta que su pie izquierdo esté de puntillas, luego póngalo gradualmente hacia abajo.
+ Repite esta acción. Los Aumentos de Pierna de Pierna ejercitan principalmente los músculos de la pantorrilla.",
+        "task_name": "SENCILLAS PIERNAS DE PIERNAS IZQUIERDAS",
+        "task_type": "",
+        "tts_advice": "Mantenga su rodilla izquierda completamente recta||Si siente que este ejercicio es demasiado difícil, doblar la rodilla ligeramente podría facilitar la tarea de completarla",
+        "tts_speed": 0,
+        "task_mode": 0,
+        "duration": 2,
+        "id": 31
+    },
+    {
+        "pic_path": "td/33.gif",
+        "tts_text": "Coloca una mano en la pared y párese de cara a la pared. Envuelva su pie izquierdo alrededor de su tobillo derecho, luego levante lentamente su talón derecho hasta que su pie derecho esté de puntillas, luego póngalo gradualmente hacia abajo.
+ Repite esta acción. Los Aumentos de Pierna de Pierna ejercitan principalmente los músculos de la pantorrilla.",
+        "task_name": "SENCILLAS PIERNAS DE PIERNAS DERECHAS",
+        "task_type": "",
+        "tts_advice": "Mantenga su rodilla derecha completamente recta||Si siente que este ejercicio es demasiado difícil, doblar la rodilla ligeramente podría facilitar la tarea de completarla",
+        "tts_speed": 0,
+        "task_mode": 0,
+        "duration": 3,
+        "id": 32
+    },
+    {
+        "pic_path": "td/34.gif",
+        "tts_text": "Párese con su cuerpo, los pies abiertos y el ancho de los hombros, mantenga su cuerpo estable, sus dedos sujeten sus manos, sus puntos pulgares sobre sus hombros, curven sus brazos, y sus hombros se muevan hacia adelante. Cuanto más grande vayas, mejor.",
+        "task_name": "Por el hombro",
+        "task_type": "",
+        "tts_advice": "Presta atención a la respiración, los hombros para estirar",
+        "tts_speed": 0,
+        "task_mode": 0,
+        "duration": 2,
+        "id": 33
+    },
+    {
+        "pic_path": "td/35.gif",
+        "tts_text": "Párese naturalmente, con los pies separados, levante el pecho y el abdomen; levanta tus brazos hacia la parte superior de tu cabeza, con las palmas una frente a la otra, imagina sosteniendo una pelota en tu mano.",
+        "task_name": "Flexión lateral del cuerpo de pie",
+        "task_type": "",
+        "tts_advice": "Inhale al flexionar y exhale al ponerse de pie",
+        "tts_speed": 0,
+        "task_mode": 0,
+        "duration": 4,
+        "id": 34
+    },
+    {
+        "pic_path": "td/36.gif",
+        "tts_text": "Coloque las manos a ambos lados de la cabeza, abra los codos hacia ambos lados, estire la espalda, mantenga las piernas ligeramente flexionadas, manténgalas estables, flexione el cuerpo, mueva los brazos hacia atrás e inclínese hacia adelante al máximo, aproximadamente nivelado con el terreno.",
+        "task_name": "Buenos días, flexión del cuerpo",
+        "task_type": "",
+        "tts_advice": "Respirando naturalmente, el lado del abdomen tiene la sensación de ser tirado",
+        "tts_speed": 0,
+        "task_mode": 0,
+        "duration": 3,
+        "id": 35
+    },
+    {
+        "pic_path": "td/37.png",
+        "tts_text": "Póngase de pie de forma natural, levante el pie derecho, sostenga el tobillo del pie derecho con la mano derecha, apriete el abdomen, levante la mano derecha y fuerce las caderas hasta la parte superior de las caderas hasta que la parte delantera del muslo derecho quede estirada gusto.",
+        "task_name": "Estiramiento delantero de la pierna derecha",
+        "task_type": "t",
+        "tts_advice": "En la fase de espera, respire de manera uniforme y no respire gas",
+        "tts_speed": 0,
+        "task_mode": 0,
+        "duration": 1,
+        "id": 36
+    },
+    {
+        "pic_path": "td/38.png",
+        "tts_text": "Póngase de pie de forma natural, levante el pie izquierdo, sostenga el tobillo del pie izquierdo con la mano izquierda, apriete el abdomen, levante la mano izquierda y fuerce las caderas hacia la parte superior, hasta que la parte anterior del muslo izquierdo salga claramente de la sensación , ¡quédatelo!",
+        "task_name": "Estiramiento delantero de la pierna izquierda",
+        "task_type": "t",
+        "tts_advice": "En la fase de espera, respire de manera uniforme y no respire gas",
+        "tts_speed": 0,
+        "task_mode": 0,
+        "duration": 1,
+        "id": 37
+    },
+    {
+        "pic_path": "td/39.png",
+        "tts_text": "Sentado en el talón en las nalgas, las manos estiradas hacia adelante, y el cuerpo se puso en cuclillas de forma natural y relajado.",
+        "task_name": "Estiramiento de espalda",
+        "task_type": "t",
+        "tts_advice": "Presta atención a la respiración, la espalda debería sentir tracción",
+        "tts_speed": 0,
+        "task_mode": 0,
+        "duration": 1,
+        "id": 38
+    }
+]

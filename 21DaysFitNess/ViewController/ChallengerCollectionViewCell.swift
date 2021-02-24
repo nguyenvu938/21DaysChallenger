@@ -18,7 +18,7 @@ class ChallengerCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         
         dayView.layer.cornerRadius = 15
-        dayLabel.text = "Day 1"
+        dayLabel.numberOfLines = 0
     }
 
 }

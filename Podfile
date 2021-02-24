@@ -7,4 +7,5 @@ target '21DaysFitNess' do
 
   # Pods for 21DaysFitNess
 	pod 'SwiftyShadow'
+	pod 'SwiftyJSON'
 end

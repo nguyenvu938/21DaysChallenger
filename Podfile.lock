@@ -1,16 +1,20 @@
 PODS:
+  - SwiftyJSON (5.0.0)
   - SwiftyShadow (1.7.0)
 
 DEPENDENCIES:
+  - SwiftyJSON
   - SwiftyShadow
 
 SPEC REPOS:
   trunk:
+    - SwiftyJSON
     - SwiftyShadow
 
 SPEC CHECKSUMS:
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   SwiftyShadow: d2697c62eb83759b7806466e3ea29de24c772c29
 
-PODFILE CHECKSUM: 2432cf98efe339fc3418170a5754c7776272b7ae
+PODFILE CHECKSUM: bc7aede31a0c569a8a09c9c1c67329f11d5a7c70
 
 COCOAPODS: 1.10.0

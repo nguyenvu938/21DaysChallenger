@@ -1,0 +1,39 @@
+[
+    {
+        "exercise": [
+            {
+                "actionId": 33,
+                "time": 20
+            },
+            {
+                "actionId": 34,
+                "time": 20
+            },
+            {
+                "actionId": 35,
+                "time": 30
+            },
+            {
+                "actionId": 36,
+                "time": 30
+            },
+            {
+                "actionId": 37,
+                "time": 30
+            },
+            {
+                "actionId": 38,
+                "time": 60
+            },
+            {
+                "actionId": 34,
+                "time": 25
+            },
+            {
+                "actionId": 33,
+                "time": 25
+            }
+        ],
+        "name": "Daily training"
+    }
+]

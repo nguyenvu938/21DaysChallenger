@@ -8,7 +8,6 @@
 import UIKit
 
 class ChallengerViewController: UIViewController {
-    var days = [DayData]()
     
     let containerView: UIView = {
         let view = UIView()
@@ -86,7 +85,7 @@ class ChallengerViewController: UIViewController {
         label.textColor = UIColor(red: 0.59, green: 0.59, blue: 0.59, alpha: 1.00)
         return label
     }()
-    
+    var listExersire : [exerciseModel] = [exerciseModel]()
     let progessBarImageView: UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
@@ -110,25 +109,12 @@ class ChallengerViewController: UIViewController {
     
     let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
-        layout.estimatedItemSize = CGSize(width: 100, height: 100)
-        layout.scrollDirection = UICollectionView.ScrollDirection.vertical
-        var cellWidth = 0
-        if UIDevice.current.userInterfaceIdiom == .pad {
-            cellWidth = Int(UIScreen.main.bounds.width) - 10
-        } else {
-            cellWidth = Int(UIScreen.main.bounds.width) - 10
-        }
-        layout.itemSize = CGSize(width: cellWidth, height: (cellWidth * 120) / 90)
-        layout.sectionInset = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
-        layout.scrollDirection = UICollectionView.ScrollDirection.vertical
-        layout.minimumInteritemSpacing = 0.0
         let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
-        
-        let nib1 = UINib(nibName: "PROSONCLVCell", bundle: nil)
-        collectionView.register(nib1, forCellWithReuseIdentifier: "PROSONCLVCell")
+        let nib1 = UINib(nibName: "ChallengerCollectionViewCell", bundle: nil)
+        collectionView.register(nib1, forCellWithReuseIdentifier: "ChallengerCollectionViewCell")
         collectionView.backgroundColor = UIColor(red: 0.89, green: 0.94, blue: 0.98, alpha: 1.00)
-//        collectionView.showsVerticalScrollIndicator = false
+        collectionView.showsVerticalScrollIndicator = false
         return collectionView
     }()
 
@@ -148,22 +134,7 @@ class ChallengerViewController: UIViewController {
         let tapSetting = UITapGestureRecognizer(target: self, action: #selector(openSetting))
         settingImageView.addGestureRecognizer(tapSetting)
         settingImageView.isUserInteractionEnabled = true
-        
-        let layout = UICollectionViewFlowLayout()
-        layout.estimatedItemSize = CGSize(width: 100, height: 100)
-        layout.scrollDirection = UICollectionView.ScrollDirection.vertical
-        var cellWidth = 0
-        if UIDevice.current.userInterfaceIdiom == .pad {
-            cellWidth = Int(UIScreen.main.bounds.width) - 10
-        } else {
-            cellWidth = Int(UIScreen.main.bounds.width) - 10
-        }
-        layout.itemSize = CGSize(width: cellWidth, height: (cellWidth * 120) / 90)
-        layout.sectionInset = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
-        layout.scrollDirection = UICollectionView.ScrollDirection.vertical
-        layout.minimumInteritemSpacing = 0.0
-        collectionView.collectionViewLayout = layout
-
+       
     }
     
     func setupLayout() {
@@ -230,33 +201,14 @@ class ChallengerViewController: UIViewController {
         collectionView.bottomAnchor.constraint(equalTo: startButton.topAnchor, constant: -29).isActive = true
         collectionView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 0).isActive = true
         collectionView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: 0).isActive = true
-        collectionView.backgroundColor = UIColor.blue
     }
     
     func setupDay() {
-        let day1 = DayData(label: "Day 1")
-        let day2 = DayData(label: "Day 2")
-        let day3 = DayData(label: "Day 3")
-        let day4 = DayData(label: "Day 4")
-        let day5 = DayData(label: "Day 5")
-        let day6 = DayData(label: "Day 6")
-        let day7 = DayData(label: "Day 7")
-        let day8 = DayData(label: "Day 8")
-        let day9 = DayData(label: "Day 9")
-        let day10 = DayData(label: "Day 10")
-        let day11 = DayData(label: "Day 11")
-        let day12 = DayData(label: "Day 12")
-        let day13 = DayData(label: "Day 13")
-        let day14 = DayData(label: "Day 14")
-        let day15 = DayData(label: "Day 15")
-        let day16 = DayData(label: "Day 16")
-        let day17 = DayData(label: "Day 17")
-        let day18 = DayData(label: "Day 18")
-        let day19 = DayData(label: "Day 19")
-        let day20 = DayData(label: "Day 20")
-        let day21 = DayData(label: "Day 21")
-        
-        days = [day1, day2, day3, day4, day5, day6, day7, day8, day9, day10, day11, day12, day13, day14, day15, day16, day17, day18, day19, day20, day21]
+        APIService.shared.plan_FAT_BURNING_EXERCISE(){dataRepond,_ in
+            if let dataRepond = dataRepond{
+                self.listExersire = dataRepond
+            }
+        }
     }
     
     @objc func openMenu() {
@@ -279,12 +231,12 @@ class ChallengerViewController: UIViewController {
 
 extension ChallengerViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return days.count
+        return self.listExersire.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PROSONCLVCell", for: indexPath) as! PROSONCLVCell
-       // cell.dayLabel.text = days[indexPath.row].label
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ChallengerCollectionViewCell", for: indexPath) as! ChallengerCollectionViewCell
+        cell.dayLabel.text = String(self.listExersire[indexPath.row].name)
         return cell
     }
     
@@ -299,10 +251,10 @@ extension ChallengerViewController: UICollectionViewDelegate, UICollectionViewDa
     }
     
 //    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        self.indexSelected = indexPath.row
-//        if indexSelected != -1 {
-//            planButton.setTitleColor(UIColor(red: 0.20, green: 0.27, blue: 0.41, alpha: 1.00), for: .normal)
-//        }
-//        self.collectionView.reloadData()
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let excerciseVC = storyboard.instantiateViewController(identifier: "ExerciseViewController") as! ExerciseViewController
+//        excerciseVC.dayLabel.text = days[indexPath.row].label
+//        excerciseVC.modalPresentationStyle = .fullScreen
+//        self.present(excerciseVC, animated: true, completion: nil)
 //    }
 }

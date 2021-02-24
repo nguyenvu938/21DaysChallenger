@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-21DaysFitNess/Pods-21DaysFitNess-frameworks.sh
+${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework
 ${BUILT_PRODUCTS_DIR}/SwiftyShadow/SwiftyShadow.framework

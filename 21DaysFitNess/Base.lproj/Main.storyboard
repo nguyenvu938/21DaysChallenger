@@ -128,6 +128,63 @@
             </objects>
             <point key="canvasLocation" x="822" y="1416"/>
         </scene>
+        <!--Exercise View Controller-->
+        <scene sceneID="S7D-UQ-lg0">
+            <objects>
+                <viewController storyboardIdentifier="ExerciseViewController" id="dP4-0n-K3N" customClass="ExerciseViewController" customModule="_1DaysFitNess" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6H1-tV-IV8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P6R-Nu-Gvr">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWb-fE-4O8">
+                                        <rect key="frame" x="43.5" y="65" width="327" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="327" id="nv6-xl-zeu"/>
+                                            <constraint firstAttribute="height" constant="32" id="oEF-fS-3Pc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.89411764709999997" green="0.94117647059999998" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="sWb-fE-4O8" firstAttribute="top" secondItem="P6R-Nu-Gvr" secondAttribute="top" constant="65" id="56w-Js-MT8"/>
+                                    <constraint firstItem="sWb-fE-4O8" firstAttribute="centerX" secondItem="P6R-Nu-Gvr" secondAttribute="centerX" id="Igz-ME-0rD"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="hZ1-hm-rw6">
+                                <rect key="frame" x="0.0" y="44" width="113" height="89"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="113" id="CpY-ke-QJ1"/>
+                                    <constraint firstAttribute="height" constant="89" id="adu-ml-fZ6"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nPB-Xb-99B"/>
+                        <color key="backgroundColor" red="0.89411764705882346" green="0.94117647058823528" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="P6R-Nu-Gvr" secondAttribute="bottom" id="10s-rj-kN8"/>
+                            <constraint firstItem="P6R-Nu-Gvr" firstAttribute="top" secondItem="6H1-tV-IV8" secondAttribute="top" id="887-zD-llK"/>
+                            <constraint firstItem="hZ1-hm-rw6" firstAttribute="top" secondItem="nPB-Xb-99B" secondAttribute="top" id="Lef-V8-Q1M"/>
+                            <constraint firstItem="P6R-Nu-Gvr" firstAttribute="leading" secondItem="nPB-Xb-99B" secondAttribute="leading" id="TQR-1b-4tD"/>
+                            <constraint firstItem="hZ1-hm-rw6" firstAttribute="leading" secondItem="nPB-Xb-99B" secondAttribute="leading" id="Z6f-hi-oBd"/>
+                            <constraint firstItem="nPB-Xb-99B" firstAttribute="trailing" secondItem="P6R-Nu-Gvr" secondAttribute="trailing" id="nFE-oY-DSa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backImageView" destination="hZ1-hm-rw6" id="DJg-Tw-xsM"/>
+                        <outlet property="containerView" destination="P6R-Nu-Gvr" id="SYD-XC-Dd5"/>
+                        <outlet property="dayLabel" destination="sWb-fE-4O8" id="CfW-kW-RGm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9lb-U1-c8Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1611.5942028985507" y="1415.625"/>
+        </scene>
         <!--Timer View Controller-->
         <scene sceneID="Toi-9W-hYW">
             <objects>
