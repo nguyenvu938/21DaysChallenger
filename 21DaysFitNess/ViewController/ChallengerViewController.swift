@@ -85,7 +85,7 @@ class ChallengerViewController: UIViewController {
         label.textColor = UIColor(red: 0.59, green: 0.59, blue: 0.59, alpha: 1.00)
         return label
     }()
-    var listExersire : [exerciseModel] = [exerciseModel]()
+    
     let progessBarImageView: UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
@@ -117,6 +117,8 @@ class ChallengerViewController: UIViewController {
         collectionView.showsVerticalScrollIndicator = false
         return collectionView
     }()
+    
+    var listExercise : [exerciseModel] = [exerciseModel]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -204,9 +206,31 @@ class ChallengerViewController: UIViewController {
     }
     
     func setupDay() {
-        APIService.shared.plan_FAT_BURNING_EXERCISE(){dataRepond,_ in
-            if let dataRepond = dataRepond{
-                self.listExersire = dataRepond
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let planVC = storyboard.instantiateViewController(identifier: "PlanViewController") as! PlanViewController
+        if planVC.label.text == "FAT BURNING EXERCISE" {
+            APIService.shared.plan_FAT_BURNING_EXERCISE() {dataRepond, _ in
+                if let dataRepond = dataRepond {
+                    self.listExercise = dataRepond
+                }
+            }
+        } else if planVC.label.text == "WAIST EXERCISE" {
+            APIService.shared.plan_WAIST_EXERCISE() {dataRepond, _ in
+                if let dataRepond = dataRepond {
+                    self.listExercise = dataRepond
+                }
+            }
+        } else if planVC.label.text == "LEG FAT BURNING EXERCISE" {
+            APIService.shared.plan_LEG_FAT_BURNING_EXERCISE() {dataRepond, _ in
+                if let dataRepond = dataRepond {
+                    self.listExercise = dataRepond
+                }
+            }
+        } else {
+            APIService.shared.plan_HIP_EXERCISE() {dataRepond, _ in
+                if let dataRepond = dataRepond {
+                    self.listExercise = dataRepond
+                }
             }
         }
     }
@@ -231,12 +255,12 @@ class ChallengerViewController: UIViewController {
 
 extension ChallengerViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.listExersire.count
+        return self.listExercise.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ChallengerCollectionViewCell", for: indexPath) as! ChallengerCollectionViewCell
-        cell.dayLabel.text = String(self.listExersire[indexPath.row].name)
+        cell.dayLabel.text = String(self.listExercise[indexPath.row].name)
         return cell
     }
     
@@ -250,11 +274,11 @@ extension ChallengerViewController: UICollectionViewDelegate, UICollectionViewDa
         return 5
     }
     
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let excerciseVC = storyboard.instantiateViewController(identifier: "ExerciseViewController") as! ExerciseViewController
-//        excerciseVC.dayLabel.text = days[indexPath.row].label
-//        excerciseVC.modalPresentationStyle = .fullScreen
-//        self.present(excerciseVC, animated: true, completion: nil)
-//    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let excerciseVC = storyboard.instantiateViewController(identifier: "ExerciseViewController") as! ExerciseViewController
+        excerciseVC.dayLabel.text = String(self.listExercise[indexPath.row].name)
+        excerciseVC.modalPresentationStyle = .fullScreen
+        self.present(excerciseVC, animated: true, completion: nil)
+    }
 }

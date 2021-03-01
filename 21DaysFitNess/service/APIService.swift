@@ -74,4 +74,70 @@ class APIService:NSObject {
         closure(nil, nil)
     }
     
+    func plan_WAIST_EXERCISE(closure: @escaping (_ response: [exerciseModel]?, _ error: Error?) -> Void) {
+        do {
+            if let file = Bundle.main.url(forResource: "plan_WAIST_EXERCISE", withExtension: "json") {
+                let data = try Data(contentsOf: file)
+                let json = try JSONSerialization.jsonObject(with: data, options: [])
+                var listExreturn:[exerciseModel] = [exerciseModel]()
+                if let dict = json as? [Dictionary<String,AnyObject>] {
+                    for item in dict {
+                        var dataEx:exerciseModel = exerciseModel()
+                        dataEx = dataEx.initLoad(item)
+                        listExreturn.append(dataEx)
+                    }
+                    closure(listExreturn, nil)
+                }
+            }
+        } catch {
+            print(error.localizedDescription)
+            closure(nil, nil)
+        }
+        closure(nil, nil)
+    }
+    
+    func plan_LEG_FAT_BURNING_EXERCISE(closure: @escaping (_ response: [exerciseModel]?, _ error: Error?) -> Void) {
+        do {
+            if let file = Bundle.main.url(forResource: "plan_LEG_FAT_BURNING_EXERCISE", withExtension: "json") {
+                let data = try Data(contentsOf: file)
+                let json = try JSONSerialization.jsonObject(with: data, options: [])
+                var listExreturn:[exerciseModel] = [exerciseModel]()
+                if let dict = json as? [Dictionary<String,AnyObject>] {
+                    for item in dict {
+                        var dataEx:exerciseModel = exerciseModel()
+                        dataEx = dataEx.initLoad(item)
+                        listExreturn.append(dataEx)
+                    }
+                    closure(listExreturn, nil)
+                }
+            }
+        } catch {
+            print(error.localizedDescription)
+            closure(nil, nil)
+        }
+        closure(nil, nil)
+    }
+    
+    func plan_HIP_EXERCISE(closure: @escaping (_ response: [exerciseModel]?, _ error: Error?) -> Void) {
+        do {
+            if let file = Bundle.main.url(forResource: "plan_HIP_EXERCISE", withExtension: "json") {
+                let data = try Data(contentsOf: file)
+                let json = try JSONSerialization.jsonObject(with: data, options: [])
+                var listExreturn:[exerciseModel] = [exerciseModel]()
+                if let dict = json as? [Dictionary<String,AnyObject>] {
+                    for item in dict {
+                        var dataEx:exerciseModel = exerciseModel()
+                        dataEx = dataEx.initLoad(item)
+                        listExreturn.append(dataEx)
+                    }
+                    closure(listExreturn, nil)
+                }
+            }
+        } catch {
+            print(error.localizedDescription)
+            closure(nil, nil)
+        }
+        closure(nil, nil)
+    }
+    
 }

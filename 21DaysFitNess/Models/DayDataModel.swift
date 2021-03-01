@@ -6,7 +6,7 @@
 //
 
 import Foundation
-class DayDataModel:NSObject {
+class DayDataModel: NSObject {
     var actionId: Int = 0
     var time: Int = 0
     func initLoad(_ json:  [String: Any]) -> DayDataModel{

@@ -66,29 +66,13 @@
 		E77C9DCD25E62BD4003D9277 /* 11.gif in Resources */ = {isa = PBXBuildFile; fileRef = E77C9DA625E62BD4003D9277 /* 11.gif */; };
 		E77C9DCE25E62BD4003D9277 /* 10.gif in Resources */ = {isa = PBXBuildFile; fileRef = E77C9DA725E62BD4003D9277 /* 10.gif */; };
 		E77C9DCF25E62BD4003D9277 /* 04.gif in Resources */ = {isa = PBXBuildFile; fileRef = E77C9DA825E62BD4003D9277 /* 04.gif */; };
-		E77C9DD625E62DEC003D9277 /* DayExcercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77C9DD525E62DEC003D9277 /* DayExcercise.swift */; };
-		E77C9DFA25E63AE5003D9277 /* plan_tr_TR in Resources */ = {isa = PBXBuildFile; fileRef = E77C9DE525E63AE5003D9277 /* plan_tr_TR */; };
-		E77C9DFB25E63AE5003D9277 /* plan_de_DE in Resources */ = {isa = PBXBuildFile; fileRef = E77C9DE625E63AE5003D9277 /* plan_de_DE */; };
-		E77C9DFC25E63AE5003D9277 /* plan_fr_FR in Resources */ = {isa = PBXBuildFile; fileRef = E77C9DE725E63AE5003D9277 /* plan_fr_FR */; };
-		E77C9DFE25E63AE5003D9277 /* plan_es_ES in Resources */ = {isa = PBXBuildFile; fileRef = E77C9DE925E63AE5003D9277 /* plan_es_ES */; };
-		E77C9DFF25E63AE5003D9277 /* plan_WAIST  EXERCISE in Resources */ = {isa = PBXBuildFile; fileRef = E77C9DEA25E63AE5003D9277 /* plan_WAIST  EXERCISE */; };
-		E77C9E0025E63AE5003D9277 /* plan_ru_RU in Resources */ = {isa = PBXBuildFile; fileRef = E77C9DEB25E63AE5003D9277 /* plan_ru_RU */; };
-		E77C9E0125E63AE5003D9277 /* plan_ar_SA in Resources */ = {isa = PBXBuildFile; fileRef = E77C9DEC25E63AE5003D9277 /* plan_ar_SA */; };
-		E77C9E0225E63AE5003D9277 /* plan_pt_PT in Resources */ = {isa = PBXBuildFile; fileRef = E77C9DED25E63AE5003D9277 /* plan_pt_PT */; };
-		E77C9E0325E63AE5003D9277 /* plan_default in Resources */ = {isa = PBXBuildFile; fileRef = E77C9DEE25E63AE5003D9277 /* plan_default */; };
-		E77C9E0425E63AE5003D9277 /* plan_ja_JP in Resources */ = {isa = PBXBuildFile; fileRef = E77C9DEF25E63AE5003D9277 /* plan_ja_JP */; };
-		E77C9E0525E63AE5003D9277 /* plan_zh_CN in Resources */ = {isa = PBXBuildFile; fileRef = E77C9DF025E63AE5003D9277 /* plan_zh_CN */; };
-		E77C9E0625E63AE5003D9277 /* plan_ms_MY in Resources */ = {isa = PBXBuildFile; fileRef = E77C9DF125E63AE5003D9277 /* plan_ms_MY */; };
-		E77C9E0725E63AE5003D9277 /* plan_hi_IN in Resources */ = {isa = PBXBuildFile; fileRef = E77C9DF225E63AE5003D9277 /* plan_hi_IN */; };
-		E77C9E0825E63AE5003D9277 /* plan_Daily training in Resources */ = {isa = PBXBuildFile; fileRef = E77C9DF325E63AE5003D9277 /* plan_Daily training */; };
-		E77C9E0925E63AE5003D9277 /* plan_HIP  EXERCISE in Resources */ = {isa = PBXBuildFile; fileRef = E77C9DF425E63AE5003D9277 /* plan_HIP  EXERCISE */; };
-		E77C9E0A25E63AE5003D9277 /* plan_ko_KR in Resources */ = {isa = PBXBuildFile; fileRef = E77C9DF525E63AE5003D9277 /* plan_ko_KR */; };
-		E77C9E0B25E63AE5003D9277 /* plan_LEG FAT BURNING  EXERCISE in Resources */ = {isa = PBXBuildFile; fileRef = E77C9DF625E63AE5003D9277 /* plan_LEG FAT BURNING  EXERCISE */; };
-		E77C9E0C25E63AE5003D9277 /* dial_plan_simple.json in Resources */ = {isa = PBXBuildFile; fileRef = E77C9DF725E63AE5003D9277 /* dial_plan_simple.json */; };
-		E77C9E0D25E63AE5003D9277 /* plan_th_TH in Resources */ = {isa = PBXBuildFile; fileRef = E77C9DF825E63AE5003D9277 /* plan_th_TH */; };
-		E77C9E0E25E63AE5003D9277 /* plan_in_ID in Resources */ = {isa = PBXBuildFile; fileRef = E77C9DF925E63AE5003D9277 /* plan_in_ID */; };
 		E77C9E1B25E64AAF003D9277 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77C9E1A25E64AAE003D9277 /* APIService.swift */; };
 		E77C9E2025E64E24003D9277 /* plan_FAT_BURNING_EXERCISE.json in Resources */ = {isa = PBXBuildFile; fileRef = E77C9E1F25E64E24003D9277 /* plan_FAT_BURNING_EXERCISE.json */; };
+		E77C9E2425E8A7E2003D9277 /* plan_WAIST_EXERCISE.json in Resources */ = {isa = PBXBuildFile; fileRef = E77C9E2325E8A7E2003D9277 /* plan_WAIST_EXERCISE.json */; };
+		E77C9E2725E8A807003D9277 /* plan_HIP_EXERCISE.json in Resources */ = {isa = PBXBuildFile; fileRef = E77C9E2625E8A807003D9277 /* plan_HIP_EXERCISE.json */; };
+		E77C9E2B25E8A83B003D9277 /* plan_LEG_FAT_BURNING_EXERCISE.json in Resources */ = {isa = PBXBuildFile; fileRef = E77C9E2A25E8A83B003D9277 /* plan_LEG_FAT_BURNING_EXERCISE.json */; };
+		E77C9E2F25ECE7DE003D9277 /* plan_default.json in Resources */ = {isa = PBXBuildFile; fileRef = E77C9E2E25ECE7DE003D9277 /* plan_default.json */; };
+		E77C9E3525ECEC35003D9277 /* PlanData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77C9E3425ECEC35003D9277 /* PlanData.swift */; };
 		E7FD5C8125ABF67300CFFB1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FD5C8025ABF67300CFFB1E /* AppDelegate.swift */; };
 		E7FD5C8325ABF67300CFFB1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FD5C8225ABF67300CFFB1E /* SceneDelegate.swift */; };
 		E7FD5C8525ABF67300CFFB1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FD5C8425ABF67300CFFB1E /* ViewController.swift */; };
@@ -157,29 +141,13 @@
 		E77C9DA625E62BD4003D9277 /* 11.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 11.gif; sourceTree = "<group>"; };
 		E77C9DA725E62BD4003D9277 /* 10.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 10.gif; sourceTree = "<group>"; };
 		E77C9DA825E62BD4003D9277 /* 04.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 04.gif; sourceTree = "<group>"; };
-		E77C9DD525E62DEC003D9277 /* DayExcercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayExcercise.swift; sourceTree = "<group>"; };
-		E77C9DE525E63AE5003D9277 /* plan_tr_TR */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plan_tr_TR; sourceTree = "<group>"; };
-		E77C9DE625E63AE5003D9277 /* plan_de_DE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plan_de_DE; sourceTree = "<group>"; };
-		E77C9DE725E63AE5003D9277 /* plan_fr_FR */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plan_fr_FR; sourceTree = "<group>"; };
-		E77C9DE925E63AE5003D9277 /* plan_es_ES */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plan_es_ES; sourceTree = "<group>"; };
-		E77C9DEA25E63AE5003D9277 /* plan_WAIST  EXERCISE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "plan_WAIST  EXERCISE"; sourceTree = "<group>"; };
-		E77C9DEB25E63AE5003D9277 /* plan_ru_RU */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plan_ru_RU; sourceTree = "<group>"; };
-		E77C9DEC25E63AE5003D9277 /* plan_ar_SA */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plan_ar_SA; sourceTree = "<group>"; };
-		E77C9DED25E63AE5003D9277 /* plan_pt_PT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plan_pt_PT; sourceTree = "<group>"; };
-		E77C9DEE25E63AE5003D9277 /* plan_default */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plan_default; sourceTree = "<group>"; };
-		E77C9DEF25E63AE5003D9277 /* plan_ja_JP */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plan_ja_JP; sourceTree = "<group>"; };
-		E77C9DF025E63AE5003D9277 /* plan_zh_CN */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plan_zh_CN; sourceTree = "<group>"; };
-		E77C9DF125E63AE5003D9277 /* plan_ms_MY */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plan_ms_MY; sourceTree = "<group>"; };
-		E77C9DF225E63AE5003D9277 /* plan_hi_IN */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plan_hi_IN; sourceTree = "<group>"; };
-		E77C9DF325E63AE5003D9277 /* plan_Daily training */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "plan_Daily training"; sourceTree = "<group>"; };
-		E77C9DF425E63AE5003D9277 /* plan_HIP  EXERCISE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "plan_HIP  EXERCISE"; sourceTree = "<group>"; };
-		E77C9DF525E63AE5003D9277 /* plan_ko_KR */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plan_ko_KR; sourceTree = "<group>"; };
-		E77C9DF625E63AE5003D9277 /* plan_LEG FAT BURNING  EXERCISE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "plan_LEG FAT BURNING  EXERCISE"; sourceTree = "<group>"; };
-		E77C9DF725E63AE5003D9277 /* dial_plan_simple.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dial_plan_simple.json; sourceTree = "<group>"; };
-		E77C9DF825E63AE5003D9277 /* plan_th_TH */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plan_th_TH; sourceTree = "<group>"; };
-		E77C9DF925E63AE5003D9277 /* plan_in_ID */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plan_in_ID; sourceTree = "<group>"; };
 		E77C9E1A25E64AAE003D9277 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		E77C9E1F25E64E24003D9277 /* plan_FAT_BURNING_EXERCISE.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = plan_FAT_BURNING_EXERCISE.json; sourceTree = "<group>"; };
+		E77C9E2325E8A7E2003D9277 /* plan_WAIST_EXERCISE.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = plan_WAIST_EXERCISE.json; sourceTree = "<group>"; };
+		E77C9E2625E8A807003D9277 /* plan_HIP_EXERCISE.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = plan_HIP_EXERCISE.json; sourceTree = "<group>"; };
+		E77C9E2A25E8A83B003D9277 /* plan_LEG_FAT_BURNING_EXERCISE.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = plan_LEG_FAT_BURNING_EXERCISE.json; sourceTree = "<group>"; };
+		E77C9E2E25ECE7DE003D9277 /* plan_default.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = plan_default.json; sourceTree = "<group>"; };
+		E77C9E3425ECEC35003D9277 /* PlanData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanData.swift; sourceTree = "<group>"; };
 		E7FD5C7D25ABF67300CFFB1E /* 21DaysFitNess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 21DaysFitNess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7FD5C8025ABF67300CFFB1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7FD5C8225ABF67300CFFB1E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -250,7 +218,7 @@
 				E71F886525BFD8F5000C38E0 /* ProgramData.swift */,
 				E71F888225C1333B000C38E0 /* MenuData.swift */,
 				E76DE1A025CBA83200A373BD /* DayDataModel.swift */,
-				E77C9DD525E62DEC003D9277 /* DayExcercise.swift */,
+				E77C9E3425ECEC35003D9277 /* PlanData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -305,26 +273,10 @@
 			isa = PBXGroup;
 			children = (
 				E77C9E1F25E64E24003D9277 /* plan_FAT_BURNING_EXERCISE.json */,
-				E77C9DE525E63AE5003D9277 /* plan_tr_TR */,
-				E77C9DE625E63AE5003D9277 /* plan_de_DE */,
-				E77C9DE725E63AE5003D9277 /* plan_fr_FR */,
-				E77C9DE925E63AE5003D9277 /* plan_es_ES */,
-				E77C9DEA25E63AE5003D9277 /* plan_WAIST  EXERCISE */,
-				E77C9DEB25E63AE5003D9277 /* plan_ru_RU */,
-				E77C9DEC25E63AE5003D9277 /* plan_ar_SA */,
-				E77C9DED25E63AE5003D9277 /* plan_pt_PT */,
-				E77C9DEE25E63AE5003D9277 /* plan_default */,
-				E77C9DEF25E63AE5003D9277 /* plan_ja_JP */,
-				E77C9DF025E63AE5003D9277 /* plan_zh_CN */,
-				E77C9DF125E63AE5003D9277 /* plan_ms_MY */,
-				E77C9DF225E63AE5003D9277 /* plan_hi_IN */,
-				E77C9DF325E63AE5003D9277 /* plan_Daily training */,
-				E77C9DF425E63AE5003D9277 /* plan_HIP  EXERCISE */,
-				E77C9DF525E63AE5003D9277 /* plan_ko_KR */,
-				E77C9DF625E63AE5003D9277 /* plan_LEG FAT BURNING  EXERCISE */,
-				E77C9DF725E63AE5003D9277 /* dial_plan_simple.json */,
-				E77C9DF825E63AE5003D9277 /* plan_th_TH */,
-				E77C9DF925E63AE5003D9277 /* plan_in_ID */,
+				E77C9E2325E8A7E2003D9277 /* plan_WAIST_EXERCISE.json */,
+				E77C9E2625E8A807003D9277 /* plan_HIP_EXERCISE.json */,
+				E77C9E2A25E8A83B003D9277 /* plan_LEG_FAT_BURNING_EXERCISE.json */,
+				E77C9E2E25ECE7DE003D9277 /* plan_default.json */,
 			);
 			path = json;
 			sourceTree = "<group>";
@@ -433,68 +385,52 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E77C9E0125E63AE5003D9277 /* plan_ar_SA in Resources */,
 				E77C9DCA25E62BD4003D9277 /* 06.gif in Resources */,
-				E77C9DFB25E63AE5003D9277 /* plan_de_DE in Resources */,
 				E77C9DBB25E62BD4003D9277 /* 07.png in Resources */,
 				E77C9DB225E62BD4003D9277 /* 33.gif in Resources */,
 				E77C9DCE25E62BD4003D9277 /* 10.gif in Resources */,
-				E77C9E0725E63AE5003D9277 /* plan_hi_IN in Resources */,
+				E77C9E2725E8A807003D9277 /* plan_HIP_EXERCISE.json in Resources */,
 				E77C9DC725E62BD4003D9277 /* 02.gif in Resources */,
 				E77C9DCB25E62BD4003D9277 /* 13.gif in Resources */,
-				E77C9E0425E63AE5003D9277 /* plan_ja_JP in Resources */,
-				E77C9E0C25E63AE5003D9277 /* dial_plan_simple.json in Resources */,
 				E77C9DB525E62BD4003D9277 /* 32.gif in Resources */,
-				E77C9E0325E63AE5003D9277 /* plan_default in Resources */,
 				E77C9DAF25E62BD4003D9277 /* 36.gif in Resources */,
-				E77C9E0025E63AE5003D9277 /* plan_ru_RU in Resources */,
 				E77C9DB325E62BD4003D9277 /* 27.gif in Resources */,
 				E77C9DBA25E62BD4003D9277 /* 19.gif in Resources */,
 				E77C9DAD25E62BD4003D9277 /* 34.gif in Resources */,
 				E77C9DAC25E62BD4003D9277 /* 08.gif in Resources */,
+				E77C9E2425E8A7E2003D9277 /* plan_WAIST_EXERCISE.json in Resources */,
 				E7FD5C8D25ABF67600CFFB1E /* LaunchScreen.storyboard in Resources */,
 				E77C9DC625E62BD4003D9277 /* 03.gif in Resources */,
 				E7FD5C8A25ABF67600CFFB1E /* Assets.xcassets in Resources */,
 				E77C9DC525E62BD4003D9277 /* 17.gif in Resources */,
 				E77C9DB125E62BD4003D9277 /* 23.gif in Resources */,
 				E77C9DAA25E62BD4003D9277 /* 35.gif in Resources */,
+				E77C9E2B25E8A83B003D9277 /* plan_LEG_FAT_BURNING_EXERCISE.json in Resources */,
 				E77C9DAB25E62BD4003D9277 /* 09.gif in Resources */,
 				E77C9DBC25E62BD4003D9277 /* 39.png in Resources */,
-				E77C9E0925E63AE5003D9277 /* plan_HIP  EXERCISE in Resources */,
-				E77C9DFE25E63AE5003D9277 /* plan_es_ES in Resources */,
 				E77C9D7F25E6274A003D9277 /* ExcerciseCollectionViewCell.xib in Resources */,
 				E77C9DC025E62BD4003D9277 /* 14.gif in Resources */,
 				E76DE19E25CBA0D200A373BD /* ChallengerCollectionViewCell.xib in Resources */,
 				E77C9DAE25E62BD4003D9277 /* 20.gif in Resources */,
-				E77C9E0625E63AE5003D9277 /* plan_ms_MY in Resources */,
 				E77C9DBF25E62BD4003D9277 /* 24.png in Resources */,
 				E77C9DB025E62BD4003D9277 /* 22.gif in Resources */,
 				E77C9DCD25E62BD4003D9277 /* 11.gif in Resources */,
 				E77C9DB725E62BD4003D9277 /* 30.gif in Resources */,
-				E77C9E0A25E63AE5003D9277 /* plan_ko_KR in Resources */,
 				E77C9DC225E62BD4003D9277 /* 29.gif in Resources */,
 				E77C9DB625E62BD4003D9277 /* 18.gif in Resources */,
 				E77C9DC925E62BD4003D9277 /* 12.gif in Resources */,
 				E77C9DC425E62BD4003D9277 /* 01.gif in Resources */,
 				E77C9DB425E62BD4003D9277 /* 26.gif in Resources */,
-				E77C9E0E25E63AE5003D9277 /* plan_in_ID in Resources */,
 				E77C9DCC25E62BD4003D9277 /* 05.gif in Resources */,
-				E77C9DFC25E63AE5003D9277 /* plan_fr_FR in Resources */,
-				E77C9E0525E63AE5003D9277 /* plan_zh_CN in Resources */,
 				E71F888025C12C95000C38E0 /* MenuTableViewCell.xib in Resources */,
-				E77C9E0B25E63AE5003D9277 /* plan_LEG FAT BURNING  EXERCISE in Resources */,
-				E77C9DFF25E63AE5003D9277 /* plan_WAIST  EXERCISE in Resources */,
 				E77C9DCF25E62BD4003D9277 /* 04.gif in Resources */,
-				E77C9E0825E63AE5003D9277 /* plan_Daily training in Resources */,
 				E7FD5C8825ABF67300CFFB1E /* Main.storyboard in Resources */,
-				E77C9DFA25E63AE5003D9277 /* plan_tr_TR in Resources */,
 				E77C9DC125E62BD4003D9277 /* 28.gif in Resources */,
 				E77C9DC825E62BD4003D9277 /* 16.gif in Resources */,
-				E77C9E0225E63AE5003D9277 /* plan_pt_PT in Resources */,
 				E77C9DBD25E62BD4003D9277 /* 38.png in Resources */,
+				E77C9E2F25ECE7DE003D9277 /* plan_default.json in Resources */,
 				E77C9DB925E62BD4003D9277 /* 25.gif in Resources */,
 				E77C9DB825E62BD4003D9277 /* 31.gif in Resources */,
-				E77C9E0D25E63AE5003D9277 /* plan_th_TH in Resources */,
 				E77C9E2025E64E24003D9277 /* plan_FAT_BURNING_EXERCISE.json in Resources */,
 				E77C9DA925E62BD4003D9277 /* 21.gif in Resources */,
 				E77C9DBE25E62BD4003D9277 /* 37.png in Resources */,
@@ -553,7 +489,6 @@
 			files = (
 				E7FD5C8525ABF67300CFFB1E /* ViewController.swift in Sources */,
 				E71F884025AC0B8E000C38E0 /* MainViewController.swift in Sources */,
-				E77C9DD625E62DEC003D9277 /* DayExcercise.swift in Sources */,
 				E71F884925BE7C1A000C38E0 /* ProgramViewController.swift in Sources */,
 				E77C9E1B25E64AAF003D9277 /* APIService.swift in Sources */,
 				E77C9D7E25E6274A003D9277 /* ExcerciseCollectionViewCell.swift in Sources */,
@@ -569,6 +504,7 @@
 				E71F886625BFD8F5000C38E0 /* ProgramData.swift in Sources */,
 				E76DE19D25CBA0D200A373BD /* ChallengerCollectionViewCell.swift in Sources */,
 				E7FD5C8325ABF67300CFFB1E /* SceneDelegate.swift in Sources */,
+				E77C9E3525ECEC35003D9277 /* PlanData.swift in Sources */,
 				E76DE1A125CBA83200A373BD /* DayDataModel.swift in Sources */,
 				E77C9D7425E620B3003D9277 /* ExerciseViewController.swift in Sources */,
 				E71F888625C14A91000C38E0 /* SettingViewController.swift in Sources */,
