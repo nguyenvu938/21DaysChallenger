@@ -37,7 +37,7 @@ class ExerciseViewController: UIViewController {
         return button
     }()
     
-    var listPlan = [PlanModel]()
+    var listPlan = [planModel]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,25 +72,25 @@ class ExerciseViewController: UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let planVC = storyboard.instantiateViewController(identifier: "PlanViewController") as! PlanViewController
         if planVC.label.text == "FAT BURNING EXERCISE" {
-            APIService.shared.plan_FAT_BURNING_EXERCISE() {dataRepond, _ in
+            APIService.shared.plan_default() {dataRepond, _ in
                 if let dataRepond = dataRepond {
                     self.listPlan = dataRepond
                 }
             }
         } else if planVC.label.text == "WAIST EXERCISE" {
-            APIService.shared.plan_WAIST_EXERCISE() {dataRepond, _ in
+            APIService.shared.plan_default() {dataRepond, _ in
                 if let dataRepond = dataRepond {
                     self.listPlan = dataRepond
                 }
             }
         } else if planVC.label.text == "LEG FAT BURNING EXERCISE" {
-            APIService.shared.plan_LEG_FAT_BURNING_EXERCISE() {dataRepond, _ in
+            APIService.shared.plan_default() {dataRepond, _ in
                 if let dataRepond = dataRepond {
                     self.listPlan = dataRepond
                 }
             }
         } else {
-            APIService.shared.plan_HIP_EXERCISE() {dataRepond, _ in
+            APIService.shared.plan_default() {dataRepond, _ in
                 if let dataRepond = dataRepond {
                     self.listPlan = dataRepond
                 }

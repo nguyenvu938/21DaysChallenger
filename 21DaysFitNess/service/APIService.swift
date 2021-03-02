@@ -57,10 +57,10 @@ class APIService:NSObject {
             if let file = Bundle.main.url(forResource: "plan_FAT_BURNING_EXERCISE", withExtension: "json") {
                 let data = try Data(contentsOf: file)
                 let json = try JSONSerialization.jsonObject(with: data, options: [])
-                var listExreturn:[exerciseModel] = [exerciseModel]()
+                var listExreturn: [exerciseModel] = [exerciseModel]()
                 if let dict = json as? [Dictionary<String,AnyObject>] {
                     for item in dict {
-                        var dataEx:exerciseModel = exerciseModel()
+                        var dataEx: exerciseModel = exerciseModel()
                         dataEx = dataEx.initLoad(item)
                         listExreturn.append(dataEx)
                     }
@@ -79,10 +79,10 @@ class APIService:NSObject {
             if let file = Bundle.main.url(forResource: "plan_WAIST_EXERCISE", withExtension: "json") {
                 let data = try Data(contentsOf: file)
                 let json = try JSONSerialization.jsonObject(with: data, options: [])
-                var listExreturn:[exerciseModel] = [exerciseModel]()
+                var listExreturn: [exerciseModel] = [exerciseModel]()
                 if let dict = json as? [Dictionary<String,AnyObject>] {
                     for item in dict {
-                        var dataEx:exerciseModel = exerciseModel()
+                        var dataEx: exerciseModel = exerciseModel()
                         dataEx = dataEx.initLoad(item)
                         listExreturn.append(dataEx)
                     }
@@ -101,10 +101,10 @@ class APIService:NSObject {
             if let file = Bundle.main.url(forResource: "plan_LEG_FAT_BURNING_EXERCISE", withExtension: "json") {
                 let data = try Data(contentsOf: file)
                 let json = try JSONSerialization.jsonObject(with: data, options: [])
-                var listExreturn:[exerciseModel] = [exerciseModel]()
+                var listExreturn: [exerciseModel] = [exerciseModel]()
                 if let dict = json as? [Dictionary<String,AnyObject>] {
                     for item in dict {
-                        var dataEx:exerciseModel = exerciseModel()
+                        var dataEx: exerciseModel = exerciseModel()
                         dataEx = dataEx.initLoad(item)
                         listExreturn.append(dataEx)
                     }
@@ -123,14 +123,36 @@ class APIService:NSObject {
             if let file = Bundle.main.url(forResource: "plan_HIP_EXERCISE", withExtension: "json") {
                 let data = try Data(contentsOf: file)
                 let json = try JSONSerialization.jsonObject(with: data, options: [])
-                var listExreturn:[exerciseModel] = [exerciseModel]()
+                var listExreturn: [exerciseModel] = [exerciseModel]()
                 if let dict = json as? [Dictionary<String,AnyObject>] {
                     for item in dict {
-                        var dataEx:exerciseModel = exerciseModel()
+                        var dataEx: exerciseModel = exerciseModel()
                         dataEx = dataEx.initLoad(item)
                         listExreturn.append(dataEx)
                     }
                     closure(listExreturn, nil)
+                }
+            }
+        } catch {
+            print(error.localizedDescription)
+            closure(nil, nil)
+        }
+        closure(nil, nil)
+    }
+    
+    func plan_default(closure: @escaping (_ response: [planModel]?, _ error: Error?) -> Void) {
+        do {
+            if let file = Bundle.main.url(forResource: "plan_default", withExtension: "json") {
+                let data = try Data(contentsOf: file)
+                let json = try JSONSerialization.jsonObject(with: data, options: [])
+                var listPlanReturn: [planModel] = [planModel]()
+                if let dict = json as? [Dictionary<String,AnyObject>] {
+                    for item in dict {
+                        var dataPlan = planModel()
+                        dataPlan = dataPlan.initLoad(item)
+                        listPlanReturn.append(dataPlan)
+                    }
+                    closure(listPlanReturn, nil)
                 }
             }
         } catch {
