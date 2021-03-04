@@ -40,6 +40,8 @@ class ExerciseViewController: UIViewController {
     var listPlan = [planModel]()
     var d: String = ""
     var arrId = [DayDataModel]()
+    var listPlanReturn: [planModel] = [planModel]()
+    var listCanShow: [planModel] = [planModel]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,6 +52,21 @@ class ExerciseViewController: UIViewController {
         collectionView.delegate = self
         
         dayLabel.text = d
+        APIService.shared.plan_default() {dataRepond, _ in
+            if let dataRepond = dataRepond {
+                self.listPlanReturn = dataRepond
+                for item in self.listPlanReturn{
+                    for item2 in self.arrId {
+                        if item.id == item2.actionId{
+                            self.listCanShow.append(item)
+                            break
+                        }
+                    }
+                }
+                self.collectionView.reloadData()
+            }
+        }
+        
     }
     
     func setupLayout() {
@@ -75,13 +92,13 @@ class ExerciseViewController: UIViewController {
 
 extension ExerciseViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.listPlan.count
+        return self.listCanShow.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ExcerciseCollectionViewCell", for: indexPath) as! ExcerciseCollectionViewCell
-        cell.excerciseLabel.text = ""
-        cell.timeLabel.text = ""
+        cell.excerciseLabel.text = self.listCanShow[indexPath.row].task_name
+        cell.timeLabel.text =  self.listCanShow[indexPath.row].tts_speed
         return cell
     }
     
