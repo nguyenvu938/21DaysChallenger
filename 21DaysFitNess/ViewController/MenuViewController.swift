@@ -83,9 +83,9 @@ class MenuViewController: UIViewController {
     }
     
     func setupMenu() {
-        let menu1 = Menu(label: "Select plan", icon: "05")
+        let menu1 = Menu(label: "Select plan", icon: "05-1")
         let menu2 = Menu(label: "Reminder", icon: "favorite")
-        let menu3 = Menu(label: "Recording", icon: "02")
+        let menu3 = Menu(label: "Recording", icon: "02-1")
         let menu4 = Menu(label: "Feed back", icon: "gesture")
         let menu5 = Menu(label: "Privacy policy", icon: "forum")
         

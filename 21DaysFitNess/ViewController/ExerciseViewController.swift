@@ -37,7 +37,6 @@ class ExerciseViewController: UIViewController {
         return button
     }()
     
-    var listPlan = [planModel]()
     var d: String = ""
     var arrId = [DayDataModel]()
     var listPlanReturn: [planModel] = [planModel]()
@@ -52,6 +51,7 @@ class ExerciseViewController: UIViewController {
         collectionView.delegate = self
         
         dayLabel.text = d
+        
         APIService.shared.plan_default() {dataRepond, _ in
             if let dataRepond = dataRepond {
                 self.listPlanReturn = dataRepond
@@ -66,6 +66,10 @@ class ExerciseViewController: UIViewController {
                 self.collectionView.reloadData()
             }
         }
+        
+        let tapBack = UITapGestureRecognizer(target: self, action: #selector(goBack))
+        backImageView.addGestureRecognizer(tapBack)
+        backImageView.isUserInteractionEnabled = true
         
     }
     
@@ -88,6 +92,13 @@ class ExerciseViewController: UIViewController {
         
     }
     
+    @objc func goBack() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let challengerVC = storyboard.instantiateViewController(identifier: "ChallengerViewController") as! ChallengerViewController
+        challengerVC.modalPresentationStyle = .fullScreen
+        self.present(challengerVC, animated: true, completion: nil)
+    }
+    
 }
 
 extension ExerciseViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -98,7 +109,13 @@ extension ExerciseViewController: UICollectionViewDelegate, UICollectionViewData
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ExcerciseCollectionViewCell", for: indexPath) as! ExcerciseCollectionViewCell
         cell.excerciseLabel.text = self.listCanShow[indexPath.row].task_name
-        cell.timeLabel.text =  self.listCanShow[indexPath.row].tts_speed
+        if cell.excerciseLabel.text == "PLANK"
+        {
+            cell.timeLabel.text = String(self.arrId[indexPath.row].time) + "s"
+        } else {
+            cell.timeLabel.text =  "x" + String(self.arrId[indexPath.row].time)
+        }
+        cell.imageView.image = UIImage(named: String(self.listCanShow[indexPath.row].pic_path))
         return cell
     }
     
