@@ -38,15 +38,18 @@ class ExerciseViewController: UIViewController {
     }()
     
     var listPlan = [planModel]()
+    var d: String = ""
+    var arrId = [DayDataModel]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupLayout()
-        setupPlan()
         
         collectionView.dataSource = self
         collectionView.delegate = self
+        
+        dayLabel.text = d
     }
     
     func setupLayout() {
@@ -68,44 +71,26 @@ class ExerciseViewController: UIViewController {
         
     }
     
-    func setupPlan() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let planVC = storyboard.instantiateViewController(identifier: "PlanViewController") as! PlanViewController
-        if planVC.label.text == "FAT BURNING EXERCISE" {
-            APIService.shared.plan_default() {dataRepond, _ in
-                if let dataRepond = dataRepond {
-                    self.listPlan = dataRepond
-                }
-            }
-        } else if planVC.label.text == "WAIST EXERCISE" {
-            APIService.shared.plan_default() {dataRepond, _ in
-                if let dataRepond = dataRepond {
-                    self.listPlan = dataRepond
-                }
-            }
-        } else if planVC.label.text == "LEG FAT BURNING EXERCISE" {
-            APIService.shared.plan_default() {dataRepond, _ in
-                if let dataRepond = dataRepond {
-                    self.listPlan = dataRepond
-                }
-            }
-        } else {
-            APIService.shared.plan_default() {dataRepond, _ in
-                if let dataRepond = dataRepond {
-                    self.listPlan = dataRepond
-                }
-            }
-        }
-    }
 }
 
 extension ExerciseViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        <#code#>
+        return self.listPlan.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        <#code#>
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ExcerciseCollectionViewCell", for: indexPath) as! ExcerciseCollectionViewCell
+        cell.excerciseLabel.text = ""
+        cell.timeLabel.text = ""
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 327 , height: 114)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 10
     }
     
     

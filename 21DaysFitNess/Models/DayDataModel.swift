@@ -19,7 +19,7 @@ class DayDataModel: NSObject {
 
 class exerciseModel: NSObject {
     var name: String = ""
-    var listEx: [DayDataModel] =  [DayDataModel]()
+    var listEx = [DayDataModel]()
     func initLoad(_ json:  [String: Any]) -> exerciseModel{
         if let temp = json["name"] as? String { name = temp }
         if let temp = json["exercise"] as? [[String: Any]] {

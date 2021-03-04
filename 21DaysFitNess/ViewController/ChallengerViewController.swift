@@ -118,7 +118,8 @@ class ChallengerViewController: UIViewController {
         return collectionView
     }()
     
-    var listExercise : [exerciseModel] = [exerciseModel]()
+    var listExercise = [exerciseModel]()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -277,7 +278,8 @@ extension ChallengerViewController: UICollectionViewDelegate, UICollectionViewDa
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let excerciseVC = storyboard.instantiateViewController(identifier: "ExerciseViewController") as! ExerciseViewController
-        excerciseVC.dayLabel.text = String(self.listExercise[indexPath.row].name)
+        excerciseVC.d = String(self.listExercise[indexPath.row].name)
+        excerciseVC.arrId = self.listExercise[indexPath.row].listEx
         excerciseVC.modalPresentationStyle = .fullScreen
         self.present(excerciseVC, animated: true, completion: nil)
     }
