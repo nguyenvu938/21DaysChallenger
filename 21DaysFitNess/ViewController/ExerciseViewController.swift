@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftGifOrigin
 
 class ExerciseViewController: UIViewController {
     
@@ -39,8 +40,8 @@ class ExerciseViewController: UIViewController {
     
     var d: String = ""
     var arrId = [DayDataModel]()
-    var listPlanReturn: [planModel] = [planModel]()
-    var listCanShow: [planModel] = [planModel]()
+    var listPlanReturn = [planModel]()
+    var listCanShow = [planModel]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -93,10 +94,7 @@ class ExerciseViewController: UIViewController {
     }
     
     @objc func goBack() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let challengerVC = storyboard.instantiateViewController(identifier: "ChallengerViewController") as! ChallengerViewController
-        challengerVC.modalPresentationStyle = .fullScreen
-        self.present(challengerVC, animated: true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
     
 }
@@ -115,7 +113,7 @@ extension ExerciseViewController: UICollectionViewDelegate, UICollectionViewData
         } else {
             cell.timeLabel.text =  "x" + String(self.arrId[indexPath.row].time)
         }
-        cell.imageView.image = UIImage(named: String(self.listCanShow[indexPath.row].pic_path))
+        cell.imageView.image = UIImage.gif(name: String(self.listCanShow[indexPath.row].pic_path))
         return cell
     }
     
@@ -127,5 +125,14 @@ extension ExerciseViewController: UICollectionViewDelegate, UICollectionViewData
         return 10
     }
     
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let excerciseVC = storyboard.instantiateViewController(identifier: "ReviewExerciseViewController") as! ReviewExerciseViewController
+        excerciseVC.exText = self.listCanShow[indexPath.row].task_name
+        excerciseVC.exImageName = self.listCanShow[indexPath.row].pic_path
+        excerciseVC.exNameText = self.listCanShow[indexPath.row].task_name
+        excerciseVC.exDetailText = self.listCanShow[indexPath.row].tts_advice
+        excerciseVC.modalPresentationStyle = .fullScreen
+        self.present(excerciseVC, animated: true, completion: nil)
+    }
 }

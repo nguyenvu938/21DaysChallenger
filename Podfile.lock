@@ -1,20 +1,24 @@
 PODS:
+  - SwiftGifOrigin (1.7.0)
   - SwiftyJSON (5.0.0)
   - SwiftyShadow (1.7.0)
 
 DEPENDENCIES:
+  - SwiftGifOrigin
   - SwiftyJSON
   - SwiftyShadow
 
 SPEC REPOS:
   trunk:
+    - SwiftGifOrigin
     - SwiftyJSON
     - SwiftyShadow
 
 SPEC CHECKSUMS:
+  SwiftGifOrigin: fbd6cf37afcfcf97a5c3db996ddc0492e5c5c145
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   SwiftyShadow: d2697c62eb83759b7806466e3ea29de24c772c29
 
-PODFILE CHECKSUM: bc7aede31a0c569a8a09c9c1c67329f11d5a7c70
+PODFILE CHECKSUM: 4cf7e926b931c4531753a5dc0a991de5eaa12fb2
 
 COCOAPODS: 1.10.0
