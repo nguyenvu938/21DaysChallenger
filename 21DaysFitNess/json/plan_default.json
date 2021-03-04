@@ -1,448 +1,431 @@
 [
-    {
-        "pic_path": "td/01.gif",
-        "tts_text": "Place your feet shoulder-width apart and, with your arms extended in front, bend your knees and lower your body as if you were sitting down. Straighten your legs.  Repeat this action. This excercise can tone your thigh and buttock muscles.",
-        "task_name": "SQUATS",
-        "task_type": "",
-        "tts_advice": "Take a deep breath as you go down, and exhale when you're up||you can do this with a hand-held dumbbell to add to the challenge||if that's still not enough of a challenge, try squatting a bit lower||too hard? You can spread your feet further apart to help you maintain balance||this exercise can tone almost all your lower body muscles plus improve your balancing ability||your knee should be the direction of your foot fat consistent",
-        "tts_speed": 0,
-        "task_mode": 0,
-        "duration": 2,
-        "id": 0
-    },
-    {
-        "pic_path": "td/02.gif",
-        "tts_text": "Stand facing the wall, about a single stride's distance away, then lean forward, and extend your hands in front of your body and on the wall. Bend your elbows, bringing your body closer to the wall, and use your arms to push your body back, just as you would in a traditional push-up. Be sure to keep your body straight and your feet in the same position.",
-        "task_name": "WALL PUSH-UPS",
-        "task_type": "",
-        "tts_advice": "Please stand facing the wall||This exercise mainly focuses on your chest and arms||Make sure to keep your body straight and contract your  abdominal muscles as you work out||inhale while your arms are flexing||exhale while stretching your arms||Too easy? Try traditional push-ups on a cushion if you fancy a challenge",
-        "tts_speed": 0,
-        "task_mode": 0,
-        "duration": 2,
-        "id": 1
-    },
-    {
-        "pic_path": "td/03.gif",
-        "tts_text": "Lie down on your side, with your head on your right arm. Your legs should be stacked, one on top of the other. Lift the top leg up as high as possible, before returning it to the initial position. Repeat this action. Please note that your leg should be kept straight during the entire exercise. This action can exercise your hip muscles.",
-        "task_name": "SIDE-LYING LEG LIFT LEFT",
-        "task_type": "",
-        "tts_advice": "Please do this on the mat||This excercise is good for your hips and thighs||keep your feet facing forward||Please remember to keep your legs straight during the exercise||To gie yourself a greater challenge, add weights to your ankles",
-        "tts_speed": 0,
-        "task_mode": 0,
-        "duration": 2,
-        "id": 2
-    },
-    {
-        "pic_path": "td/04.gif",
-        "tts_text": "Lie down sideways, with your head on your left arm. Your legs should be stacked, one on top of the other.Lift the upper leg up and then return it to the initial position. Repeat this action. Please note that your leg should be kept straight throughout the entire exercise. This action can exercise your hip muscles.",
-        "task_name": "SIDE-LYING LEG LIFT RIGHT",
-        "task_type": "",
-        "tts_advice": "Please do this on the mat||This excercise is good for your hips and thighs||keep your feet facing forward||Please remember to keep your legs straight during the exercise||To gie yourself a greater challenge, add weights to your ankles",
-        "tts_speed": 0,
-        "task_mode": 0,
-        "duration": 2,
-        "id": 3
-    },
-    {
-        "pic_path": "td/05.gif",
-        "tts_text": "Lie on the floor with your back flat on the ground and your knees bent. Your feet should also be touching the ground and your arms at either side of your body. Next, raise your buttocks up and down. Repeat this action. The bridge exercise strengthens the entire abdomen, lower back and buttock muscles.",
-        "task_name": "BUTT BRIDGE",
-        "task_type": "",
-        "tts_advice": "Please put your feet on the mat shoulder width apart||this exercise is good for your lower back||this exercise can be a good exercise your hips",
-        "tts_speed": 0,
-        "task_mode": 0,
-        "duration": 2,
-        "id": 4
-    },
-    {
-        "pic_path": "td/06.gif",
-        "tts_text": "Place your feet shoulder-width apart. Raise your arms up high and clasp your hands above your head.",
-        "task_name": "CLAPS OVER HEAD",
-        "task_type": "",
-        "tts_advice": "Stretch your arms when training||this exercise can relax and stretch your shoulders||this exercise can work out your deltoid muscle||inhale when raising your arms, exhale when lowering them",
-        "tts_speed": 0,
-        "task_mode": 0,
-        "duration": 2,
-        "id": 5
-    },
-    {
-        "pic_path": "td/07.png",
-        "tts_text": "Lie facing the floor with your toes and forearms resting on the ground.Keep your body straight and hold this position as long as you can.
- This exercise strenghtens the abdomen,back and shoulders.",
-        "task_name": "PLANK",
-        "task_type": "t",
-        "tts_advice": "This action can exercise your core muscles||Keep your body upright, tighten your abdomen and buttocks, don't allow your buttocks to sink down or stick out. Breathe naturally||this position is very good for your spine||If you're struggling to maintain this position you can place your knees on a mat instead and cross your feet in the air； if the excercise is too easy for you, you can place weights on your back",
-        "tts_speed": 0,
-        "task_mode": 0,
-        "duration": 1,
-        "id": 6
-    },
-    {
-        "pic_path": "td/08.gif",
-        "tts_text": "Lie on your stomach with your arms extended over your head.Lift one leg and the arm on the opposite side of your body simultaneously, then lower them. ",
-        "task_name": "SWIMMER AND SUPERMAN",
-        "task_type": "",
-        "tts_advice": "This training can strengthen your hips and lower back||breathe in as you raise your leg and arm, exhale as they go down||Too easy? Try raising both arms and legs at the same time",
-        "tts_speed": 0,
-        "task_mode": 0,
-        "duration": 2,
-        "id": 7
-    },
-    {
-        "pic_path": "td/09.gif",
-        "tts_text": "Stand both feet and shoulder width. Lift one knee to touch the other side of the elbow. Return to the starting position and repeat the action on the other side.",
-        "task_name": "STANDING BICYCLE CRUNCHES",
-        "task_type": "",
-        "tts_advice": "Squeezing your abdomen each time you roll your belly||you can feel your core muscles squeezing||this action can exercise your core muscles； tighten your abs while training",
-        "tts_speed": 0,
-        "task_mode": 0,
-        "duration": 3,
-        "id": 8
-    },
-    {
-        "pic_path": "td/10.gif",
-        "tts_text": "Place yor feet shoulder-width apart, and bend into a squat before using your hands to suspend you on the ground and jumping backwards, placing your legs in a back pedal motion, . Do a push-up, and then reverse the steps above and jump up. Repeat this action.",
-        "task_name": "BURPEES",
-        "task_type": "",
-        "tts_advice": "This exercise trains over 70 percent of the body's muscle groups||try to complete each step fluidly||if you feel the exercise is too easy try speeding up your actions",
-        "tts_speed": 0,
-        "task_mode": 0,
-        "duration": 6,
-        "id": 9
-    },
-    {
-        "pic_path": "td/11.gif",
-        "tts_text": "Sit on the ground with your legs slightly raised. Your upper body shoud be leaning backwards. Lift one leg at a time, bending it at the knee. Reach forward and clap your hands together in the space underneath the bent leg. Switch legs and repeat the steps above.",
-        "task_name": "CLAPPING CRUNCHES",
-        "task_type": "",
-        "tts_advice": "Exhale as you lift your knees and breathe in as you lower them||If you struggle with this exercise, try it with your feet on the ground||this exercise can train your abdominal muscles； look straight ahead",
-        "tts_speed": 0,
-        "task_mode": 0,
-        "duration": 3,
-        "id": 10
-    },
-    {
-        "pic_path": "td/12.gif",
-        "tts_text": "Rest your knees on the ground, and extend your upper body out in front of your legs, with your hands directly below your shoulders resting on the ground.
- Your knees should be positioned just below your buttocks. Next, bend your left leg 90 degrees and lift it out to the side of your body, then back down. Repeat this action.",
-        "task_name": "FIRE HYDRANT LEFT",
-        "task_type": "",
-        "tts_advice": "This exercise can tighten your thigh and buttock muscles||this exercise trains your buttocks, legs and abdomen||Remember to keep your arms straight； Don't forget to contract your abdomen||Make sure not to bend your back",
-        "tts_speed": 0,
-        "task_mode": 0,
-        "duration": 2,
-        "id": 11
-    },
-    {
-        "pic_path": "td/13.gif",
-        "tts_text": "Rest your knees on the ground, and extend your upper body out in front of your legs, with your hands directly below your shoulders resting on the ground. Your knees should be positioned just below your buttocks. Next, bend your right leg 90 degrees and lift it out to the side of your body, then back down. Repeat this action.",
-        "task_name": "FIRE HYDRANT RIGHT",
-        "task_type": "",
-        "tts_advice": "This exercise can tighten your thigh and buttock muscles||this exercise trains your buttocks, legs and abdomen||Remember to keep your arms straight； Don't forget to contract your abdomen||Make sure not to bend your back",
-        "tts_speed": 0,
-        "task_mode": 0,
-        "duration": 2,
-        "id": 12
-    },
-    {
-        "pic_path": "td/14.gif",
-        "tts_text": "Lie flat on the ground, facing the ceiling. Bend your legs, and place your arms on both sides of your body.
-  Lift your upper body slightly, allowing you to reach down and touch your heels with your hands.",
-        "task_name": "HEEL TOUCH",
-        "task_type": "",
-        "tts_advice": "Ensure that your lower body remains on the ground||This exercise works your core muscles. Inhale as you reach out to touch your ankle, exhale as you lie back down",
-        "tts_speed": 0,
-        "task_mode": 0,
-        "duration": 3,
-        "id": 13
-    },
-    {
-        "pic_path": "td/15.gif",
-        "tts_text": "Rest your knees on the ground, and extend your upper body out in front of your legs, with your hands directly below your shoulders resting on the ground.
- Your knees should be positioned just below your buttocks. Next, bend your right leg 90 degrees and lift it up above your buttocks, then back down without touching the ground. Repeat this action.",
-        "task_name": "DONKEY KICKS RIGHT",
-        "task_type": "",
-        "tts_advice": "Please do this on the mat||This action can tighten up your hips and also exercise your legs||Keep your knee bent at 90 degrees||Contract your abdominal muscles as much as you can||Try not to raise your leg higher than your hip||Exhale as you raise your leg",
-        "tts_speed": 0,
-        "task_mode": 0,
-        "duration": 2,
-        "id": 14
-    },
-    {
-        "pic_path": "td/16.gif",
-        "tts_text": "Rest your knees on the ground, and extend your upper body out in front of your legs, with your hands directly below your shoulders resting on the ground.
- Your knees should be positioned just below your buttocks. Next, bend your right leg 90 degrees and lift it up above your buttocks, then back down without touching the ground.. Repeat this action.",
-        "task_name": "DONKEY KICKS LEFT",
-        "task_type": "",
-        "tts_advice": "Please do this on the mat||This action can tighten up your hips and also exercise your legs||Keep your knee bent at 90 degrees||Contract your abdominal muscles as much as you can||Try not to raise your leg higher than your hip||Exhale as you raise your leg",
-        "tts_speed": 0,
-        "task_mode": 0,
-        "duration": 2,
-        "id": 15
-    },
-    {
-        "pic_path": "td/17.gif",
-        "tts_text": "Lie down flat on your back, arms resting at both sides of your body. Raise your legs and try to keep them straight. Lift your leg up slightly and, in quick succession alternate between lifting and lowering your right and left legs.",
-        "task_name": "SCISSORS",
-        "task_type": "",
-        "tts_advice": "Try not to use your hands to propel your legs||Contract your abdominal muscles",
-        "tts_speed": 0,
-        "task_mode": 0,
-        "duration": 2,
-        "id": 16
-    },
-    {
-        "pic_path": "td/18.gif",
-        "tts_text": "Lie on the floor, with your hands hands raised behind your ears.
-  Raise your upper body slightly and simultaneously raise your right knee in towards your chest. Next, straighten your left leg out so that it hovers above the ground while turning your upper body to the right, bringing your left elbow towards the right knee, so that the elbow of your left arm and right knee are close. Repeat this action, switching to the other side.",
-        "task_name": "BICYCLE CRUNCHES",
-        "task_type": "",
-        "tts_advice": "Keep your neck relaxed as you do this exercise||Keep your hands behind your ears and your arms as far back as possible. Do not cross your fingers||You should be able to feel your abdominal muscles contracting||if you can see your elbows, please open the chest||Ensure that you breathe naturally during the workout proces - Inhale as you raise your knee and elbow, exhale as you bring them down",
-        "tts_speed": 0,
-        "task_mode": 0,
-        "duration": 2,
-        "id": 17
-    },
-    {
-        "pic_path": "td/19.gif",
-        "tts_text": "Start off in the squatting position, before engaging your core and propel yourself up by jumping on the spot. Repeat the action. This is a good overall warm-up exercise.",
-        "task_name": "JUMPING SQUATS",
-        "task_type": "",
-        "tts_advice": "When you jump try to jump as high as possible||As you squat keep your thigh parallel to the ground||Face forward as you squat and keep your back straight",
-        "tts_speed": 0,
-        "task_mode": 0,
-        "duration": 2,
-        "id": 18
-    },
-    {
-        "pic_path": "td/20.gif",
-        "tts_text": "Stand with your two legs a large stride apart. Bending slightly, take a large,  slow step to the left.
- Your toes should be pointed  forward. Extend your right knee, putting all of your weight on the left leg, placing the left knee and hip into a side lunge.  Return to the starting position and repeat this action, this time with the other leg taking the lead.",
-        "task_name": "SIDE LUNGES",
-        "task_type": "",
-        "tts_advice": "Inhale as you lunge, exhale as you come back up||Contract your abdominal muscles||your toes should move forward||Almost all of your leg muscles will benefit from this exercise||Too easy? Try extending and raising your arm as you lunge||This exercise can tighten up your abdominal muscles",
-        "tts_speed": 0,
-        "task_mode": 0,
-        "duration": 4,
-        "id": 19
-    },
-    {
-        "pic_path": "td/21.gif",
-        "tts_text": "Place your feet shoulder-width apart and place your hands on your waist. Extend your left leg forward with your thighs lowered and both knees bent at a 90 degree angle. Then return to the initial position, and repeat the steps above for the other leg. This action can tighten up the gluteus maximus and your thigh muscles.",
-        "task_name": "LUNGES",
-        "task_type": "",
-        "tts_advice": "Inhale as you go down, exhale when you come back up||Carry dumbbells in both hands to increase the difficulty of this exercise||Knees feeling sore? Try increasing the distance between your feet||Give your legs a great workout with this exericise",
-        "tts_speed": 0,
-        "task_mode": 0,
-        "duration": 6,
-        "id": 20
-    },
-    {
-        "pic_path": "td/22.gif",
-        "tts_text": "Place your feet slightly further apart than shoulder-width with your toes pointing outwards and your hands at either side of your body. Next, squat down until your thighs are parallel to the ground. Extend your arms in front of your body as you squat.
- Your knees shouldn't come out further than your toes. Return to a standing position and repeat the steps above.",
-        "task_name": "PLIE SQUATS",
-        "task_type": "",
-        "tts_advice": "Keep your eyes facing forward||Your hands should be at shoulder height；Ensure your knees and toes are facing the same direction",
-        "tts_speed": 0,
-        "task_mode": 0,
-        "duration": 2,
-        "id": 21
-    },
-    {
-        "pic_path": "td/23.gif",
-        "tts_text": "Place feet together and firmly on the ground with your arms at both sides of your body. Jump and extend your legs outward, simultaneously raising your hands out over your head.
-  Jump back into the original position, feet together, arms back to the side of your body. Repeat this action. This movement exercises all the major muscle groups in the body.",
-        "task_name": "Jumping Jack",
-        "task_type": "",
-        "tts_advice": "Be careful to fully straighten your arms as you jump||Keep your back straight at all times||Jumping jacks warm up the body and exercises all the major muscle groups",
-        "tts_speed": 0,
-        "task_mode": 0,
-        "duration": 2,
-        "id": 22
-    },
-    {
-        "pic_path": "td/24.png",
-        "tts_text": "Place your back flat against a wall and slide your body down the wall in a squat position until your thighs are parallel to the ground.
- Place your hands on your hips but do not use them to hold yourself up. Wall sits mainly exercise thigh muscles.",
-        "task_name": "WALL SIT",
-        "task_type": "t",
-        "tts_advice": "Your back must be flat against the wall||Ensure that your thighs are parallel to the ground||Wall sits mainly exercise the thigh muscles",
-        "tts_speed": 0,
-        "task_mode": 0,
-        "duration": 1,
-        "id": 23
-    },
-    {
-        "pic_path": "td/25.gif",
-        "tts_text": "Lie flat on the ground, and bend your legs. Keep your feet flat on the ground. Cross your arms and place them on your chest, then slowly lift your upper body until it is 30 degrees off of the ground. Return to the initial position and repeat the steps above. This exercise works out the rectus abdominis and abdominal oblique muscles.",
-        "task_name": "CROSS ARM CRUNCHES",
-        "task_type": "",
-        "tts_advice": "As you raise your upper body, your abdominal muscles will contract||This exercise can improve the power of the core muscles",
-        "tts_speed": 0,
-        "task_mode": 0,
-        "duration": 3,
-        "id": 24
-    },
-    {
-        "pic_path": "td/26.gif",
-        "tts_text": "Start from a traditional push-up position, but with your knees on the ground,and both feet raised and pointing towards the air. Start doing push-ups in this position.",
-        "task_name": "KNEE PUSH-UPS",
-        "task_type": "",
-        "tts_advice": "If you struggle with this exercise try doing shorter push-ups instead||Try to use your arm and abdominal strength to complete your push-ups",
-        "tts_speed": 0,
-        "task_mode": 0,
-        "duration": 3,
-        "id": 25
-    },
-    {
-        "pic_path": "td/27.gif",
-        "tts_text": "Lie flat on the ground, with your hands at both sides of your body for support.
-  Being careful to keep your legs straight, lift them both up until your buttocks lifts slightly off of the floor.
-  Slowly lower your legs back down to the floor before repeating this action.",
-        "task_name": "LEG RAISES",
-        "task_type": "",
-        "tts_advice": "Try to keep your legs straight||if you struggle to complete this exercise you can rest your legs on the ground after each raise||this action effectively exercises abdominal muscles",
-        "tts_speed": 0,
-        "task_mode": 0,
-        "duration": 3,
-        "id": 26
-    },
-    {
-        "pic_path": "td/28.gif",
-        "tts_text": "Get yourself into the push-up position, with your arms touching the ground, holding you up. Then lift your right knee towards your chest, straighten your left leg before quickly switching legs.
-  The mountain climber exercises multiple muscle groups at once.",
-        "task_name": "MOUNTAIN CLIMBER",
-        "task_type": "",
-        "tts_advice": "This exercise works out leg muscles and improves shoulder stability||pay special attention to the abdominal area as you do this exercise||Contract your abdomen to exercise the core muscles",
-        "tts_speed": 0,
-        "task_mode": 0,
-        "duration": 2,
-        "id": 27
-    },
-    {
-        "pic_path": "td/29.gif",
-        "tts_text": "Get on all fours and tighten your abdominal muscles. Your hands should be directly below your shoulders and you should be facing the ground.
-  Next, extend your right leg and left arm slowly, holidng the position for five seconds. Bring the leg and arm back, returning to all fours and then follow the above steps for the other arm and leg.",
-        "task_name": "BIRD DOG",
-        "task_type": "",
-        "tts_advice": "Keep your upper body as stable as possible||Your back should remain straight at all times",
-        "tts_speed": 0,
-        "task_mode": 0,
-        "duration": 5,
-        "id": 28
-    },
-    {
-        "pic_path": "td/30.gif",
-        "tts_text": "Keep your upper body straight and begin to run on the spot, trying to raise your knees.
-  This is a good exercise for your leg and hip muscles, and can improve the flexibility of the lower body.",
-        "task_name": "HIGH STEPPING",
-        "task_type": "",
-        "tts_advice": "Try to raise your knees||keep your upper body straight||High stepping can exercise your leg and buttock muscles",
-        "tts_speed": 0,
-        "task_mode": 0,
-        "duration": 2,
-        "id": 29
-    },
-    {
-        "pic_path": "td/31.gif",
-        "tts_text": "Sit on the floor, with your legs bent, feet and knees extended outwards slightly and your upper body tilted back. Lock your fingers together and twist your upper body from one side to the other..",
-        "task_name": "RUSSIAN TWIST",
-        "task_type": "",
-        "tts_advice": "Your eyes should be looking forward as you complete this exercise||keep your back straight upright||if you find yourself struggling, you can place your feet on the ground",
-        "tts_speed": 0,
-        "task_mode": 0,
-        "duration": 3,
-        "id": 30
-    },
-    {
-        "pic_path": "td/32.gif",
-        "tts_text": "Place one hand on the wall and stand facing the wall. Wrap your right foot around your left ankle, then slowly raise your left heel until your left foot is on tip-toes, then gradually set it down.
-  Repeat this action. Leg Calf Raises mainly exercise calf muscles.",
-        "task_name": "SINGLE LEFT LEG CALF RAISES",
-        "task_type": "",
-        "tts_advice": "Keep your left knee completely straight||If you feel this exercise is too difficult, bending your knee slightly might make it easier to complete",
-        "tts_speed": 0,
-        "task_mode": 0,
-        "duration": 2,
-        "id": 31
-    },
-    {
-        "pic_path": "td/33.gif",
-        "tts_text": "Place one hand on the wall and stand facing the wall. Wrap your left foot around your right ankle, then slowly raise your right heel until your left foot is on tip-toes, then gradually set it down.
-  Repeat this action. Leg Calf Raises mainly exercise calf muscles.",
-        "task_name": "SINGLE RIGHT LEG CALF RAISES",
-        "task_type": "",
-        "tts_advice": "Keep your right knee completely straight||If you feel this exercise is too difficult, bending your knee slightly might make it easier to complete",
-        "tts_speed": 0,
-        "task_mode": 0,
-        "duration": 3,
-        "id": 32
-    },
-    {
-        "pic_path": "td/34.gif",
-        "tts_text": "Stand with your body, feet open and shoulder width, keep your body stable, your fingers hold your hands, your thumb points on your shoulders, curl your arms, and your shoulders move forward. The bigger you go, the better.",
-        "task_name": "Around the shoulder",
-        "task_type": "",
-        "tts_advice": "Pay attention to breathing, shoulders to stretch",
-        "tts_speed": 0,
-        "task_mode": 0,
-        "duration": 2,
-        "id": 33
-    },
-    {
-        "pic_path": "td/35.gif",
-        "tts_text": "Stand naturally, feet apart, raise your chest and abdomen; raise your arms to the top of your head, palms facing each other, imagine holding a ball in your hand.",
-        "task_name": "Standing body lateral flexion",
-        "task_type": "",
-        "tts_advice": "Inhale when flexing and exhale when standing up",
-        "tts_speed": 0,
-        "task_mode": 0,
-        "duration": 4,
-        "id": 34
-    },
-    {
-        "pic_path": "td/36.gif",
-        "tts_text": "Put your hands on both sides of the head, open your elbows toward both sides, straighten your back, keep your legs slightly bent, keep them stable, flex your body, move your arms backwards, and lean forward to the maximum, roughly level with the ground.",
-        "task_name": "Good morning body flexion",
-        "task_type": "",
-        "tts_advice": "Breathing naturally, the side abdomen has a feeling of being pulled",
-        "tts_speed": 0,
-        "task_mode": 0,
-        "duration": 3,
-        "id": 35
-    },
-    {
-        "pic_path": "td/37.png",
-        "tts_text": "Stand naturally, bring up your right foot, hold your right foot ankle in your right hand, tighten your abdomen, pull your right hand up and force your hips to the top of your hips until the front of your right thigh is clearly stretched to your liking.",
-        "task_name": "Right leg front stretch",
-        "task_type": "t",
-        "tts_advice": "In the hold phase, breathe evenly and do not breathe gas",
-        "tts_speed": 0,
-        "task_mode": 0,
-        "duration": 1,
-        "id": 36
-    },
-    {
-        "pic_path": "td/38.png",
-        "tts_text": "Stand naturally, bring up your left foot, hold your left foot ankle with your left hand, tighten your abdomen, pull your left hand up and force your hips to the top, until the front of your left thigh is clearly pulled out of your sensation, keep it!",
-        "task_name": "Left leg front stretch",
-        "task_type": "t",
-        "tts_advice": "In the hold phase, breathe evenly and do not breathe gas",
-        "tts_speed": 0,
-        "task_mode": 0,
-        "duration": 1,
-        "id": 37
-    },
-    {
-        "pic_path": "td/39.png",
-        "tts_text": "Sitting on the heel on the buttocks, hands stretched forward, and the body squatted naturally and relaxed.",
-        "task_name": "Back stretch",
-        "task_type": "t",
-        "tts_advice": "Pay attention to breathing, the back should feel traction",
-        "tts_speed": 0,
-        "task_mode": 0,
-        "duration": 1,
-        "id": 38
-    }
+  {
+    "pic_path": "td/01.gif",
+    "tts_text": "Place your feet shoulder-width apart and, with your arms extended in front, bend your knees and lower your body as if you were sitting down. Straighten your legs.  Repeat this action. This excercise can tone your thigh and buttock muscles.",
+    "task_name": "SQUATS",
+    "task_type": "",
+    "tts_advice": "Take a deep breath as you go down, and exhale when you're up||you can do this with a hand-held dumbbell to add to the challenge||if that's still not enough of a challenge, try squatting a bit lower||too hard? You can spread your feet further apart to help you maintain balance||this exercise can tone almost all your lower body muscles plus improve your balancing ability||your knee should be the direction of your foot fat consistent",
+    "tts_speed": 0,
+    "task_mode": 0,
+    "duration": 2,
+    "id": 0
+  },
+  {
+    "pic_path": "td/02.gif",
+    "tts_text": "Stand facing the wall, about a single stride's distance away, then lean forward, and extend your hands in front of your body and on the wall. Bend your elbows, bringing your body closer to the wall, and use your arms to push your body back, just as you would in a traditional push-up. Be sure to keep your body straight and your feet in the same position.",
+    "task_name": "WALL PUSH-UPS",
+    "task_type": "",
+    "tts_advice": "Please stand facing the wall||This exercise mainly focuses on your chest and arms||Make sure to keep your body straight and contract your  abdominal muscles as you work out||inhale while your arms are flexing||exhale while stretching your arms||Too easy? Try traditional push-ups on a cushion if you fancy a challenge",
+    "tts_speed": 0,
+    "task_mode": 0,
+    "duration": 2,
+    "id": 1
+  },
+  {
+    "pic_path": "td/03.gif",
+    "tts_text": "Lie down on your side, with your head on your right arm. Your legs should be stacked, one on top of the other. Lift the top leg up as high as possible, before returning it to the initial position. Repeat this action. Please note that your leg should be kept straight during the entire exercise. This action can exercise your hip muscles.",
+    "task_name": "SIDE-LYING LEG LIFT LEFT",
+    "task_type": "",
+    "tts_advice": "Please do this on the mat||This excercise is good for your hips and thighs||keep your feet facing forward||Please remember to keep your legs straight during the exercise||To gie yourself a greater challenge, add weights to your ankles",
+    "tts_speed": 0,
+    "task_mode": 0,
+    "duration": 2,
+    "id": 2
+  },
+  {
+    "pic_path": "td/04.gif",
+    "tts_text": "Lie down sideways, with your head on your left arm. Your legs should be stacked, one on top of the other.Lift the upper leg up and then return it to the initial position. Repeat this action. Please note that your leg should be kept straight throughout the entire exercise. This action can exercise your hip muscles.",
+    "task_name": "SIDE-LYING LEG LIFT RIGHT",
+    "task_type": "",
+    "tts_advice": "Please do this on the mat||This excercise is good for your hips and thighs||keep your feet facing forward||Please remember to keep your legs straight during the exercise||To gie yourself a greater challenge, add weights to your ankles",
+    "tts_speed": 0,
+    "task_mode": 0,
+    "duration": 2,
+    "id": 3
+  },
+  {
+    "pic_path": "td/05.gif",
+    "tts_text": "Lie on the floor with your back flat on the ground and your knees bent. Your feet should also be touching the ground and your arms at either side of your body. Next, raise your buttocks up and down. Repeat this action. The bridge exercise strengthens the entire abdomen, lower back and buttock muscles.",
+    "task_name": "BUTT BRIDGE",
+    "task_type": "",
+    "tts_advice": "Please put your feet on the mat shoulder width apart||this exercise is good for your lower back||this exercise can be a good exercise your hips",
+    "tts_speed": 0,
+    "task_mode": 0,
+    "duration": 2,
+    "id": 4
+  },
+  {
+    "pic_path": "td/06.gif",
+    "tts_text": "Place your feet shoulder-width apart. Raise your arms up high and clasp your hands above your head.",
+    "task_name": "CLAPS OVER HEAD",
+    "task_type": "",
+    "tts_advice": "Stretch your arms when training||this exercise can relax and stretch your shoulders||this exercise can work out your deltoid muscle||inhale when raising your arms, exhale when lowering them",
+    "tts_speed": 0,
+    "task_mode": 0,
+    "duration": 2,
+    "id": 5
+  },
+  {
+    "pic_path": "td/07.png",
+    "tts_text": "Lie facing the floor with your toes and forearms resting on the ground.Keep your body straight and hold this position as long as you can.         This exercise strenghtens the abdomen,back and shoulders.",
+    "task_name": "PLANK",
+    "task_type": "t",
+    "tts_advice": "This action can exercise your core muscles||Keep your body upright, tighten your abdomen and buttocks, don't allow your buttocks to sink down or stick out. Breathe naturally||this position is very good for your spine||If you're struggling to maintain this position you can place your knees on a mat instead and cross your feet in the air； if the excercise is too easy for you, you can place weights on your back",
+    "tts_speed": 0,
+    "task_mode": 0,
+    "duration": 1,
+    "id": 6
+  },
+  {
+    "pic_path": "td/08.gif",
+    "tts_text": "Lie on your stomach with your arms extended over your head.Lift one leg and the arm on the opposite side of your body simultaneously, then lower them. ",
+    "task_name": "SWIMMER AND SUPERMAN",
+    "task_type": "",
+    "tts_advice": "This training can strengthen your hips and lower back||breathe in as you raise your leg and arm, exhale as they go down||Too easy? Try raising both arms and legs at the same time",
+    "tts_speed": 0,
+    "task_mode": 0,
+    "duration": 2,
+    "id": 7
+  },
+  {
+    "pic_path": "td/09.gif",
+    "tts_text": "Stand both feet and shoulder width. Lift one knee to touch the other side of the elbow. Return to the starting position and repeat the action on the other side.",
+    "task_name": "STANDING BICYCLE CRUNCHES",
+    "task_type": "",
+    "tts_advice": "Squeezing your abdomen each time you roll your belly||you can feel your core muscles squeezing||this action can exercise your core muscles； tighten your abs while training",
+    "tts_speed": 0,
+    "task_mode": 0,
+    "duration": 3,
+    "id": 8
+  },
+  {
+    "pic_path": "td/10.gif",
+    "tts_text": "Place yor feet shoulder-width apart, and bend into a squat before using your hands to suspend you on the ground and jumping backwards, placing your legs in a back pedal motion, . Do a push-up, and then reverse the steps above and jump up. Repeat this action.",
+    "task_name": "BURPEES",
+    "task_type": "",
+    "tts_advice": "This exercise trains over 70 percent of the body's muscle groups||try to complete each step fluidly||if you feel the exercise is too easy try speeding up your actions",
+    "tts_speed": 0,
+    "task_mode": 0,
+    "duration": 6,
+    "id": 9
+  },
+  {
+    "pic_path": "td/11.gif",
+    "tts_text": "Sit on the ground with your legs slightly raised. Your upper body shoud be leaning backwards. Lift one leg at a time, bending it at the knee. Reach forward and clap your hands together in the space underneath the bent leg. Switch legs and repeat the steps above.",
+    "task_name": "CLAPPING CRUNCHES",
+    "task_type": "",
+    "tts_advice": "Exhale as you lift your knees and breathe in as you lower them||If you struggle with this exercise, try it with your feet on the ground||this exercise can train your abdominal muscles； look straight ahead",
+    "tts_speed": 0,
+    "task_mode": 0,
+    "duration": 3,
+    "id": 10
+  },
+  {
+    "pic_path": "td/12.gif",
+    "tts_text": "Rest your knees on the ground, and extend your upper body out in front of your legs, with your hands directly below your shoulders resting on the ground.         Your knees should be positioned just below your buttocks. Next, bend your left leg 90 degrees and lift it out to the side of your body, then back down. Repeat this action.",
+    "task_name": "FIRE HYDRANT LEFT",
+    "task_type": "",
+    "tts_advice": "This exercise can tighten your thigh and buttock muscles||this exercise trains your buttocks, legs and abdomen||Remember to keep your arms straight； Don't forget to contract your abdomen||Make sure not to bend your back",
+    "tts_speed": 0,
+    "task_mode": 0,
+    "duration": 2,
+    "id": 11
+  },
+  {
+    "pic_path": "td/13.gif",
+    "tts_text": "Rest your knees on the ground, and extend your upper body out in front of your legs, with your hands directly below your shoulders resting on the ground. Your knees should be positioned just below your buttocks. Next, bend your right leg 90 degrees and lift it out to the side of your body, then back down. Repeat this action.",
+    "task_name": "FIRE HYDRANT RIGHT",
+    "task_type": "",
+    "tts_advice": "This exercise can tighten your thigh and buttock muscles||this exercise trains your buttocks, legs and abdomen||Remember to keep your arms straight； Don't forget to contract your abdomen||Make sure not to bend your back",
+    "tts_speed": 0,
+    "task_mode": 0,
+    "duration": 2,
+    "id": 12
+  },
+  {
+    "pic_path": "td/14.gif",
+    "tts_text": "Lie flat on the ground, facing the ceiling. Bend your legs, and place your arms on both sides of your body.         Lift your upper body slightly, allowing you to reach down and touch your heels with your hands.",
+    "task_name": "HEEL TOUCH",
+    "task_type": "",
+    "tts_advice": "Ensure that your lower body remains on the ground||This exercise works your core muscles. Inhale as you reach out to touch your ankle, exhale as you lie back down",
+    "tts_speed": 0,
+    "task_mode": 0,
+    "duration": 3,
+    "id": 13
+  },
+  {
+    "pic_path": "td/15.gif",
+    "tts_text": "Rest your knees on the ground, and extend your upper body out in front of your legs, with your hands directly below your shoulders resting on the ground.         Your knees should be positioned just below your buttocks. Next, bend your right leg 90 degrees and lift it up above your buttocks, then back down without touching the ground. Repeat this action.",
+    "task_name": "DONKEY KICKS RIGHT",
+    "task_type": "",
+    "tts_advice": "Please do this on the mat||This action can tighten up your hips and also exercise your legs||Keep your knee bent at 90 degrees||Contract your abdominal muscles as much as you can||Try not to raise your leg higher than your hip||Exhale as you raise your leg",
+    "tts_speed": 0,
+    "task_mode": 0,
+    "duration": 2,
+    "id": 14
+  },
+  {
+    "pic_path": "td/16.gif",
+    "tts_text": "Rest your knees on the ground, and extend your upper body out in front of your legs, with your hands directly below your shoulders resting on the ground.         Your knees should be positioned just below your buttocks. Next, bend your right leg 90 degrees and lift it up above your buttocks, then back down without touching the ground.. Repeat this action.",
+    "task_name": "DONKEY KICKS LEFT",
+    "task_type": "",
+    "tts_advice": "Please do this on the mat||This action can tighten up your hips and also exercise your legs||Keep your knee bent at 90 degrees||Contract your abdominal muscles as much as you can||Try not to raise your leg higher than your hip||Exhale as you raise your leg",
+    "tts_speed": 0,
+    "task_mode": 0,
+    "duration": 2,
+    "id": 15
+  },
+  {
+    "pic_path": "td/17.gif",
+    "tts_text": "Lie down flat on your back, arms resting at both sides of your body. Raise your legs and try to keep them straight. Lift your leg up slightly and, in quick succession alternate between lifting and lowering your right and left legs.",
+    "task_name": "SCISSORS",
+    "task_type": "",
+    "tts_advice": "Try not to use your hands to propel your legs||Contract your abdominal muscles",
+    "tts_speed": 0,
+    "task_mode": 0,
+    "duration": 2,
+    "id": 16
+  },
+  {
+    "pic_path": "td/18.gif",
+    "tts_text": "Lie on the floor, with your hands hands raised behind your ears.         Raise your upper body slightly and simultaneously raise your right knee in towards your chest. Next, straighten your left leg out so that it hovers above the ground while turning your upper body to the right, bringing your left elbow towards the right knee, so that the elbow of your left arm and right knee are close. Repeat this action, switching to the other side.",
+    "task_name": "BICYCLE CRUNCHES",
+    "task_type": "",
+    "tts_advice": "Keep your neck relaxed as you do this exercise||Keep your hands behind your ears and your arms as far back as possible. Do not cross your fingers||You should be able to feel your abdominal muscles contracting||if you can see your elbows, please open the chest||Ensure that you breathe naturally during the workout proces - Inhale as you raise your knee and elbow, exhale as you bring them down",
+    "tts_speed": 0,
+    "task_mode": 0,
+    "duration": 2,
+    "id": 17
+  },
+  {
+    "pic_path": "td/19.gif",
+    "tts_text": "Start off in the squatting position, before engaging your core and propel yourself up by jumping on the spot. Repeat the action. This is a good overall warm-up exercise.",
+    "task_name": "JUMPING SQUATS",
+    "task_type": "",
+    "tts_advice": "When you jump try to jump as high as possible||As you squat keep your thigh parallel to the ground||Face forward as you squat and keep your back straight",
+    "tts_speed": 0,
+    "task_mode": 0,
+    "duration": 2,
+    "id": 18
+  },
+  {
+    "pic_path": "td/20.gif",
+    "tts_text": "Stand with your two legs a large stride apart. Bending slightly, take a large,  slow step to the left.         Your toes should be pointed  forward. Extend your right knee, putting all of your weight on the left leg, placing the left knee and hip into a side lunge.  Return to the starting position and repeat this action, this time with the other leg taking the lead.",
+    "task_name": "SIDE LUNGES",
+    "task_type": "",
+    "tts_advice": "Inhale as you lunge, exhale as you come back up||Contract your abdominal muscles||your toes should move forward||Almost all of your leg muscles will benefit from this exercise||Too easy? Try extending and raising your arm as you lunge||This exercise can tighten up your abdominal muscles",
+    "tts_speed": 0,
+    "task_mode": 0,
+    "duration": 4,
+    "id": 19
+  },
+  {
+    "pic_path": "td/21.gif",
+    "tts_text": "Place your feet shoulder-width apart and place your hands on your waist. Extend your left leg forward with your thighs lowered and both knees bent at a 90 degree angle. Then return to the initial position, and repeat the steps above for the other leg. This action can tighten up the gluteus maximus and your thigh muscles.",
+    "task_name": "LUNGES",
+    "task_type": "",
+    "tts_advice": "Inhale as you go down, exhale when you come back up||Carry dumbbells in both hands to increase the difficulty of this exercise||Knees feeling sore? Try increasing the distance between your feet||Give your legs a great workout with this exericise",
+    "tts_speed": 0,
+    "task_mode": 0,
+    "duration": 6,
+    "id": 20
+  },
+  {
+    "pic_path": "td/22.gif",
+    "tts_text": "Place your feet slightly further apart than shoulder-width with your toes pointing outwards and your hands at either side of your body. Next, squat down until your thighs are parallel to the ground. Extend your arms in front of your body as you squat.         Your knees shouldn't come out further than your toes. Return to a standing position and repeat the steps above.",
+    "task_name": "PLIE SQUATS",
+    "task_type": "",
+    "tts_advice": "Keep your eyes facing forward||Your hands should be at shoulder height；Ensure your knees and toes are facing the same direction",
+    "tts_speed": 0,
+    "task_mode": 0,
+    "duration": 2,
+    "id": 21
+  },
+  {
+    "pic_path": "td/23.gif",
+    "tts_text": "Place feet together and firmly on the ground with your arms at both sides of your body. Jump and extend your legs outward, simultaneously raising your hands out over your head.         Jump back into the original position, feet together, arms back to the side of your body. Repeat this action. This movement exercises all the major muscle groups in the body.",
+    "task_name": "Jumping Jack",
+    "task_type": "",
+    "tts_advice": "Be careful to fully straighten your arms as you jump||Keep your back straight at all times||Jumping jacks warm up the body and exercises all the major muscle groups",
+    "tts_speed": 0,
+    "task_mode": 0,
+    "duration": 2,
+    "id": 22
+  },
+  {
+    "pic_path": "td/24.png",
+    "tts_text": "Place your back flat against a wall and slide your body down the wall in a squat position until your thighs are parallel to the ground.         Place your hands on your hips but do not use them to hold yourself up. Wall sits mainly exercise thigh muscles.",
+    "task_name": "WALL SIT",
+    "task_type": "t",
+    "tts_advice": "Your back must be flat against the wall||Ensure that your thighs are parallel to the ground||Wall sits mainly exercise the thigh muscles",
+    "tts_speed": 0,
+    "task_mode": 0,
+    "duration": 1,
+    "id": 23
+  },
+  {
+    "pic_path": "td/25.gif",
+    "tts_text": "Lie flat on the ground, and bend your legs. Keep your feet flat on the ground. Cross your arms and place them on your chest, then slowly lift your upper body until it is 30 degrees off of the ground. Return to the initial position and repeat the steps above. This exercise works out the rectus abdominis and abdominal oblique muscles.",
+    "task_name": "CROSS ARM CRUNCHES",
+    "task_type": "",
+    "tts_advice": "As you raise your upper body, your abdominal muscles will contract||This exercise can improve the power of the core muscles",
+    "tts_speed": 0,
+    "task_mode": 0,
+    "duration": 3,
+    "id": 24
+  },
+  {
+    "pic_path": "td/26.gif",
+    "tts_text": "Start from a traditional push-up position, but with your knees on the ground,and both feet raised and pointing towards the air. Start doing push-ups in this position.",
+    "task_name": "KNEE PUSH-UPS",
+    "task_type": "",
+    "tts_advice": "If you struggle with this exercise try doing shorter push-ups instead||Try to use your arm and abdominal strength to complete your push-ups",
+    "tts_speed": 0,
+    "task_mode": 0,
+    "duration": 3,
+    "id": 25
+  },
+  {
+    "pic_path": "td/27.gif",
+    "tts_text": "Lie flat on the ground, with your hands at both sides of your body for support.         Being careful to keep your legs straight, lift them both up until your buttocks lifts slightly off of the floor.         Slowly lower your legs back down to the floor before repeating this action.",
+    "task_name": "LEG RAISES",
+    "task_type": "",
+    "tts_advice": "Try to keep your legs straight||if you struggle to complete this exercise you can rest your legs on the ground after each raise||this action effectively exercises abdominal muscles",
+    "tts_speed": 0,
+    "task_mode": 0,
+    "duration": 3,
+    "id": 26
+  },
+  {
+    "pic_path": "td/28.gif",
+    "tts_text": "Get yourself into the push-up position, with your arms touching the ground, holding you up. Then lift your right knee towards your chest, straighten your left leg before quickly switching legs.         The mountain climber exercises multiple muscle groups at once.",
+    "task_name": "MOUNTAIN CLIMBER",
+    "task_type": "",
+    "tts_advice": "This exercise works out leg muscles and improves shoulder stability||pay special attention to the abdominal area as you do this exercise||Contract your abdomen to exercise the core muscles",
+    "tts_speed": 0,
+    "task_mode": 0,
+    "duration": 2,
+    "id": 27
+  },
+  {
+    "pic_path": "td/29.gif",
+    "tts_text": "Get on all fours and tighten your abdominal muscles. Your hands should be directly below your shoulders and you should be facing the ground.         Next, extend your right leg and left arm slowly, holidng the position for five seconds. Bring the leg and arm back, returning to all fours and then follow the above steps for the other arm and leg.",
+    "task_name": "BIRD DOG",
+    "task_type": "",
+    "tts_advice": "Keep your upper body as stable as possible||Your back should remain straight at all times",
+    "tts_speed": 0,
+    "task_mode": 0,
+    "duration": 5,
+    "id": 28
+  },
+  {
+    "pic_path": "td/30.gif",
+    "tts_text": "Keep your upper body straight and begin to run on the spot, trying to raise your knees.         This is a good exercise for your leg and hip muscles, and can improve the flexibility of the lower body.",
+    "task_name": "HIGH STEPPING",
+    "task_type": "",
+    "tts_advice": "Try to raise your knees||keep your upper body straight||High stepping can exercise your leg and buttock muscles",
+    "tts_speed": 0,
+    "task_mode": 0,
+    "duration": 2,
+    "id": 29
+  },
+  {
+    "pic_path": "td/31.gif",
+    "tts_text": "Sit on the floor, with your legs bent, feet and knees extended outwards slightly and your upper body tilted back. Lock your fingers together and twist your upper body from one side to the other..",
+    "task_name": "RUSSIAN TWIST",
+    "task_type": "",
+    "tts_advice": "Your eyes should be looking forward as you complete this exercise||keep your back straight upright||if you find yourself struggling, you can place your feet on the ground",
+    "tts_speed": 0,
+    "task_mode": 0,
+    "duration": 3,
+    "id": 30
+  },
+  {
+    "pic_path": "td/32.gif",
+    "tts_text": "Place one hand on the wall and stand facing the wall. Wrap your right foot around your left ankle, then slowly raise your left heel until your left foot is on tip-toes, then gradually set it down.         Repeat this action. Leg Calf Raises mainly exercise calf muscles.",
+    "task_name": "SINGLE LEFT LEG CALF RAISES",
+    "task_type": "",
+    "tts_advice": "Keep your left knee completely straight||If you feel this exercise is too difficult, bending your knee slightly might make it easier to complete",
+    "tts_speed": 0,
+    "task_mode": 0,
+    "duration": 2,
+    "id": 31
+  },
+  {
+    "pic_path": "td/33.gif",
+    "tts_text": "Place one hand on the wall and stand facing the wall. Wrap your left foot around your right ankle, then slowly raise your right heel until your left foot is on tip-toes, then gradually set it down.         Repeat this action. Leg Calf Raises mainly exercise calf muscles.",
+    "task_name": "SINGLE RIGHT LEG CALF RAISES",
+    "task_type": "",
+    "tts_advice": "Keep your right knee completely straight||If you feel this exercise is too difficult, bending your knee slightly might make it easier to complete",
+    "tts_speed": 0,
+    "task_mode": 0,
+    "duration": 3,
+    "id": 32
+  },
+  {
+    "pic_path": "td/34.gif",
+    "tts_text": "Stand with your body, feet open and shoulder width, keep your body stable, your fingers hold your hands, your thumb points on your shoulders, curl your arms, and your shoulders move forward. The bigger you go, the better.",
+    "task_name": "Around the shoulder",
+    "task_type": "",
+    "tts_advice": "Pay attention to breathing, shoulders to stretch",
+    "tts_speed": 0,
+    "task_mode": 0,
+    "duration": 2,
+    "id": 33
+  },
+  {
+    "pic_path": "td/35.gif",
+    "tts_text": "Stand naturally, feet apart, raise your chest and abdomen; raise your arms to the top of your head, palms facing each other, imagine holding a ball in your hand.",
+    "task_name": "Standing body lateral flexion",
+    "task_type": "",
+    "tts_advice": "Inhale when flexing and exhale when standing up",
+    "tts_speed": 0,
+    "task_mode": 0,
+    "duration": 4,
+    "id": 34
+  },
+  {
+    "pic_path": "td/36.gif",
+    "tts_text": "Put your hands on both sides of the head, open your elbows toward both sides, straighten your back, keep your legs slightly bent, keep them stable, flex your body, move your arms backwards, and lean forward to the maximum, roughly level with the ground.",
+    "task_name": "Good morning body flexion",
+    "task_type": "",
+    "tts_advice": "Breathing naturally, the side abdomen has a feeling of being pulled",
+    "tts_speed": 0,
+    "task_mode": 0,
+    "duration": 3,
+    "id": 35
+  },
+  {
+    "pic_path": "td/37.png",
+    "tts_text": "Stand naturally, bring up your right foot, hold your right foot ankle in your right hand, tighten your abdomen, pull your right hand up and force your hips to the top of your hips until the front of your right thigh is clearly stretched to your liking.",
+    "task_name": "Right leg front stretch",
+    "task_type": "t",
+    "tts_advice": "In the hold phase, breathe evenly and do not breathe gas",
+    "tts_speed": 0,
+    "task_mode": 0,
+    "duration": 1,
+    "id": 36
+  },
+  {
+    "pic_path": "td/38.png",
+    "tts_text": "Stand naturally, bring up your left foot, hold your left foot ankle with your left hand, tighten your abdomen, pull your left hand up and force your hips to the top, until the front of your left thigh is clearly pulled out of your sensation, keep it!",
+    "task_name": "Left leg front stretch",
+    "task_type": "t",
+    "tts_advice": "In the hold phase, breathe evenly and do not breathe gas",
+    "tts_speed": 0,
+    "task_mode": 0,
+    "duration": 1,
+    "id": 37
+  },
+  {
+    "pic_path": "td/39.png",
+    "tts_text": "Sitting on the heel on the buttocks, hands stretched forward, and the body squatted naturally and relaxed.",
+    "task_name": "Back stretch",
+    "task_type": "t",
+    "tts_advice": "Pay attention to breathing, the back should feel traction",
+    "tts_speed": 0,
+    "task_mode": 0,
+    "duration": 1,
+    "id": 38
+  }
 ]

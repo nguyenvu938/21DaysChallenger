@@ -56,7 +56,7 @@ class APIService:NSObject {
         do {
             if let file = Bundle.main.url(forResource: "plan_FAT_BURNING_EXERCISE", withExtension: "json") {
                 let data = try Data(contentsOf: file)
-                let json = try JSONSerialization.jsonObject(with: data, options: [])
+                let json =  (with: data, options: [])
                 var listExreturn: [exerciseModel] = [exerciseModel]()
                 if let dict = json as? [Dictionary<String,AnyObject>] {
                     for item in dict {
@@ -144,6 +144,9 @@ class APIService:NSObject {
         do {
             if let file = Bundle.main.url(forResource: "plan_default", withExtension: "json") {
                 let data = try Data(contentsOf: file)
+                let decoder = JSONDecoder()
+                let pro = try JSONSerialization.jsonObject(with: data, options: [])
+
                 let json = try JSONSerialization.jsonObject(with: data, options: [])
                 var listPlanReturn: [planModel] = [planModel]()
                 if let dict = json as? [Dictionary<String,AnyObject>] {
