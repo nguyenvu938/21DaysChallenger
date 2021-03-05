@@ -127,12 +127,13 @@ extension ExerciseViewController: UICollectionViewDelegate, UICollectionViewData
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let excerciseVC = storyboard.instantiateViewController(identifier: "ReviewExerciseViewController") as! ReviewExerciseViewController
-        excerciseVC.exText = self.listCanShow[indexPath.row].task_name
-        excerciseVC.exImageName = self.listCanShow[indexPath.row].pic_path
-        excerciseVC.exNameText = self.listCanShow[indexPath.row].task_name
-        excerciseVC.exDetailText = self.listCanShow[indexPath.row].tts_advice
-        excerciseVC.modalPresentationStyle = .fullScreen
-        self.present(excerciseVC, animated: true, completion: nil)
+        let reviewExerciseVC = storyboard.instantiateViewController(identifier: "ReviewExerciseViewController") as! ReviewExerciseViewController
+        reviewExerciseVC.exText = self.listCanShow[indexPath.row].task_name
+        reviewExerciseVC.exImageName = self.listCanShow[indexPath.row].pic_path
+        reviewExerciseVC.exNameText = self.listCanShow[indexPath.row].task_name
+        reviewExerciseVC.exDetailText = self.listCanShow[indexPath.row].tts_text
+        reviewExerciseVC.totalText = String(self.listCanShow.count)
+        reviewExerciseVC.modalPresentationStyle = .fullScreen
+        self.present(reviewExerciseVC, animated: true, completion: nil)
     }
 }

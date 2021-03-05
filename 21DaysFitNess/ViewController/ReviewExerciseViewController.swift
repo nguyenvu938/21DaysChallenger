@@ -13,15 +13,16 @@ class ReviewExerciseViewController: UIViewController {
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var exerciseLabel: UILabel!
     @IBOutlet weak var backImageView: UIImageView!
-    @IBOutlet weak var exImageView: UIImageView!
     @IBOutlet weak var exNameLabel: UILabel!
     @IBOutlet weak var subView: UIView!
     @IBOutlet weak var exDetailLabel: UILabel!
+    @IBOutlet weak var exImageView: UIImageView!
     
     var exText: String = ""
     var exImageName: String = ""
     var exNameText: String = ""
     var exDetailText: String = ""
+    var totalText: String = ""
     
     let startButton: UIButton = {
         let button = UIButton()
@@ -53,22 +54,30 @@ class ReviewExerciseViewController: UIViewController {
         return label
     }()
     
+    let totalLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = UIFont.boldSystemFont(ofSize: 17)
+        return label
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupLayout()
         
-        exImageView.layer.cornerRadius = 5
+        exImageView.layer.cornerRadius = 10
         
         subView.backgroundColor = UIColor(red: 0.89, green: 0.94, blue: 0.98, alpha: 1.00)
         subView.layer.cornerRadius = 24
         subView.layer.borderWidth = 2
         subView.layer.borderColor = UIColor(red: 1.00, green: 1.00, blue: 1.00, alpha: 1.00).cgColor
         
-        exerciseLabel.text = String(exText)
-        exImageView.image = UIImage.gif(name: String(exImageName))
-        exNameLabel.text = String(exNameText)
-        exDetailLabel.text = String(exDetailText)
+        exerciseLabel.text = exText
+        exImageView.image = UIImage.gif(name: exImageName)
+        exNameLabel.text = exNameText
+        exDetailLabel.text = exDetailText
+        totalLabel.text = totalText
         
         let tapBack = UITapGestureRecognizer(target: self, action: #selector(goBack))
         backImageView.addGestureRecognizer(tapBack)
@@ -79,6 +88,7 @@ class ReviewExerciseViewController: UIViewController {
         containerView.addSubview(startButton)
         containerView.addSubview(nextLabel)
         containerView.addSubview(preLabel)
+        containerView.addSubview(totalLabel)
         
         startButton.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -60).isActive = true
         startButton.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 24).isActive = true
@@ -90,6 +100,9 @@ class ReviewExerciseViewController: UIViewController {
         
         preLabel.centerYAnchor.constraint(equalTo: startButton.centerYAnchor, constant: 0).isActive = true
         preLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 38).isActive = true
+        
+        totalLabel.centerXAnchor.constraint(equalTo: startButton.centerXAnchor, constant: 0).isActive = true
+        totalLabel.centerYAnchor.constraint(equalTo: startButton.centerYAnchor, constant: 0).isActive = true
     }
     
     @objc func goBack() {
