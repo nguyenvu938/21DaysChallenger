@@ -56,7 +56,7 @@ class ExerciseViewController: UIViewController {
         APIService.shared.plan_default() {dataRepond, _ in
             if let dataRepond = dataRepond {
                 self.listPlanReturn = dataRepond
-                for item in self.listPlanReturn{
+                for item in self.listPlanReturn {
                     for item2 in self.arrId {
                         if item.id == item2.actionId{
                             self.listCanShow.append(item)
@@ -132,7 +132,8 @@ extension ExerciseViewController: UICollectionViewDelegate, UICollectionViewData
         reviewExerciseVC.exImageName = self.listCanShow[indexPath.row].pic_path
         reviewExerciseVC.exNameText = self.listCanShow[indexPath.row].task_name
         reviewExerciseVC.exDetailText = self.listCanShow[indexPath.row].tts_text
-        reviewExerciseVC.totalText = String(self.listCanShow.count)
+        reviewExerciseVC.totalPage = self.listCanShow.count
+        reviewExerciseVC.index = indexPath.row
         reviewExerciseVC.modalPresentationStyle = .fullScreen
         self.present(reviewExerciseVC, animated: true, completion: nil)
     }

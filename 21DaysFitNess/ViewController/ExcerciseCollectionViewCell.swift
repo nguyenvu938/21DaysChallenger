@@ -20,7 +20,7 @@ class ExcerciseCollectionViewCell: UICollectionViewCell {
         containerView.layer.cornerRadius = 24
         containerView.layer.borderWidth = 2
         containerView.layer.borderColor = UIColor(red: 1.00, green: 1.00, blue: 1.00, alpha: 1.00).cgColor
-        imageView.layer.cornerRadius = 5
+        containerView.backgroundColor = UIColor(red: 0.89, green: 0.94, blue: 0.98, alpha: 1.00)
     }
 
 }
