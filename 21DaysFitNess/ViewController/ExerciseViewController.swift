@@ -42,6 +42,9 @@ class ExerciseViewController: UIViewController {
     var arrId = [DayDataModel]()
     var listPlanReturn = [planModel]()
     var listCanShow = [planModel]()
+    var doImageView: String = ""
+    var doNameLabel: String = ""
+    var doTimeLabel: String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -90,8 +93,16 @@ class ExerciseViewController: UIViewController {
     }
     
     @objc func goStart() {
-        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let doExerciseVC = storyboard.instantiateViewController(identifier: "DoExerciseViewController") as! DoExerciseViewController
+        doExerciseVC.d = d
+        doExerciseVC.doImageView = doImageView
+        doExerciseVC.doNameLabel = doNameLabel
+        doExerciseVC.doTimeLabel = doTimeLabel
+        doExerciseVC.modalPresentationStyle = .fullScreen
+        self.present(doExerciseVC, animated: true, completion: nil)
     }
+    
     
     @objc func goBack() {
         self.dismiss(animated: true, completion: nil)
@@ -113,7 +124,11 @@ extension ExerciseViewController: UICollectionViewDelegate, UICollectionViewData
         } else {
             cell.timeLabel.text =  "x" + String(self.arrId[indexPath.row].time)
         }
-        cell.imageView.image = UIImage.gif(name: String(self.listCanShow[indexPath.row].pic_path))
+        cell.imageView.image = UIImage.gif(name: self.listCanShow[indexPath.row].pic_path)
+        
+        doNameLabel = self.listCanShow[indexPath.row].task_name
+        doImageView = self.listCanShow[indexPath.row].pic_path
+        doTimeLabel = cell.timeLabel.text!
         return cell
     }
     
@@ -128,12 +143,9 @@ extension ExerciseViewController: UICollectionViewDelegate, UICollectionViewData
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let reviewExerciseVC = storyboard.instantiateViewController(identifier: "ReviewExerciseViewController") as! ReviewExerciseViewController
-        reviewExerciseVC.exText = self.listCanShow[indexPath.row].task_name
-        reviewExerciseVC.exImageName = self.listCanShow[indexPath.row].pic_path
-        reviewExerciseVC.exNameText = self.listCanShow[indexPath.row].task_name
-        reviewExerciseVC.exDetailText = self.listCanShow[indexPath.row].tts_text
         reviewExerciseVC.totalPage = self.listCanShow.count
         reviewExerciseVC.index = indexPath.row
+        reviewExerciseVC.listCanShow = self.listCanShow
         reviewExerciseVC.modalPresentationStyle = .fullScreen
         self.present(reviewExerciseVC, animated: true, completion: nil)
     }

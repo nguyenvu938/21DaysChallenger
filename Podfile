@@ -9,4 +9,5 @@ target '21DaysFitNess' do
 	pod 'SwiftyShadow'
 	pod 'SwiftyJSON'
 	pod 'SwiftGifOrigin'
+	pod 'MBCircularProgressBar'
 end

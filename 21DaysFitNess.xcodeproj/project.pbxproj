@@ -8,16 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		4EDD575C93A2C7F7077520DA /* Pods_21DaysFitNess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7BFEF9632D9A65404EE7B9B /* Pods_21DaysFitNess.framework */; };
+		E704E6A325F6085700AD0379 /* DoExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E704E6A225F6085700AD0379 /* DoExerciseViewController.swift */; };
 		E71F884025AC0B8E000C38E0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F883F25AC0B8E000C38E0 /* MainViewController.swift */; };
 		E71F884925BE7C1A000C38E0 /* ProgramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F884825BE7C1A000C38E0 /* ProgramViewController.swift */; };
-		E71F886225BFD59B000C38E0 /* ProgramCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F886125BFD59B000C38E0 /* ProgramCollectionViewCell.swift */; };
-		E71F886625BFD8F5000C38E0 /* ProgramData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F886525BFD8F5000C38E0 /* ProgramData.swift */; };
 		E71F887125C004EE000C38E0 /* PlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F887025C004EE000C38E0 /* PlanViewController.swift */; };
 		E71F887625C1299B000C38E0 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F887525C1299B000C38E0 /* MenuViewController.swift */; };
 		E71F887F25C12C95000C38E0 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F887D25C12C95000C38E0 /* MenuTableViewCell.swift */; };
 		E71F888025C12C95000C38E0 /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E71F887E25C12C95000C38E0 /* MenuTableViewCell.xib */; };
 		E71F888325C1333B000C38E0 /* MenuData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F888225C1333B000C38E0 /* MenuData.swift */; };
 		E71F888625C14A91000C38E0 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F888525C14A91000C38E0 /* SettingViewController.swift */; };
+		E726788725F8AE2A00CA1EF4 /* ProgramCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E726788525F8AE2A00CA1EF4 /* ProgramCollectionViewCell.swift */; };
+		E726788825F8AE2A00CA1EF4 /* ProgramCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E726788625F8AE2A00CA1EF4 /* ProgramCollectionViewCell.xib */; };
+		E726788C25F8B3A700CA1EF4 /* ProgramData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E726788B25F8B3A700CA1EF4 /* ProgramData.swift */; };
+		E726789625F8FCB900CA1EF4 /* PlanTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E726789425F8FCB900CA1EF4 /* PlanTableViewCell.swift */; };
+		E726789725F8FCB900CA1EF4 /* PlanTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E726789525F8FCB900CA1EF4 /* PlanTableViewCell.xib */; };
 		E72719C825CAA0F100D5FA54 /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72719C725CAA0F100D5FA54 /* ReminderViewController.swift */; };
 		E72719CB25CAB57400D5FA54 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72719CA25CAB57400D5FA54 /* TimerViewController.swift */; };
 		E73DE11C25F0C38800D27ECF /* 21.gif in Resources */ = {isa = PBXBuildFile; fileRef = E73DE0F525F0C38800D27ECF /* 21.gif */; };
@@ -84,16 +88,20 @@
 
 /* Begin PBXFileReference section */
 		10DCB233FE3CB533DDE4ABF0 /* Pods-21DaysFitNess.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-21DaysFitNess.debug.xcconfig"; path = "Target Support Files/Pods-21DaysFitNess/Pods-21DaysFitNess.debug.xcconfig"; sourceTree = "<group>"; };
+		E704E6A225F6085700AD0379 /* DoExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoExerciseViewController.swift; sourceTree = "<group>"; };
 		E71F883F25AC0B8E000C38E0 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E71F884825BE7C1A000C38E0 /* ProgramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramViewController.swift; sourceTree = "<group>"; };
-		E71F886125BFD59B000C38E0 /* ProgramCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramCollectionViewCell.swift; sourceTree = "<group>"; };
-		E71F886525BFD8F5000C38E0 /* ProgramData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramData.swift; sourceTree = "<group>"; };
 		E71F887025C004EE000C38E0 /* PlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanViewController.swift; sourceTree = "<group>"; };
 		E71F887525C1299B000C38E0 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		E71F887D25C12C95000C38E0 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		E71F887E25C12C95000C38E0 /* MenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
 		E71F888225C1333B000C38E0 /* MenuData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuData.swift; sourceTree = "<group>"; };
 		E71F888525C14A91000C38E0 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		E726788525F8AE2A00CA1EF4 /* ProgramCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramCollectionViewCell.swift; sourceTree = "<group>"; };
+		E726788625F8AE2A00CA1EF4 /* ProgramCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgramCollectionViewCell.xib; sourceTree = "<group>"; };
+		E726788B25F8B3A700CA1EF4 /* ProgramData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramData.swift; sourceTree = "<group>"; };
+		E726789425F8FCB900CA1EF4 /* PlanTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanTableViewCell.swift; sourceTree = "<group>"; };
+		E726789525F8FCB900CA1EF4 /* PlanTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlanTableViewCell.xib; sourceTree = "<group>"; };
 		E72719C725CAA0F100D5FA54 /* ReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
 		E72719CA25CAB57400D5FA54 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		E73DE0F525F0C38800D27ECF /* 21.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 21.gif; sourceTree = "<group>"; };
@@ -196,8 +204,11 @@
 			children = (
 				E71F883F25AC0B8E000C38E0 /* MainViewController.swift */,
 				E71F884825BE7C1A000C38E0 /* ProgramViewController.swift */,
-				E71F886125BFD59B000C38E0 /* ProgramCollectionViewCell.swift */,
+				E726788525F8AE2A00CA1EF4 /* ProgramCollectionViewCell.swift */,
+				E726788625F8AE2A00CA1EF4 /* ProgramCollectionViewCell.xib */,
 				E71F887025C004EE000C38E0 /* PlanViewController.swift */,
+				E726789425F8FCB900CA1EF4 /* PlanTableViewCell.swift */,
+				E726789525F8FCB900CA1EF4 /* PlanTableViewCell.xib */,
 				E71F887525C1299B000C38E0 /* MenuViewController.swift */,
 				E71F887D25C12C95000C38E0 /* MenuTableViewCell.swift */,
 				E71F887E25C12C95000C38E0 /* MenuTableViewCell.xib */,
@@ -211,6 +222,7 @@
 				E77C9D7C25E6274A003D9277 /* ExcerciseCollectionViewCell.swift */,
 				E77C9D7D25E6274A003D9277 /* ExcerciseCollectionViewCell.xib */,
 				E73DE14625F0C4BF00D27ECF /* ReviewExerciseViewController.swift */,
+				E704E6A225F6085700AD0379 /* DoExerciseViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -218,7 +230,7 @@
 		E71F886425BFD8D9000C38E0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E71F886525BFD8F5000C38E0 /* ProgramData.swift */,
+				E726788B25F8B3A700CA1EF4 /* ProgramData.swift */,
 				E71F888225C1333B000C38E0 /* MenuData.swift */,
 				E76DE1A025CBA83200A373BD /* DayDataModel.swift */,
 				E77C9E3425ECEC35003D9277 /* PlanData.swift */,
@@ -421,6 +433,7 @@
 				E7FD5C8A25ABF67600CFFB1E /* Assets.xcassets in Resources */,
 				E77C9E2B25E8A83B003D9277 /* plan_LEG_FAT_BURNING_EXERCISE.json in Resources */,
 				E73DE12A25F0C38800D27ECF /* 30.gif in Resources */,
+				E726789725F8FCB900CA1EF4 /* PlanTableViewCell.xib in Resources */,
 				E73DE12B25F0C38800D27ECF /* 31.gif in Resources */,
 				E73DE12D25F0C38800D27ECF /* 19.gif in Resources */,
 				E73DE12225F0C38800D27ECF /* 36.gif in Resources */,
@@ -429,6 +442,7 @@
 				E73DE12925F0C38800D27ECF /* 18.gif in Resources */,
 				E76DE19E25CBA0D200A373BD /* ChallengerCollectionViewCell.xib in Resources */,
 				E73DE13125F0C38800D27ECF /* 37.gif in Resources */,
+				E726788825F8AE2A00CA1EF4 /* ProgramCollectionViewCell.xib in Resources */,
 				E73DE11F25F0C38800D27ECF /* 08.gif in Resources */,
 				E71F888025C12C95000C38E0 /* MenuTableViewCell.xib in Resources */,
 				E7FD5C8825ABF67300CFFB1E /* Main.storyboard in Resources */,
@@ -496,19 +510,21 @@
 				E71F884925BE7C1A000C38E0 /* ProgramViewController.swift in Sources */,
 				E77C9E1B25E64AAF003D9277 /* APIService.swift in Sources */,
 				E77C9D7E25E6274A003D9277 /* ExcerciseCollectionViewCell.swift in Sources */,
-				E71F886225BFD59B000C38E0 /* ProgramCollectionViewCell.swift in Sources */,
 				E73DE14725F0C4BF00D27ECF /* ReviewExerciseViewController.swift in Sources */,
 				E72719C825CAA0F100D5FA54 /* ReminderViewController.swift in Sources */,
 				E71F887F25C12C95000C38E0 /* MenuTableViewCell.swift in Sources */,
 				E71F887625C1299B000C38E0 /* MenuViewController.swift in Sources */,
+				E726788C25F8B3A700CA1EF4 /* ProgramData.swift in Sources */,
 				E76DE19925CB974D00A373BD /* ChallengerViewController.swift in Sources */,
 				E71F888325C1333B000C38E0 /* MenuData.swift in Sources */,
 				E7FD5C8125ABF67300CFFB1E /* AppDelegate.swift in Sources */,
 				E71F887125C004EE000C38E0 /* PlanViewController.swift in Sources */,
 				E72719CB25CAB57400D5FA54 /* TimerViewController.swift in Sources */,
-				E71F886625BFD8F5000C38E0 /* ProgramData.swift in Sources */,
 				E76DE19D25CBA0D200A373BD /* ChallengerCollectionViewCell.swift in Sources */,
+				E726789625F8FCB900CA1EF4 /* PlanTableViewCell.swift in Sources */,
 				E7FD5C8325ABF67300CFFB1E /* SceneDelegate.swift in Sources */,
+				E704E6A325F6085700AD0379 /* DoExerciseViewController.swift in Sources */,
+				E726788725F8AE2A00CA1EF4 /* ProgramCollectionViewCell.swift in Sources */,
 				E77C9E3525ECEC35003D9277 /* PlanData.swift in Sources */,
 				E76DE1A125CBA83200A373BD /* DayDataModel.swift in Sources */,
 				E77C9D7425E620B3003D9277 /* ExerciseViewController.swift in Sources */,

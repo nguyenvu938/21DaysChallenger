@@ -1,24 +1,28 @@
 PODS:
+  - MBCircularProgressBar (0.3.5)
   - SwiftGifOrigin (1.7.0)
   - SwiftyJSON (5.0.0)
   - SwiftyShadow (1.7.0)
 
 DEPENDENCIES:
+  - MBCircularProgressBar
   - SwiftGifOrigin
   - SwiftyJSON
   - SwiftyShadow
 
 SPEC REPOS:
   trunk:
+    - MBCircularProgressBar
     - SwiftGifOrigin
     - SwiftyJSON
     - SwiftyShadow
 
 SPEC CHECKSUMS:
+  MBCircularProgressBar: 0b795b722a5eb5b0923822f90474e2576a1a7855
   SwiftGifOrigin: fbd6cf37afcfcf97a5c3db996ddc0492e5c5c145
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   SwiftyShadow: d2697c62eb83759b7806466e3ea29de24c772c29
 
-PODFILE CHECKSUM: 4cf7e926b931c4531753a5dc0a991de5eaa12fb2
+PODFILE CHECKSUM: edd32ea44bb81a651bbd1324231c090087cf6eaf
 
 COCOAPODS: 1.10.0

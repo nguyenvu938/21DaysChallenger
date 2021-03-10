@@ -8,98 +8,10 @@
 import UIKit
 
 class PlanViewController: UIViewController {
-    let containerView: UIView = {
-        let view = UIView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = UIColor(red: 0.89, green: 0.94, blue: 0.98, alpha: 1.00)
-        return view
-    }()
     
-    let ellipseImageView: UIImageView = {
-        let image = UIImageView()
-        image.translatesAutoresizingMaskIntoConstraints = false
-        image.image = UIImage(named: "Ellipse")
-        return image
-    }()
-    
-    let menuImageView: UIImageView = {
-        let image = UIImageView()
-        image.translatesAutoresizingMaskIntoConstraints = false
-        image.image = UIImage(named: "menu")
-        return image
-    }()
-    
-    let settingImageView: UIImageView = {
-        let image = UIImageView()
-        image.translatesAutoresizingMaskIntoConstraints = false
-        image.image = UIImage(named: "setting")
-        return image
-    }()
-    
-    let kcalImageView: UIImageView = {
-        let image = UIImageView()
-        image.translatesAutoresizingMaskIntoConstraints = false
-        image.image = UIImage(named: "kcalbar")
-        return image
-    }()
-    
-    let dayImageView: UIImageView = {
-        let image = UIImageView()
-        image.translatesAutoresizingMaskIntoConstraints = false
-        image.image = UIImage(named: "daybar")
-        return image
-    }()
-    
-    let label1: UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "21 Days"
-        label.textColor = UIColor(red: 0.99, green: 0.99, blue: 0.99, alpha: 1.00)
-        label.font = UIFont.boldSystemFont(ofSize: 18)
-        return label
-    }()
-    
-    let label2: UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Clock in"
-        label.font = UIFont.boldSystemFont(ofSize: 14)
-        return label
-    }()
-    
-    let label3: UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "0/7 ▶"
-        label.font = UIFont.boldSystemFont(ofSize: 12)
-        return label
-    }()
-    
-    let label4: UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "My training"
-        label.font = UIFont.boldSystemFont(ofSize: 16)
-        return label
-    }()
-    
-    let label5: UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Recommended training"
-        label.font = UIFont.boldSystemFont(ofSize: 16)
-        return label
-    }()
-    
-    let subView: UIView = {
-        let view = UIView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        view.layer.cornerRadius = 24
-        view.backgroundColor = UIColor(red: 0.89, green: 0.94, blue: 0.98, alpha: 1.00)
-        view.layer.borderWidth = 2
-        view.layer.borderColor = UIColor(red: 1.00, green: 1.00, blue: 1.00, alpha: 1.00).cgColor
-        return view
-    }()
+    @IBOutlet weak var menuImageView: UIImageView!
+    @IBOutlet weak var settingImageView: UIImageView!
+    @IBOutlet weak var planImageView: UIImageView!
     
     let titleImageView: UIImageView = {
         let imageView = UIImageView()
@@ -126,7 +38,7 @@ class PlanViewController: UIViewController {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "21 days left"
-        label.font = UIFont(name: "Lato", size: 12)
+        label.font = UIFont.systemFont(ofSize: 12)
         label.textColor = UIColor(red: 0.59, green: 0.59, blue: 0.59, alpha: 1.00)
         return label
     }()
@@ -137,16 +49,24 @@ class PlanViewController: UIViewController {
         image.image = UIImage(named: "progess bar")
         return image
     }()
+    
+    let tableView: UITableView = {
+        let tableView = UITableView()
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.backgroundColor = UIColor(red: 0.89, green: 0.94, blue: 0.98, alpha: 1.00)
+        tableView.separatorStyle = .none
+        tableView.register(UINib(nibName: "MenuTableViewCell", bundle: nil), forCellReuseIdentifier: "MenuTableViewCell")
+        return tableView
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.setNavigationBarHidden(true, animated: true)
-        self.navigationController?.navigationBar.isHidden = true
-        self.navigationController?.isNavigationBarHidden = true
-        
         addSubview()
         setupLayout()
+        
+        tableView.dataSource = self
+        tableView.delegate = self
         
         view.backgroundColor = UIColor(red: 0.89, green: 0.94, blue: 0.98, alpha: 1.00)
         
@@ -159,88 +79,36 @@ class PlanViewController: UIViewController {
         settingImageView.isUserInteractionEnabled = true
         
         let tapChallenger = UITapGestureRecognizer(target: self, action: #selector(goChallenger))
-        subView.addGestureRecognizer(tapChallenger)
+        planImageView.addGestureRecognizer(tapChallenger)
+        planImageView.isUserInteractionEnabled = true
     }
     
     func addSubview() {
-        view.addSubview(containerView)
-        containerView.addSubview(ellipseImageView)
-        containerView.addSubview(menuImageView)
-        containerView.addSubview(settingImageView)
-        containerView.addSubview(kcalImageView)
-        containerView.addSubview(dayImageView)
-        containerView.addSubview(label1)
-        containerView.addSubview(label2)
-        containerView.addSubview(label3)
-        containerView.addSubview(label4)
-        containerView.addSubview(label5)
-        containerView.addSubview(subView)
-        subView.addSubview(titleImageView)
-        subView.addSubview(subImageView)
-        subView.addSubview(label)
-        subView.addSubview(subLabel)
-        subView.addSubview(progessBarImageView)
+        planImageView.addSubview(titleImageView)
+        planImageView.addSubview(subImageView)
+        planImageView.addSubview(label)
+        planImageView.addSubview(subLabel)
+        planImageView.addSubview(progessBarImageView)
     }
     
     
     func setupLayout() {
-        containerView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
-        containerView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
-        containerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0).isActive = true
-        containerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
         
-        ellipseImageView.topAnchor.constraint(equalTo: containerView.topAnchor, constant: -72).isActive = true
-        ellipseImageView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: -60).isActive = true
-        ellipseImageView.widthAnchor.constraint(equalToConstant: 494).isActive = true
-        ellipseImageView.heightAnchor.constraint(equalToConstant: 218).isActive = true
+        titleImageView.centerYAnchor.constraint(equalTo: planImageView.centerYAnchor, constant: -5).isActive = true
+        titleImageView.trailingAnchor.constraint(equalTo: planImageView.trailingAnchor, constant: -25).isActive = true
         
-        menuImageView.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 30).isActive = true
-        menuImageView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 4).isActive = true
-        
-        settingImageView.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 30).isActive = true
-        settingImageView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 288).isActive = true
-        
-        label1.centerXAnchor.constraint(equalTo: containerView.centerXAnchor, constant: 0).isActive = true
-        label1.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 56).isActive = true
-        
-        kcalImageView.centerXAnchor.constraint(equalTo: containerView.centerXAnchor, constant: 0).isActive = true
-        kcalImageView.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 78).isActive = true
-        
-        dayImageView.centerXAnchor.constraint(equalTo: containerView.centerXAnchor, constant: 0).isActive = true
-        dayImageView.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 206).isActive = true
-        
-        label2.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 183).isActive = true
-        label2.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 25).isActive = true
-        
-        label3.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 184).isActive = true
-        label3.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -23).isActive = true
-        
-        label4.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 284).isActive = true
-        label4.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 25).isActive = true
-        
-        label5.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 315).isActive = true
-        label5.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 25).isActive = true
-        
-        subView.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 349).isActive = true
-        subView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 24).isActive = true
-        subView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -24).isActive = true
-        subView.heightAnchor.constraint(equalToConstant: 156).isActive = true
-        
-        titleImageView.topAnchor.constraint(equalTo: subView.topAnchor, constant: 22).isActive = true
-        titleImageView.trailingAnchor.constraint(equalTo: subView.trailingAnchor, constant: -16).isActive = true
-        
-        label.topAnchor.constraint(equalTo: subView.topAnchor, constant: 18).isActive = true
-        label.leadingAnchor.constraint(equalTo: subView.leadingAnchor, constant: 23).isActive = true
+        label.topAnchor.constraint(equalTo: planImageView.topAnchor, constant: 43).isActive = true
+        label.leadingAnchor.constraint(equalTo: planImageView.leadingAnchor, constant: 37).isActive = true
         label.widthAnchor.constraint(equalToConstant: 160).isActive = true
         
-        subImageView.topAnchor.constraint(equalTo: subView.topAnchor, constant: 61).isActive = true
-        subImageView.leadingAnchor.constraint(equalTo: subView.leadingAnchor, constant: 23).isActive = true
+        subImageView.topAnchor.constraint(equalTo: planImageView.topAnchor, constant: 93).isActive = true
+        subImageView.leadingAnchor.constraint(equalTo: planImageView.leadingAnchor, constant: 37).isActive = true
         
-        subLabel.bottomAnchor.constraint(equalTo: subView.bottomAnchor, constant: -22).isActive = true
-        subLabel.leadingAnchor.constraint(equalTo: subView.leadingAnchor, constant: 23).isActive = true
+        subLabel.bottomAnchor.constraint(equalTo: planImageView.bottomAnchor, constant: -42).isActive = true
+        subLabel.leadingAnchor.constraint(equalTo: planImageView.leadingAnchor, constant: 37).isActive = true
         
-        progessBarImageView.centerXAnchor.constraint(equalTo: subView.centerXAnchor, constant: 0).isActive = true
-        progessBarImageView.bottomAnchor.constraint(equalTo: subView.bottomAnchor, constant: -3).isActive = true
+        progessBarImageView.centerXAnchor.constraint(equalTo: planImageView.centerXAnchor, constant: 0).isActive = true
+        progessBarImageView.bottomAnchor.constraint(equalTo: planImageView.bottomAnchor, constant: -22).isActive = true
     }
     
     @objc func openMenu() {
@@ -265,4 +133,18 @@ class PlanViewController: UIViewController {
         challengerVC.modalPresentationStyle = .fullScreen
         self.present(challengerVC, animated: true, completion: nil)
     }
+}
+
+extension PlanViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+    
+    
 }

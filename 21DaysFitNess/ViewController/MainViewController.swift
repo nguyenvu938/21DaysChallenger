@@ -92,11 +92,6 @@ class MainViewController: UIViewController {
         containerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0).isActive = true
         containerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
         
-//        closeImage.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 50).isActive = true
-//        closeImage.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -10).isActive = true
-//        closeImage.widthAnchor.constraint(equalToConstant: 80).isActive = true
-//        closeImage.heightAnchor.constraint(equalToConstant: 80).isActive = true
-        
         imageView.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 0).isActive = true
         imageView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 0).isActive = true
         imageView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: 0).isActive = true
@@ -120,9 +115,9 @@ class MainViewController: UIViewController {
     }
     
     @objc func onAgreeButton() {
-        let programVC = ProgramViewController()
-        let navigation = UINavigationController(rootViewController: programVC)
-        navigation.modalPresentationStyle = .fullScreen
-        self.present(navigation, animated: true, completion: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let programVC = storyboard.instantiateViewController(identifier: "ProgramViewController") as! ProgramViewController
+        programVC.modalPresentationStyle = .fullScreen
+        self.present(programVC, animated: true, completion: nil)
     }
 }

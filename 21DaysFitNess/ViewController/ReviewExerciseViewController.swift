@@ -17,14 +17,10 @@ class ReviewExerciseViewController: UIViewController {
     @IBOutlet weak var subView: UIView!
     @IBOutlet weak var exImageView: UIImageView!
     @IBOutlet weak var exDetailTextView: UITextView!
-    
-    var exText: String = ""
-    var exImageName: String = ""
-    var exNameText: String = ""
-    var exDetailText: String = ""
+  
     var totalPage: Int = 0
-    var page: Int = 1
     var index: Int = 0
+    var listCanShow = [planModel]()
     
     let startButton: UIButton = {
         let button = UIButton()
@@ -76,12 +72,12 @@ class ReviewExerciseViewController: UIViewController {
         subView.layer.cornerRadius = 24
         subView.layer.borderWidth = 2
         subView.layer.borderColor = UIColor(red: 1.00, green: 1.00, blue: 1.00, alpha: 1.00).cgColor
-        
-        exerciseLabel.text = exText
-        exImageView.image = UIImage.gif(name: exImageName)
-        exNameLabel.text = exNameText
-        exDetailTextView.text = exDetailText
-        totalLabel.text = String(page) + "/" + String(totalPage)
+       
+        exerciseLabel.text = listCanShow[index].task_name
+        exImageView.image = UIImage.gif(name: listCanShow[index].pic_path)
+        exNameLabel.text = listCanShow[index].task_name
+        exDetailTextView.text = listCanShow[index].tts_text
+        totalLabel.text = String(index + 1) + "/" + String(totalPage)
         
         let tapBack = UITapGestureRecognizer(target: self, action: #selector(goBack))
         backImageView.addGestureRecognizer(tapBack)
@@ -121,25 +117,33 @@ class ReviewExerciseViewController: UIViewController {
     }
     
     @objc func goNext() {
-        if page < totalPage {
-            page = page + 1
+        if index < totalPage {
+            index = index + 1
         } else {
-            page = totalPage
+            index = totalPage
         }
-        totalLabel.text = String(page) + "/" + String(totalPage)
+        totalLabel.text = String(index + 1) + "/" + String(totalPage)
+        if listCanShow.count > index {
+            exerciseLabel.text = listCanShow[index].task_name
+            exImageView.image = UIImage.gif(name: listCanShow[index].pic_path)
+            exNameLabel.text = listCanShow[index].task_name
+            exDetailTextView.text = listCanShow[index].tts_text
+        }
     }
     
     @objc func goPre() {
-        if page > 1 {
-            page = page - 1
+        if index > 0 {
+            index = index - 1
         } else {
-            page = 1
+            index = 1
         }
-//        exerciseLabel.text = exText
-//        exImageView.image = UIImage.gif(name: exImageName)
-//        exNameLabel.text = exNameText
-//        exDetailTextView.text = exDetailText
-        totalLabel.text = String(page) + "/" + String(totalPage)
+        totalLabel.text = String(index + 1) + "/" + String(totalPage)
+        if listCanShow.count > index {
+            exerciseLabel.text = listCanShow[index].task_name
+            exImageView.image = UIImage.gif(name: listCanShow[index].pic_path)
+            exNameLabel.text = listCanShow[index].task_name
+            exDetailTextView.text = listCanShow[index].tts_text
+        }
     }
 
 }

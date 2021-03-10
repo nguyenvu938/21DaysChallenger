@@ -16,7 +16,7 @@ class ProgramViewController: UIViewController {
         let layout = UICollectionViewFlowLayout()
         let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
-        collectionView.register(ProgramCollectionViewCell.self, forCellWithReuseIdentifier: "ProgramCollectionViewCell")
+        collectionView.register(UINib(nibName: "ProgramCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ProgramCollectionViewCell")
         collectionView.backgroundColor = UIColor(red: 0.89, green: 0.94, blue: 0.98, alpha: 1.00)
         collectionView.showsVerticalScrollIndicator = false
         return collectionView
@@ -63,10 +63,6 @@ class ProgramViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.setNavigationBarHidden(true, animated: true)
-        self.navigationController?.navigationBar.isHidden = true
-        self.navigationController?.isNavigationBarHidden = true
-        
         addSubview()
         setupLayout()
         setupProgam()
@@ -87,7 +83,7 @@ class ProgramViewController: UIViewController {
     
     func setupLayout() {
         ellipseImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: -72).isActive = true
-        ellipseImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: -60).isActive = true
+        ellipseImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
         ellipseImageView.widthAnchor.constraint(equalToConstant: 494).isActive = true
         ellipseImageView.heightAnchor.constraint(equalToConstant: 218).isActive = true
         
@@ -107,8 +103,8 @@ class ProgramViewController: UIViewController {
         
         collectionView.topAnchor.constraint(equalTo: titleImageView.bottomAnchor, constant: 21).isActive = true
         collectionView.bottomAnchor.constraint(equalTo: planButton.topAnchor, constant: -36).isActive = true
-        collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 24).isActive = true
-        collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24).isActive = true
+        collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0).isActive = true
+        collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
     }
     
     func setupProgam() {
@@ -121,8 +117,8 @@ class ProgramViewController: UIViewController {
     }
     
     @objc func onClick() {
-        let planVC = PlanViewController()
-        let navigation = UINavigationController(rootViewController: planVC)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let planVC = storyboard.instantiateViewController(identifier: "PlanViewController") as! PlanViewController
         if indexSelected == 0 {
             planVC.titleImageView.image = UIImage(named: "pic2")
             planVC.label.text = "FAT BURNING EXERCISE"
@@ -140,33 +136,35 @@ class ProgramViewController: UIViewController {
             planVC.label.text = "HIP EXERCISE"
             planVC.subImageView.image = UIImage(named: "rec5")
         }
-        navigation.modalPresentationStyle = .fullScreen
-        self.present(navigation, animated: true, completion: nil)
+        planVC.modalPresentationStyle = .fullScreen
+        self.present(planVC, animated: true, completion: nil)
     }
 }
 
 extension ProgramViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return plans.count
+        return 4
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProgramCollectionViewCell", for: indexPath) as! ProgramCollectionViewCell
-        cell.plan = plans[indexPath.row]
+        cell.exImageView.image = UIImage(named: plans[indexPath.row].titleImageName)
+        cell.nameExLabel.text = plans[indexPath.row].label
+        cell.levelExImageView.image = UIImage(named: plans[indexPath.row].subImageName)
         if self.indexSelected == indexPath.row {
-            cell.checkedImageView.image = UIImage(named: "check")
+            cell.checkImageView.image = UIImage(named: "check")
         } else {
-            cell.checkedImageView.image = UIImage()
+            cell.checkImageView.image = UIImage()
         }
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 327, height: 129)
+        return CGSize(width: 375, height: 165)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 20
+        return -10
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

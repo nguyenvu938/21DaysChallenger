@@ -111,8 +111,7 @@ class ChallengerViewController: UIViewController {
         let layout = UICollectionViewFlowLayout()
         let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
-        let nib1 = UINib(nibName: "ChallengerCollectionViewCell", bundle: nil)
-        collectionView.register(nib1, forCellWithReuseIdentifier: "ChallengerCollectionViewCell")
+        collectionView.register(UINib(nibName: "ChallengerCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ChallengerCollectionViewCell")
         collectionView.backgroundColor = UIColor(red: 0.89, green: 0.94, blue: 0.98, alpha: 1.00)
         collectionView.showsVerticalScrollIndicator = false
         return collectionView
