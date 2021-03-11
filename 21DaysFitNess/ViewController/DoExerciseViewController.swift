@@ -29,9 +29,13 @@ class DoExerciseViewController: UIViewController {
     
     var isRun: Bool = true
     var d: String = ""
-    var doImageView: String = ""
-    var doNameLabel: String = ""
-    var doTimeLabel: String = ""
+    var doExTimeLabel: String = ""
+    var doExImageView: String = ""
+    var doExNameLabel: String = ""
+    var index: Int = 0
+    var dataNextImageView: String = ""
+    var dataNextExLabel: String = ""
+    var dataNextTimeLabel: String = ""
     
     let timeLeftShapeLayer = CAShapeLayer()
     let bgShapeLayer = CAShapeLayer()
@@ -49,9 +53,9 @@ class DoExerciseViewController: UIViewController {
         
         planImageView.layer.cornerRadius = 20
         dayLabel.text = d
-        exImageView.image = UIImage.gif(name: doImageView)
-        exNameLabel.text = doNameLabel
-        exTimeLabel.text = doTimeLabel
+        exImageView.image = UIImage.gif(name: doExImageView)
+        exNameLabel.text = doExNameLabel
+        exTimeLabel.text = doExTimeLabel
         
         let tapRun = UITapGestureRecognizer(target: self, action: #selector(goRun))
         playImageView.addGestureRecognizer(tapRun)
@@ -62,6 +66,10 @@ class DoExerciseViewController: UIViewController {
         let tapBack = UITapGestureRecognizer(target: self, action: #selector(goBack))
         backImageView.addGestureRecognizer(tapBack)
         backImageView.isUserInteractionEnabled = true
+        
+        let tapSkip = UITapGestureRecognizer(target: self, action: #selector(goSkip))
+        skipLabel.addGestureRecognizer(tapSkip)
+        skipLabel.isUserInteractionEnabled = true
         
 //        drawBgShape()
         drawTimeLeftShape()
@@ -93,6 +101,20 @@ class DoExerciseViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
+    @objc func goSkip() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let doExercise2VC = storyboard.instantiateViewController(identifier: "DoExercise2ViewController") as! DoExercise2ViewController
+        doExercise2VC.dataDayLabel = d
+        doExercise2VC.dataExImageView = doExImageView
+        doExercise2VC.dataExLabel = doExNameLabel
+        doExercise2VC.dataNextImageView = dataNextImageView
+        doExercise2VC.dataNextExLabel = dataNextExLabel
+        doExercise2VC.dataTimeLabel = doExTimeLabel
+        doExercise2VC.dataNextImageView = dataNextTimeLabel
+        doExercise2VC.modalPresentationStyle = .fullScreen
+        self.present(doExercise2VC, animated: true, completion: nil)
+    }
+    
     func changeFunction(_ value: Bool){
         if value {
             playImageView.image = UIImage(named: "play")
@@ -104,7 +126,7 @@ class DoExerciseViewController: UIViewController {
     }
     
 //    func drawBgShape() {
-//        bgShapeLayer.path = UIBezierPath(arcCenter: CGPoint(x: view.frame.midX , y: subImageView.frame.midY-3), radius:
+//        bgShapeLayer.path = UIBezierPath(arcCenter: CGPoint(x: view.frame.midX , y: subImageView.frame.midY-4), radius:
 //            40, startAngle: -90.degreesToRadians, endAngle: 270.degreesToRadians, clockwise: true).cgPath
 //        bgShapeLayer.strokeColor = UIColor.white.cgColor
 //        bgShapeLayer.fillColor = UIColor.clear.cgColor
@@ -113,7 +135,7 @@ class DoExerciseViewController: UIViewController {
 //    }
     
     func drawTimeLeftShape() {
-        timeLeftShapeLayer.path = UIBezierPath(arcCenter: CGPoint(x: view.frame.midX , y: subImageView.frame.midY-3), radius:
+        timeLeftShapeLayer.path = UIBezierPath(arcCenter: CGPoint(x: view.frame.midX , y: subImageView.frame.midY-4), radius:
             40, startAngle: -90.degreesToRadians, endAngle: 270.degreesToRadians, clockwise: true).cgPath
         timeLeftShapeLayer.strokeColor = UIColor.red.cgColor
         timeLeftShapeLayer.fillColor = UIColor.clear.cgColor
@@ -122,7 +144,7 @@ class DoExerciseViewController: UIViewController {
     }
     
     func addTimeLabel() {
-        timeLabel = UILabel(frame: CGRect(x: view.frame.midX-40 ,y: subImageView.frame.midY-28, width: 80, height: 50))
+        timeLabel = UILabel(frame: CGRect(x: view.frame.midX-40 ,y: subImageView.frame.midY-29, width: 80, height: 50))
         timeLabel.textAlignment = .center
         timeLabel.text = timeLeft.time
         view.addSubview(timeLabel)

@@ -20,8 +20,10 @@
 		E726788725F8AE2A00CA1EF4 /* ProgramCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E726788525F8AE2A00CA1EF4 /* ProgramCollectionViewCell.swift */; };
 		E726788825F8AE2A00CA1EF4 /* ProgramCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E726788625F8AE2A00CA1EF4 /* ProgramCollectionViewCell.xib */; };
 		E726788C25F8B3A700CA1EF4 /* ProgramData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E726788B25F8B3A700CA1EF4 /* ProgramData.swift */; };
-		E726789625F8FCB900CA1EF4 /* PlanTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E726789425F8FCB900CA1EF4 /* PlanTableViewCell.swift */; };
-		E726789725F8FCB900CA1EF4 /* PlanTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E726789525F8FCB900CA1EF4 /* PlanTableViewCell.xib */; };
+		E726789D25F9CA8D00CA1EF4 /* PlanCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E726789B25F9CA8D00CA1EF4 /* PlanCollectionViewCell.swift */; };
+		E726789E25F9CA8D00CA1EF4 /* PlanCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E726789C25F9CA8D00CA1EF4 /* PlanCollectionViewCell.xib */; };
+		E72678A125F9CCF200CA1EF4 /* WeekModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72678A025F9CCF200CA1EF4 /* WeekModel.swift */; };
+		E72678A425F9E04900CA1EF4 /* DoExercise2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72678A325F9E04900CA1EF4 /* DoExercise2ViewController.swift */; };
 		E72719C825CAA0F100D5FA54 /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72719C725CAA0F100D5FA54 /* ReminderViewController.swift */; };
 		E72719CB25CAB57400D5FA54 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72719CA25CAB57400D5FA54 /* TimerViewController.swift */; };
 		E73DE11C25F0C38800D27ECF /* 21.gif in Resources */ = {isa = PBXBuildFile; fileRef = E73DE0F525F0C38800D27ECF /* 21.gif */; };
@@ -100,8 +102,10 @@
 		E726788525F8AE2A00CA1EF4 /* ProgramCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramCollectionViewCell.swift; sourceTree = "<group>"; };
 		E726788625F8AE2A00CA1EF4 /* ProgramCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgramCollectionViewCell.xib; sourceTree = "<group>"; };
 		E726788B25F8B3A700CA1EF4 /* ProgramData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramData.swift; sourceTree = "<group>"; };
-		E726789425F8FCB900CA1EF4 /* PlanTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanTableViewCell.swift; sourceTree = "<group>"; };
-		E726789525F8FCB900CA1EF4 /* PlanTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlanTableViewCell.xib; sourceTree = "<group>"; };
+		E726789B25F9CA8D00CA1EF4 /* PlanCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanCollectionViewCell.swift; sourceTree = "<group>"; };
+		E726789C25F9CA8D00CA1EF4 /* PlanCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlanCollectionViewCell.xib; sourceTree = "<group>"; };
+		E72678A025F9CCF200CA1EF4 /* WeekModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekModel.swift; sourceTree = "<group>"; };
+		E72678A325F9E04900CA1EF4 /* DoExercise2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoExercise2ViewController.swift; sourceTree = "<group>"; };
 		E72719C725CAA0F100D5FA54 /* ReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
 		E72719CA25CAB57400D5FA54 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		E73DE0F525F0C38800D27ECF /* 21.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 21.gif; sourceTree = "<group>"; };
@@ -207,8 +211,8 @@
 				E726788525F8AE2A00CA1EF4 /* ProgramCollectionViewCell.swift */,
 				E726788625F8AE2A00CA1EF4 /* ProgramCollectionViewCell.xib */,
 				E71F887025C004EE000C38E0 /* PlanViewController.swift */,
-				E726789425F8FCB900CA1EF4 /* PlanTableViewCell.swift */,
-				E726789525F8FCB900CA1EF4 /* PlanTableViewCell.xib */,
+				E726789B25F9CA8D00CA1EF4 /* PlanCollectionViewCell.swift */,
+				E726789C25F9CA8D00CA1EF4 /* PlanCollectionViewCell.xib */,
 				E71F887525C1299B000C38E0 /* MenuViewController.swift */,
 				E71F887D25C12C95000C38E0 /* MenuTableViewCell.swift */,
 				E71F887E25C12C95000C38E0 /* MenuTableViewCell.xib */,
@@ -223,6 +227,7 @@
 				E77C9D7D25E6274A003D9277 /* ExcerciseCollectionViewCell.xib */,
 				E73DE14625F0C4BF00D27ECF /* ReviewExerciseViewController.swift */,
 				E704E6A225F6085700AD0379 /* DoExerciseViewController.swift */,
+				E72678A325F9E04900CA1EF4 /* DoExercise2ViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -234,6 +239,7 @@
 				E71F888225C1333B000C38E0 /* MenuData.swift */,
 				E76DE1A025CBA83200A373BD /* DayDataModel.swift */,
 				E77C9E3425ECEC35003D9277 /* PlanData.swift */,
+				E72678A025F9CCF200CA1EF4 /* WeekModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -433,7 +439,6 @@
 				E7FD5C8A25ABF67600CFFB1E /* Assets.xcassets in Resources */,
 				E77C9E2B25E8A83B003D9277 /* plan_LEG_FAT_BURNING_EXERCISE.json in Resources */,
 				E73DE12A25F0C38800D27ECF /* 30.gif in Resources */,
-				E726789725F8FCB900CA1EF4 /* PlanTableViewCell.xib in Resources */,
 				E73DE12B25F0C38800D27ECF /* 31.gif in Resources */,
 				E73DE12D25F0C38800D27ECF /* 19.gif in Resources */,
 				E73DE12225F0C38800D27ECF /* 36.gif in Resources */,
@@ -447,6 +452,7 @@
 				E71F888025C12C95000C38E0 /* MenuTableViewCell.xib in Resources */,
 				E7FD5C8825ABF67300CFFB1E /* Main.storyboard in Resources */,
 				E73DE12425F0C38800D27ECF /* 23.gif in Resources */,
+				E726789E25F9CA8D00CA1EF4 /* PlanCollectionViewCell.xib in Resources */,
 				E73DE12325F0C38800D27ECF /* 22.gif in Resources */,
 				E77C9E2F25ECE7DE003D9277 /* plan_default.json in Resources */,
 				E73DE12125F0C38800D27ECF /* 20.gif in Resources */,
@@ -519,10 +525,12 @@
 				E71F888325C1333B000C38E0 /* MenuData.swift in Sources */,
 				E7FD5C8125ABF67300CFFB1E /* AppDelegate.swift in Sources */,
 				E71F887125C004EE000C38E0 /* PlanViewController.swift in Sources */,
+				E72678A425F9E04900CA1EF4 /* DoExercise2ViewController.swift in Sources */,
 				E72719CB25CAB57400D5FA54 /* TimerViewController.swift in Sources */,
+				E72678A125F9CCF200CA1EF4 /* WeekModel.swift in Sources */,
 				E76DE19D25CBA0D200A373BD /* ChallengerCollectionViewCell.swift in Sources */,
-				E726789625F8FCB900CA1EF4 /* PlanTableViewCell.swift in Sources */,
 				E7FD5C8325ABF67300CFFB1E /* SceneDelegate.swift in Sources */,
+				E726789D25F9CA8D00CA1EF4 /* PlanCollectionViewCell.swift in Sources */,
 				E704E6A325F6085700AD0379 /* DoExerciseViewController.swift in Sources */,
 				E726788725F8AE2A00CA1EF4 /* ProgramCollectionViewCell.swift in Sources */,
 				E77C9E3525ECEC35003D9277 /* PlanData.swift in Sources */,

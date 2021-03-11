@@ -42,9 +42,13 @@ class ExerciseViewController: UIViewController {
     var arrId = [DayDataModel]()
     var listPlanReturn = [planModel]()
     var listCanShow = [planModel]()
-    var doImageView: String = ""
-    var doNameLabel: String = ""
-    var doTimeLabel: String = ""
+    var doExTimeLabel: String = ""
+    var doExImageView: String = ""
+    var doExNameLabel: String = ""
+    var index: Int = 0
+    var dataNextImageView: String = ""
+    var dataNextExLabel: String = ""
+    var dataNextTimeLabel: String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -96,9 +100,11 @@ class ExerciseViewController: UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let doExerciseVC = storyboard.instantiateViewController(identifier: "DoExerciseViewController") as! DoExerciseViewController
         doExerciseVC.d = d
-        doExerciseVC.doImageView = doImageView
-        doExerciseVC.doNameLabel = doNameLabel
-        doExerciseVC.doTimeLabel = doTimeLabel
+        doExerciseVC.doExTimeLabel = doExTimeLabel
+        doExerciseVC.doExImageView = doExImageView
+        doExerciseVC.doExNameLabel = doExNameLabel
+        doExerciseVC.dataNextImageView = dataNextImageView
+        doExerciseVC.dataNextExLabel = dataNextExLabel
         doExerciseVC.modalPresentationStyle = .fullScreen
         self.present(doExerciseVC, animated: true, completion: nil)
     }
@@ -121,14 +127,18 @@ extension ExerciseViewController: UICollectionViewDelegate, UICollectionViewData
         if cell.excerciseLabel.text == "PLANK"
         {
             cell.timeLabel.text = String(self.arrId[indexPath.row].time) + "s"
+            doExTimeLabel = String(self.arrId[indexPath.row].time) + "s"
+            dataNextTimeLabel = String(self.arrId[(indexPath.row)+1].time) + "s"
         } else {
             cell.timeLabel.text =  "x" + String(self.arrId[indexPath.row].time)
+            doExTimeLabel = "x" + String(self.arrId[indexPath.row].time)
+            dataNextTimeLabel = "x" + String(self.arrId[(indexPath.row)+1].time)
         }
         cell.imageView.image = UIImage.gif(name: self.listCanShow[indexPath.row].pic_path)
-        
-        doNameLabel = self.listCanShow[indexPath.row].task_name
-        doImageView = self.listCanShow[indexPath.row].pic_path
-        doTimeLabel = cell.timeLabel.text!
+        doExImageView = self.listCanShow[indexPath.row].pic_path
+        doExNameLabel = self.listCanShow[indexPath.row].task_name
+        dataNextImageView = self.listCanShow[(indexPath.row)+1].pic_path
+        dataNextExLabel = self.listCanShow[(indexPath.row)+1].task_name
         return cell
     }
     

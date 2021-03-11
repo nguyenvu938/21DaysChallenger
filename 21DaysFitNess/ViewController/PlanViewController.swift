@@ -9,9 +9,12 @@ import UIKit
 
 class PlanViewController: UIViewController {
     
+    
     @IBOutlet weak var menuImageView: UIImageView!
     @IBOutlet weak var settingImageView: UIImageView!
     @IBOutlet weak var planImageView: UIImageView!
+    @IBOutlet weak var clockInLabel: UILabel!
+    @IBOutlet weak var myTrainingLabel: UILabel!
     
     let titleImageView: UIImageView = {
         let imageView = UIImageView()
@@ -50,23 +53,27 @@ class PlanViewController: UIViewController {
         return image
     }()
     
-    let tableView: UITableView = {
-        let tableView = UITableView()
-        tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.backgroundColor = UIColor(red: 0.89, green: 0.94, blue: 0.98, alpha: 1.00)
-        tableView.separatorStyle = .none
-        tableView.register(UINib(nibName: "MenuTableViewCell", bundle: nil), forCellReuseIdentifier: "MenuTableViewCell")
-        return tableView
+    let collectionView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        collectionView.register(UINib(nibName: "PlanCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "PlanCollectionViewCell")
+        collectionView.backgroundColor = .none
+        collectionView.showsVerticalScrollIndicator = false
+        return collectionView
     }()
+    
+    var weekDay = [weekModel]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         addSubview()
         setupLayout()
+        setupWeekDay()
         
-        tableView.dataSource = self
-        tableView.delegate = self
+        collectionView.dataSource = self
+        collectionView.delegate = self
         
         view.backgroundColor = UIColor(red: 0.89, green: 0.94, blue: 0.98, alpha: 1.00)
         
@@ -89,6 +96,7 @@ class PlanViewController: UIViewController {
         planImageView.addSubview(label)
         planImageView.addSubview(subLabel)
         planImageView.addSubview(progessBarImageView)
+        view.addSubview(collectionView)
     }
     
     
@@ -109,6 +117,24 @@ class PlanViewController: UIViewController {
         
         progessBarImageView.centerXAnchor.constraint(equalTo: planImageView.centerXAnchor, constant: 0).isActive = true
         progessBarImageView.bottomAnchor.constraint(equalTo: planImageView.bottomAnchor, constant: -22).isActive = true
+        
+        collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 25).isActive = true
+        collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -25).isActive = true
+        collectionView.topAnchor.constraint(equalTo: clockInLabel.bottomAnchor, constant: 6).isActive = true
+        collectionView.bottomAnchor.constraint(equalTo: myTrainingLabel.topAnchor, constant: -40).isActive = true
+        
+    }
+    
+    func setupWeekDay() {
+        let sun = weekModel(dayLabel: "SUN", checkImage: "circlegray")
+        let mon = weekModel(dayLabel: "MON", checkImage: "circlegray")
+        let tue = weekModel(dayLabel: "TUE", checkImage: "circlegray")
+        let wed = weekModel(dayLabel: "WED", checkImage: "circlegray")
+        let thu = weekModel(dayLabel: "THU", checkImage: "circlegray")
+        let fri = weekModel(dayLabel: "FRI", checkImage: "circlegray")
+        let sat = weekModel(dayLabel: "SAT", checkImage: "circlegray")
+        
+        weekDay = [sun, mon, tue, wed, thu, fri, sat]
     }
     
     @objc func openMenu() {
@@ -135,16 +161,20 @@ class PlanViewController: UIViewController {
     }
 }
 
-extension PlanViewController: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+extension PlanViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 7
     }
     
-    
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PlanCollectionViewCell", for: indexPath) as! PlanCollectionViewCell
+        cell.dayLabel.text = weekDay[indexPath.row].dayLabel
+        cell.checkImageView.image = UIImage(named: weekDay[indexPath.row].checkImage)
+        return cell
     }
     
-    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let size = (collectionView.frame.size.width)/9
+        return CGSize(width: size, height: 50)
+    }
 }
