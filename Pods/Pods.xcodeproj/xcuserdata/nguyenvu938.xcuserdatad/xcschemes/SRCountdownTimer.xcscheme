@@ -14,9 +14,9 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "46FA1E1D7ABC29B96888E2D9085D474F"
-               BuildableName = "MBCircularProgressBar.framework"
-               BlueprintName = "MBCircularProgressBar"
+               BlueprintIdentifier = "A32423E0D02E0A41B4E900FB52F6D139"
+               BuildableName = "SRCountdownTimer.framework"
+               BlueprintName = "SRCountdownTimer"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

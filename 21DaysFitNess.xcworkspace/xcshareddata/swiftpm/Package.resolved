@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "GCProgressView",
+        "repositoryURL": "https://github.com/graycampbell/GCProgressView",
+        "state": {
+          "branch": null,
+          "revision": "998a3a6f7aa8236f0b910b8e314947d2c847e145",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
