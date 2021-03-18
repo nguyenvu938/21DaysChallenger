@@ -20,15 +20,15 @@ class DoExercise2ViewController: UIViewController {
     @IBOutlet weak var nextTimeLabel: UILabel!
     @IBOutlet weak var planImageView: UIImageView!
     @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var progressView: UIProgressView!
     
     let playImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.image = UIImage(named: "play")
+        imageView.image = UIImage(named: "pause")
         return imageView
     }()
     
-    var isRun: Bool = true
     var dataDayLabel: String = ""
     var dataExImageView: String = ""
     var dataExLabel: String = ""
@@ -36,11 +36,19 @@ class DoExercise2ViewController: UIViewController {
     var dataNextImageView: String = ""
     var dataNextExLabel: String = ""
     var dataNextTimeLabel: String = ""
+    var isRed = false
+    var progressBarTimer: Timer!
+    var isRunning = false
+    var rep: Int = 0
+    var isRun: Bool = true
+    var timer = Timer()
+    var progress = Progress()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupLayout()
+        startTimer()
         
         planImageView.layer.cornerRadius = 20
         dayLabel.text = dataDayLabel
@@ -51,15 +59,27 @@ class DoExercise2ViewController: UIViewController {
         nextExLabel.text = dataNextExLabel
         nextTimeLabel.text = dataNextTimeLabel
         
-        let tapRun = UITapGestureRecognizer(target: self, action: #selector(goRun))
-        playImageView.addGestureRecognizer(tapRun)
-        playImageView.isUserInteractionEnabled = true
-        runImageView.addGestureRecognizer(tapRun)
-        runImageView.isUserInteractionEnabled = true
+        
+        progressView.layer.cornerRadius = 13
+        progressView.progress = 0.0
+        progress.totalUnitCount = Int64(rep)
+        progress.completedUnitCount = 0
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (timer) in
+            guard self.progress.isFinished == false else {
+                timer.invalidate()
+                return
+            }
+            self.progress.completedUnitCount += 1
+            self.progressView.setProgress(Float(self.progress.fractionCompleted), animated: true)
+        }
         
         let tapBack = UITapGestureRecognizer(target: self, action: #selector(goBack))
         backImageView.addGestureRecognizer(tapBack)
         backImageView.isUserInteractionEnabled = true
+        
+        let tapRun = UITapGestureRecognizer(target: self, action: #selector(goRun))
+        runImageView.addGestureRecognizer(tapRun)
+        runImageView.isUserInteractionEnabled = true
     }
     
     func setupLayout() {
@@ -69,23 +89,55 @@ class DoExercise2ViewController: UIViewController {
         playImageView.centerYAnchor.constraint(equalTo: runImageView.centerYAnchor, constant: -2).isActive = true
     }
     
+    @objc func goBack() {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    func startTimer() {
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
+    }
+    
+    @objc func updateTime() {
+        if rep != 0 {
+            rep -= 1
+            if dataExLabel == "PLANK" {
+                timeLabel.text = String(rep) + "s"
+            } else {
+                timeLabel.text = "x" + String(rep)
+            }
+        } else {
+            timer.invalidate()
+            let aler = UIAlertController(title: "Completed", message: "Do you want to go next round?", preferredStyle: UIAlertController.Style.alert)
+            aler.addAction(UIAlertAction(title: "Yes", style: UIAlertAction.Style.default, handler: { (UIAlertAction) in
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let doExerciseVC = storyboard.instantiateViewController(identifier: "DoExerciseViewController") as! DoExerciseViewController
+                doExerciseVC.modalPresentationStyle = .fullScreen
+                self.present(doExerciseVC, animated: true, completion: nil)
+            }))
+            aler.addAction(UIAlertAction(title: "No", style: UIAlertAction.Style.default, handler: { (UIAlertAction) in
+                self.dismiss(animated: true, completion: nil)
+            }))
+            self.present(aler, animated: true, completion: nil)
+        }
+    }
+    
     @objc func goRun() {
         changeFunction(isRun)
+        if isRun == true {
+            timer.fireDate = Date.distantFuture
+        } else {
+            timer.fireDate = Date()
+        }
         isRun = !isRun
     }
     
     func changeFunction(_ value: Bool){
         if value {
-            playImageView.image = UIImage(named: "play")
             playImageView.image = UIImage(named: "pause")
+            playImageView.image = UIImage(named: "play")
         } else {
-            playImageView.image = UIImage(named: "pause")
             playImageView.image = UIImage(named: "play")
+            playImageView.image = UIImage(named: "pause")
         }
     }
-    
-    @objc func goBack() {
-        self.dismiss(animated: true, completion: nil)
-    }
-
 }

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,6 +24,7 @@
 		E726789E25F9CA8D00CA1EF4 /* PlanCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E726789C25F9CA8D00CA1EF4 /* PlanCollectionViewCell.xib */; };
 		E72678A125F9CCF200CA1EF4 /* WeekModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72678A025F9CCF200CA1EF4 /* WeekModel.swift */; };
 		E72678A425F9E04900CA1EF4 /* DoExercise2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72678A325F9E04900CA1EF4 /* DoExercise2ViewController.swift */; };
+		E72678C325FF1C0600CA1EF4 /* GCProgressView in Frameworks */ = {isa = PBXBuildFile; productRef = E72678C225FF1C0600CA1EF4 /* GCProgressView */; };
 		E72719C825CAA0F100D5FA54 /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72719C725CAA0F100D5FA54 /* ReminderViewController.swift */; };
 		E72719CB25CAB57400D5FA54 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72719CA25CAB57400D5FA54 /* TimerViewController.swift */; };
 		E73DE11C25F0C38800D27ECF /* 21.gif in Resources */ = {isa = PBXBuildFile; fileRef = E73DE0F525F0C38800D27ECF /* 21.gif */; };
@@ -69,7 +70,7 @@
 		E76DE19925CB974D00A373BD /* ChallengerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76DE19825CB974D00A373BD /* ChallengerViewController.swift */; };
 		E76DE19D25CBA0D200A373BD /* ChallengerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76DE19B25CBA0D200A373BD /* ChallengerCollectionViewCell.swift */; };
 		E76DE19E25CBA0D200A373BD /* ChallengerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E76DE19C25CBA0D200A373BD /* ChallengerCollectionViewCell.xib */; };
-		E76DE1A125CBA83200A373BD /* DayDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76DE1A025CBA83200A373BD /* DayDataModel.swift */; };
+		E76DE1A125CBA83200A373BD /* DayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76DE1A025CBA83200A373BD /* DayModel.swift */; };
 		E77C9D7425E620B3003D9277 /* ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77C9D7325E620B3003D9277 /* ExerciseViewController.swift */; };
 		E77C9D7E25E6274A003D9277 /* ExcerciseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77C9D7C25E6274A003D9277 /* ExcerciseCollectionViewCell.swift */; };
 		E77C9D7F25E6274A003D9277 /* ExcerciseCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E77C9D7D25E6274A003D9277 /* ExcerciseCollectionViewCell.xib */; };
@@ -151,7 +152,7 @@
 		E76DE19825CB974D00A373BD /* ChallengerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengerViewController.swift; sourceTree = "<group>"; };
 		E76DE19B25CBA0D200A373BD /* ChallengerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengerCollectionViewCell.swift; sourceTree = "<group>"; };
 		E76DE19C25CBA0D200A373BD /* ChallengerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChallengerCollectionViewCell.xib; sourceTree = "<group>"; };
-		E76DE1A025CBA83200A373BD /* DayDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDataModel.swift; sourceTree = "<group>"; };
+		E76DE1A025CBA83200A373BD /* DayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayModel.swift; sourceTree = "<group>"; };
 		E77C9D7325E620B3003D9277 /* ExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewController.swift; sourceTree = "<group>"; };
 		E77C9D7C25E6274A003D9277 /* ExcerciseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcerciseCollectionViewCell.swift; sourceTree = "<group>"; };
 		E77C9D7D25E6274A003D9277 /* ExcerciseCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExcerciseCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -179,6 +180,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E72678C325FF1C0600CA1EF4 /* GCProgressView in Frameworks */,
 				4EDD575C93A2C7F7077520DA /* Pods_21DaysFitNess.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,7 +239,7 @@
 			children = (
 				E726788B25F8B3A700CA1EF4 /* ProgramData.swift */,
 				E71F888225C1333B000C38E0 /* MenuData.swift */,
-				E76DE1A025CBA83200A373BD /* DayDataModel.swift */,
+				E76DE1A025CBA83200A373BD /* DayModel.swift */,
 				E77C9E3425ECEC35003D9277 /* PlanData.swift */,
 				E72678A025F9CCF200CA1EF4 /* WeekModel.swift */,
 			);
@@ -366,6 +368,9 @@
 			dependencies = (
 			);
 			name = 21DaysFitNess;
+			packageProductDependencies = (
+				E72678C225FF1C0600CA1EF4 /* GCProgressView */,
+			);
 			productName = 21DaysFitNess;
 			productReference = E7FD5C7D25ABF67300CFFB1E /* 21DaysFitNess.app */;
 			productType = "com.apple.product-type.application";
@@ -393,6 +398,9 @@
 				Base,
 			);
 			mainGroup = E7FD5C7425ABF67300CFFB1E;
+			packageReferences = (
+				E72678C125FF1C0500CA1EF4 /* XCRemoteSwiftPackageReference "GCProgressView" */,
+			);
 			productRefGroup = E7FD5C7E25ABF67300CFFB1E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -534,7 +542,7 @@
 				E704E6A325F6085700AD0379 /* DoExerciseViewController.swift in Sources */,
 				E726788725F8AE2A00CA1EF4 /* ProgramCollectionViewCell.swift in Sources */,
 				E77C9E3525ECEC35003D9277 /* PlanData.swift in Sources */,
-				E76DE1A125CBA83200A373BD /* DayDataModel.swift in Sources */,
+				E76DE1A125CBA83200A373BD /* DayModel.swift in Sources */,
 				E77C9D7425E620B3003D9277 /* ExerciseViewController.swift in Sources */,
 				E71F888625C14A91000C38E0 /* SettingViewController.swift in Sources */,
 			);
@@ -740,6 +748,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E72678C125FF1C0500CA1EF4 /* XCRemoteSwiftPackageReference "GCProgressView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/graycampbell/GCProgressView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E72678C225FF1C0600CA1EF4 /* GCProgressView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E72678C125FF1C0500CA1EF4 /* XCRemoteSwiftPackageReference "GCProgressView" */;
+			productName = GCProgressView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E7FD5C7525ABF67300CFFB1E /* Project object */;
 }

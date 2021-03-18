@@ -7,8 +7,9 @@
 
 import UIKit
 import SwiftGifOrigin
+import SRCountdownTimer
 
-class DoExerciseViewController: UIViewController {
+class DoExerciseViewController: UIViewController, SRCountdownTimerDelegate {
 
     @IBOutlet weak var backImageView: UIImageView!
     @IBOutlet weak var dayLabel: UILabel!
@@ -19,11 +20,12 @@ class DoExerciseViewController: UIViewController {
     @IBOutlet weak var exTimeLabel: UILabel!
     @IBOutlet weak var subImageView: UIImageView!
     @IBOutlet weak var planImageView: UIImageView!
+    @IBOutlet weak var countdownTimer: SRCountdownTimer!
     
     let playImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.image = UIImage(named: "play")
+        imageView.image = UIImage(named: "pause")
         return imageView
     }()
     
@@ -36,15 +38,7 @@ class DoExerciseViewController: UIViewController {
     var dataNextImageView: String = ""
     var dataNextExLabel: String = ""
     var dataNextTimeLabel: String = ""
-    
-    let timeLeftShapeLayer = CAShapeLayer()
-    let bgShapeLayer = CAShapeLayer()
-    var timeLeft: TimeInterval = 10
-    var endTime: Date?
-    var timeLabel =  UILabel()
-    var timer = Timer()
-    let strokeIt = CABasicAnimation(keyPath: "strokeEnd")
-    
+    var rep: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,9 +51,17 @@ class DoExerciseViewController: UIViewController {
         exNameLabel.text = doExNameLabel
         exTimeLabel.text = doExTimeLabel
         
+        countdownTimer.backgroundColor = .clear
+        countdownTimer.labelFont = UIFont.systemFont(ofSize: 24)
+        countdownTimer.labelTextColor = UIColor(red: 1.00, green: 0.25, blue: 0.42, alpha: 1.00)
+//        countdownTimer.timerFinishingText = "0"
+        countdownTimer.lineWidth = 3
+        countdownTimer.lineColor = UIColor(red: 1.00, green: 0.25, blue: 0.42, alpha: 1.00)
+        countdownTimer.trailLineColor = .clear
+        countdownTimer.start(beginingValue: 15, interval: 1)
+        countdownTimer.delegate = self
+        
         let tapRun = UITapGestureRecognizer(target: self, action: #selector(goRun))
-        playImageView.addGestureRecognizer(tapRun)
-        playImageView.isUserInteractionEnabled = true
         runImageView.addGestureRecognizer(tapRun)
         runImageView.isUserInteractionEnabled = true
         
@@ -70,19 +72,6 @@ class DoExerciseViewController: UIViewController {
         let tapSkip = UITapGestureRecognizer(target: self, action: #selector(goSkip))
         skipLabel.addGestureRecognizer(tapSkip)
         skipLabel.isUserInteractionEnabled = true
-        
-//        drawBgShape()
-        drawTimeLeftShape()
-        addTimeLabel()
-        // here you define the fromValue, toValue and duration of your animation
-        strokeIt.fromValue = 0
-        strokeIt.toValue = 1
-        strokeIt.duration = timeLeft
-        // add the animation to your timeLeftShapeLayer
-        timeLeftShapeLayer.add(strokeIt, forKey: nil)
-        // define the future end time by adding the timeLeft to now Date()
-        endTime = Date().addingTimeInterval(timeLeft)
-        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
     }
     
     func setupLayout() {
@@ -94,7 +83,22 @@ class DoExerciseViewController: UIViewController {
     
     @objc func goRun() {
         changeFunction(isRun)
+        if isRun == true {
+            countdownTimer.pause()
+        } else {
+            countdownTimer.resume()
+        }
         isRun = !isRun
+    }
+    
+    func changeFunction(_ value: Bool){
+        if value {
+            playImageView.image = UIImage(named: "pause")
+            playImageView.image = UIImage(named: "play")
+        } else {
+            playImageView.image = UIImage(named: "play")
+            playImageView.image = UIImage(named: "pause")
+        }
     }
     
     @objc func goBack() {
@@ -105,69 +109,29 @@ class DoExerciseViewController: UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let doExercise2VC = storyboard.instantiateViewController(identifier: "DoExercise2ViewController") as! DoExercise2ViewController
         doExercise2VC.dataDayLabel = d
+        doExercise2VC.rep = rep
         doExercise2VC.dataExImageView = doExImageView
         doExercise2VC.dataExLabel = doExNameLabel
         doExercise2VC.dataNextImageView = dataNextImageView
         doExercise2VC.dataNextExLabel = dataNextExLabel
         doExercise2VC.dataTimeLabel = doExTimeLabel
-        doExercise2VC.dataNextImageView = dataNextTimeLabel
+        doExercise2VC.dataNextTimeLabel = dataNextTimeLabel
         doExercise2VC.modalPresentationStyle = .fullScreen
         self.present(doExercise2VC, animated: true, completion: nil)
     }
     
-    func changeFunction(_ value: Bool){
-        if value {
-            playImageView.image = UIImage(named: "play")
-            playImageView.image = UIImage(named: "pause")
-        } else {
-            playImageView.image = UIImage(named: "pause")
-            playImageView.image = UIImage(named: "play")
-        }
-    }
-    
-//    func drawBgShape() {
-//        bgShapeLayer.path = UIBezierPath(arcCenter: CGPoint(x: view.frame.midX , y: subImageView.frame.midY-4), radius:
-//            40, startAngle: -90.degreesToRadians, endAngle: 270.degreesToRadians, clockwise: true).cgPath
-//        bgShapeLayer.strokeColor = UIColor.white.cgColor
-//        bgShapeLayer.fillColor = UIColor.clear.cgColor
-//        bgShapeLayer.lineWidth = 3
-//        view.layer.addSublayer(bgShapeLayer)
-//    }
-    
-    func drawTimeLeftShape() {
-        timeLeftShapeLayer.path = UIBezierPath(arcCenter: CGPoint(x: view.frame.midX , y: subImageView.frame.midY-4), radius:
-            40, startAngle: -90.degreesToRadians, endAngle: 270.degreesToRadians, clockwise: true).cgPath
-        timeLeftShapeLayer.strokeColor = UIColor.red.cgColor
-        timeLeftShapeLayer.fillColor = UIColor.clear.cgColor
-        timeLeftShapeLayer.lineWidth = 3
-        view.layer.addSublayer(timeLeftShapeLayer)
-    }
-    
-    func addTimeLabel() {
-        timeLabel = UILabel(frame: CGRect(x: view.frame.midX-40 ,y: subImageView.frame.midY-29, width: 80, height: 50))
-        timeLabel.textAlignment = .center
-        timeLabel.text = timeLeft.time
-        view.addSubview(timeLabel)
-    }
-    
-    @objc func updateTime() {
-        if timeLeft > 0 {
-            timeLeft = endTime?.timeIntervalSinceNow ?? 0
-            timeLabel.text = timeLeft.time
-        } else {
-            timeLabel.text = "0s"
-            timer.invalidate()
-        }
-    }
-}
-
-extension TimeInterval {
-    var time: String {
-        return String(format:"%d%ds", Int(self/60),  Int(ceil(truncatingRemainder(dividingBy: 60))) )
-    }
-}
-extension Int {
-    var degreesToRadians : CGFloat {
-        return CGFloat(self) * .pi / 180
+    func timerDidEnd(sender: SRCountdownTimer, elapsedTime: TimeInterval){
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let doExercise2VC = storyboard.instantiateViewController(identifier: "DoExercise2ViewController") as! DoExercise2ViewController
+        doExercise2VC.dataDayLabel = d
+        doExercise2VC.rep = rep
+        doExercise2VC.dataExImageView = doExImageView
+        doExercise2VC.dataExLabel = doExNameLabel
+        doExercise2VC.dataNextImageView = dataNextImageView
+        doExercise2VC.dataNextExLabel = dataNextExLabel
+        doExercise2VC.dataTimeLabel = doExTimeLabel
+        doExercise2VC.dataNextTimeLabel = dataNextTimeLabel
+        doExercise2VC.modalPresentationStyle = .fullScreen
+        self.present(doExercise2VC, animated: true, completion: nil)
     }
 }

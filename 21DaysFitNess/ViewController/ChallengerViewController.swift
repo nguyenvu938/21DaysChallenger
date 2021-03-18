@@ -118,6 +118,9 @@ class ChallengerViewController: UIViewController {
     }()
     
     var listExercise = [exerciseModel]()
+    var labelName: String = ""
+    var subImageName: String = ""
+    var titleImageName: String = ""
     
 
     override func viewDidLoad() {
@@ -125,6 +128,11 @@ class ChallengerViewController: UIViewController {
 
         setupLayout()
         setupDay()
+        
+        label.text = labelName
+        titleImageView.image = UIImage(named: titleImageName)
+        subImageView.image = UIImage(named: subImageName)
+        
         
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -206,21 +214,19 @@ class ChallengerViewController: UIViewController {
     }
     
     func setupDay() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let planVC = storyboard.instantiateViewController(identifier: "PlanViewController") as! PlanViewController
-        if planVC.label.text == "FAT BURNING EXERCISE" {
+        if labelName == "FAT BURNING EXERCISE" {
             APIService.shared.plan_FAT_BURNING_EXERCISE() {dataRepond, _ in
                 if let dataRepond = dataRepond {
                     self.listExercise = dataRepond
                 }
             }
-        } else if planVC.label.text == "WAIST EXERCISE" {
+        } else if labelName == "WAIST EXERCISE" {
             APIService.shared.plan_WAIST_EXERCISE() {dataRepond, _ in
                 if let dataRepond = dataRepond {
                     self.listExercise = dataRepond
                 }
             }
-        } else if planVC.label.text == "LEG FAT BURNING EXERCISE" {
+        } else if labelName == "LEG FAT BURNING EXERCISE" {
             APIService.shared.plan_LEG_FAT_BURNING_EXERCISE() {dataRepond, _ in
                 if let dataRepond = dataRepond {
                     self.listExercise = dataRepond

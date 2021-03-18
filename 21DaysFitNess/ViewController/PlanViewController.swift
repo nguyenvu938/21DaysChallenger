@@ -64,6 +64,9 @@ class PlanViewController: UIViewController {
     }()
     
     var weekDay = [weekModel]()
+    var labelName: String = ""
+    var subImageName: String = ""
+    var titleImageName: String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,6 +74,10 @@ class PlanViewController: UIViewController {
         addSubview()
         setupLayout()
         setupWeekDay()
+        
+        titleImageView.image = UIImage(named: titleImageName)
+        label.text = labelName
+        subImageView.image = UIImage(named: subImageName)
         
         collectionView.dataSource = self
         collectionView.delegate = self
@@ -153,9 +160,9 @@ class PlanViewController: UIViewController {
     @objc func goChallenger() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let challengerVC = storyboard.instantiateViewController(identifier: "ChallengerViewController") as! ChallengerViewController
-        challengerVC.titleImageView.image = titleImageView.image
-        challengerVC.subImageView.image = subImageView.image
-        challengerVC.label.text = label.text
+        challengerVC.titleImageName = titleImageName
+        challengerVC.subImageName = subImageName
+        challengerVC.labelName = labelName
         challengerVC.modalPresentationStyle = .fullScreen
         self.present(challengerVC, animated: true, completion: nil)
     }

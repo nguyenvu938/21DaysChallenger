@@ -502,7 +502,7 @@
                                             <constraint firstAttribute="width" constant="160" id="IA3-kh-I3d"/>
                                             <constraint firstAttribute="height" constant="30" id="dy5-OD-B3F"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -513,12 +513,20 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="round" translatesAutoresizingMaskIntoConstraints="NO" id="5wB-hE-6sQ">
-                                        <rect key="frame" x="152" y="213.5" width="110" height="110"/>
+                                        <rect key="frame" x="152" y="218.5" width="110" height="110"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="110" id="45b-y5-kko"/>
                                             <constraint firstAttribute="height" constant="110" id="e7h-Ka-Cdm"/>
                                         </constraints>
                                     </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gk0-jv-rEl" customClass="SRCountdownTimer" customModule="SRCountdownTimer">
+                                        <rect key="frame" x="166.5" y="233" width="81" height="81"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="81" id="DWx-Ts-Wck"/>
+                                            <constraint firstAttribute="width" constant="81" id="gzB-kl-Ylx"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.89411764709999997" green="0.94117647059999998" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -535,6 +543,7 @@
                                     <constraint firstItem="x9o-Io-eMa" firstAttribute="centerY" secondItem="NY9-90-SmC" secondAttribute="centerY" id="VIA-kg-WFi"/>
                                     <constraint firstItem="yPM-gH-WMk" firstAttribute="top" secondItem="aRh-4f-dnC" secondAttribute="top" constant="40" id="X9j-qV-LnJ"/>
                                     <constraint firstAttribute="trailing" secondItem="694-Fc-FTk" secondAttribute="trailing" constant="10" id="bdt-ag-C8a"/>
+                                    <constraint firstItem="Gk0-jv-rEl" firstAttribute="centerY" secondItem="aRh-4f-dnC" secondAttribute="centerY" id="dhm-my-Vjj"/>
                                     <constraint firstItem="yPM-gH-WMk" firstAttribute="centerX" secondItem="Twm-gz-yp5" secondAttribute="centerX" id="eC2-qi-hdV"/>
                                     <constraint firstItem="lTO-Aw-3jR" firstAttribute="centerX" secondItem="Twm-gz-yp5" secondAttribute="centerX" id="eXl-mr-dlU"/>
                                     <constraint firstItem="aRh-4f-dnC" firstAttribute="bottom" secondItem="y86-0m-1C6" secondAttribute="bottom" constant="45" id="fIX-Ak-hIi"/>
@@ -542,9 +551,10 @@
                                     <constraint firstItem="NY9-90-SmC" firstAttribute="centerX" secondItem="Twm-gz-yp5" secondAttribute="centerX" id="hUM-gK-Sr6"/>
                                     <constraint firstItem="694-Fc-FTk" firstAttribute="centerY" secondItem="aRh-4f-dnC" secondAttribute="centerY" id="it4-nD-c2s"/>
                                     <constraint firstItem="gyl-P2-nlF" firstAttribute="centerY" secondItem="NY9-90-SmC" secondAttribute="centerY" id="loI-jq-Bvm"/>
-                                    <constraint firstItem="5wB-hE-6sQ" firstAttribute="centerY" secondItem="aRh-4f-dnC" secondAttribute="centerY" constant="-5" id="qt1-OQ-hHw"/>
+                                    <constraint firstItem="5wB-hE-6sQ" firstAttribute="centerY" secondItem="aRh-4f-dnC" secondAttribute="centerY" id="qt1-OQ-hHw"/>
                                     <constraint firstItem="ogW-UG-f0f" firstAttribute="leading" secondItem="Twm-gz-yp5" secondAttribute="leading" constant="42" id="snC-R9-qfL"/>
                                     <constraint firstItem="sy2-qg-gP6" firstAttribute="leading" secondItem="Twm-gz-yp5" secondAttribute="leading" constant="40" id="vGd-sU-Egh"/>
+                                    <constraint firstItem="Gk0-jv-rEl" firstAttribute="centerX" secondItem="aRh-4f-dnC" secondAttribute="centerX" id="xsn-9S-gjH"/>
                                     <constraint firstItem="aRh-4f-dnC" firstAttribute="centerX" secondItem="Twm-gz-yp5" secondAttribute="centerX" id="zIe-8q-d9N"/>
                                 </constraints>
                             </view>
@@ -564,6 +574,7 @@
                     </view>
                     <connections>
                         <outlet property="backImageView" destination="4Pq-1k-fvO" id="3nk-2e-UmU"/>
+                        <outlet property="countdownTimer" destination="Gk0-jv-rEl" id="C0G-HR-kFR"/>
                         <outlet property="dayLabel" destination="lTO-Aw-3jR" id="ixL-GY-haM"/>
                         <outlet property="exImageView" destination="ogW-UG-f0f" id="yWB-7m-PQQ"/>
                         <outlet property="exNameLabel" destination="x9o-Io-eMa" id="9qT-6Z-ceR"/>
@@ -621,7 +632,7 @@
                                             <constraint firstAttribute="height" constant="30" id="7ui-fn-m5S"/>
                                             <constraint firstAttribute="width" constant="160" id="Uhl-2I-SSK"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -647,14 +658,22 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="30s" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9W-h5-eZ0">
-                                        <rect key="frame" x="24" y="438" width="34" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9W-h5-eZ0">
+                                        <rect key="frame" x="24" y="438" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="xFO-GG-rwq">
+                                        <rect key="frame" x="43" y="453" width="328" height="7"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="7" id="6U0-XP-yhs"/>
+                                            <constraint firstAttribute="width" constant="328" id="ygK-Vg-SEc"/>
+                                        </constraints>
+                                        <color key="progressTintColor" red="1" green="0.25490196079999999" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </progressView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rec" translatesAutoresizingMaskIntoConstraints="NO" id="IxW-Hh-xmC">
-                                        <rect key="frame" x="324" y="398" width="80" height="80"/>
+                                        <rect key="frame" x="324" y="438" width="80" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="80" id="XGm-Gx-PQz"/>
                                             <constraint firstAttribute="height" constant="80" id="gT6-YN-xmh"/>
@@ -674,15 +693,17 @@
                                     <constraint firstItem="RTz-SP-rRr" firstAttribute="centerX" secondItem="xev-MB-5ll" secondAttribute="centerX" id="Q2h-1x-HQN"/>
                                     <constraint firstAttribute="trailing" secondItem="3RH-D5-NIY" secondAttribute="trailing" constant="73" id="Vw3-N4-YDk"/>
                                     <constraint firstItem="6pe-Q7-s5Q" firstAttribute="top" secondItem="xev-MB-5ll" secondAttribute="top" constant="390" id="YpA-zh-90I"/>
+                                    <constraint firstItem="xFO-GG-rwq" firstAttribute="top" secondItem="y9W-h5-eZ0" secondAttribute="bottom" constant="15" id="bqb-J7-lUv"/>
                                     <constraint firstAttribute="bottom" secondItem="gfn-1H-sht" secondAttribute="bottom" constant="108.5" id="cNf-Ae-B34"/>
                                     <constraint firstItem="vFA-Zb-p86" firstAttribute="centerX" secondItem="xev-MB-5ll" secondAttribute="centerX" id="ds1-La-shC"/>
                                     <constraint firstItem="hf3-lY-4qx" firstAttribute="leading" secondItem="xev-MB-5ll" secondAttribute="leading" constant="24" id="hQq-Gp-sai"/>
+                                    <constraint firstItem="xFO-GG-rwq" firstAttribute="centerX" secondItem="xev-MB-5ll" secondAttribute="centerX" id="lTJ-Pz-bK8"/>
                                     <constraint firstAttribute="bottom" secondItem="3RH-D5-NIY" secondAttribute="bottom" constant="123" id="m5J-En-rfk"/>
                                     <constraint firstItem="xFL-bY-w5v" firstAttribute="centerX" secondItem="xev-MB-5ll" secondAttribute="centerX" id="mPP-GE-iRx"/>
                                     <constraint firstItem="y9W-h5-eZ0" firstAttribute="top" secondItem="6pe-Q7-s5Q" secondAttribute="bottom" constant="16" id="mxq-kR-6A0"/>
                                     <constraint firstItem="y9W-h5-eZ0" firstAttribute="leading" secondItem="xev-MB-5ll" secondAttribute="leading" constant="24" id="nnC-uR-UV2"/>
                                     <constraint firstItem="6pe-Q7-s5Q" firstAttribute="leading" secondItem="xev-MB-5ll" secondAttribute="leading" constant="24" id="pCL-Vd-JRM"/>
-                                    <constraint firstItem="IxW-Hh-xmC" firstAttribute="centerY" secondItem="xev-MB-5ll" secondAttribute="centerY" constant="-10" id="rAw-hL-a9M"/>
+                                    <constraint firstItem="IxW-Hh-xmC" firstAttribute="centerY" secondItem="xev-MB-5ll" secondAttribute="centerY" constant="30" id="rAw-hL-a9M"/>
                                     <constraint firstItem="gfn-1H-sht" firstAttribute="centerY" secondItem="vFA-Zb-p86" secondAttribute="centerY" id="rHc-n1-rEa"/>
                                 </constraints>
                             </view>
@@ -714,6 +735,7 @@
                         <outlet property="nextImageView" destination="gfn-1H-sht" id="g8Z-BH-5OS"/>
                         <outlet property="nextTimeLabel" destination="3RH-D5-NIY" id="VBV-e8-Gjl"/>
                         <outlet property="planImageView" destination="vFA-Zb-p86" id="K9m-FZ-gz6"/>
+                        <outlet property="progressView" destination="xFO-GG-rwq" id="FJH-ZV-NcE"/>
                         <outlet property="runImageView" destination="IxW-Hh-xmC" id="gI0-eT-oWI"/>
                         <outlet property="timeLabel" destination="y9W-h5-eZ0" id="F1c-VQ-CJ7"/>
                     </connections>

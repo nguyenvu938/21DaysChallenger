@@ -9,8 +9,12 @@ import UIKit
 import SwiftyShadow
 
 class ProgramViewController: UIViewController {
+    
     var plans = [Program]()
-    var indexSelected = -1
+    var indexSelected: Int = -1
+    var labelName: String = ""
+    var subImageName: String = ""
+    var titleImageName: String = ""
 
     let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -119,23 +123,9 @@ class ProgramViewController: UIViewController {
     @objc func onClick() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let planVC = storyboard.instantiateViewController(identifier: "PlanViewController") as! PlanViewController
-        if indexSelected == 0 {
-            planVC.titleImageView.image = UIImage(named: "pic2")
-            planVC.label.text = "FAT BURNING EXERCISE"
-            planVC.subImageView.image = UIImage(named: "rec2")
-        } else if indexSelected == 1 {
-            planVC.titleImageView.image = UIImage(named: "pic3")
-            planVC.label.text = "WAIST EXERCISE"
-            planVC.subImageView.image = UIImage(named: "rec3")
-        } else if indexSelected == 2 {
-            planVC.titleImageView.image = UIImage(named: "pic4")
-            planVC.label.text = "LEG FAT BURNING EXERCISE"
-            planVC.subImageView.image = UIImage(named: "rec4")
-        } else if indexSelected == 3 {
-            planVC.titleImageView.image = UIImage(named: "pic5")
-            planVC.label.text = "HIP EXERCISE"
-            planVC.subImageView.image = UIImage(named: "rec5")
-        }
+        planVC.titleImageName = titleImageName
+        planVC.labelName = labelName
+        planVC.subImageName = subImageName
         planVC.modalPresentationStyle = .fullScreen
         self.present(planVC, animated: true, completion: nil)
     }
@@ -151,7 +141,7 @@ extension ProgramViewController: UICollectionViewDelegate, UICollectionViewDataS
         cell.exImageView.image = UIImage(named: plans[indexPath.row].titleImageName)
         cell.nameExLabel.text = plans[indexPath.row].label
         cell.levelExImageView.image = UIImage(named: plans[indexPath.row].subImageName)
-        if self.indexSelected == indexPath.row {
+        if indexSelected == indexPath.row {
             cell.checkImageView.image = UIImage(named: "check")
         } else {
             cell.checkImageView.image = UIImage()
@@ -169,6 +159,9 @@ extension ProgramViewController: UICollectionViewDelegate, UICollectionViewDataS
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         self.indexSelected = indexPath.row
+        titleImageName = plans[indexPath.row].titleImageName
+        subImageName = plans[indexPath.row].subImageName
+        labelName = plans[indexPath.row].label
         if indexSelected != -1 {
             planButton.setTitleColor(UIColor(red: 0.20, green: 0.27, blue: 0.41, alpha: 1.00), for: .normal)
         }

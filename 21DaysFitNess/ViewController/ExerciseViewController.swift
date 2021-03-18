@@ -39,16 +39,10 @@ class ExerciseViewController: UIViewController {
     }()
     
     var d: String = ""
-    var arrId = [DayDataModel]()
+    var arrId = [DayModel]()
     var listPlanReturn = [planModel]()
     var listCanShow = [planModel]()
-    var doExTimeLabel: String = ""
-    var doExImageView: String = ""
-    var doExNameLabel: String = ""
     var index: Int = 0
-    var dataNextImageView: String = ""
-    var dataNextExLabel: String = ""
-    var dataNextTimeLabel: String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -100,11 +94,20 @@ class ExerciseViewController: UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let doExerciseVC = storyboard.instantiateViewController(identifier: "DoExerciseViewController") as! DoExerciseViewController
         doExerciseVC.d = d
-        doExerciseVC.doExTimeLabel = doExTimeLabel
-        doExerciseVC.doExImageView = doExImageView
-        doExerciseVC.doExNameLabel = doExNameLabel
-        doExerciseVC.dataNextImageView = dataNextImageView
-        doExerciseVC.dataNextExLabel = dataNextExLabel
+        if index <= listCanShow.count {
+            doExerciseVC.rep = arrId[index].time
+            doExerciseVC.doExImageView = listCanShow[index].pic_path
+            doExerciseVC.doExNameLabel = listCanShow[index].task_name
+            doExerciseVC.dataNextImageView = listCanShow[index+1].pic_path
+            doExerciseVC.dataNextExLabel = listCanShow[index+1].task_name
+            if listCanShow[index].task_name == "PLANK" {
+                doExerciseVC.doExTimeLabel = String(arrId[index].time) + "s"
+                doExerciseVC.dataNextTimeLabel = String(arrId[index+1].time) + "s"
+            } else {
+                doExerciseVC.doExTimeLabel = "x" + String(arrId[index].time)
+                doExerciseVC.dataNextTimeLabel = "x" + String(arrId[index+1].time)
+            }
+        }
         doExerciseVC.modalPresentationStyle = .fullScreen
         self.present(doExerciseVC, animated: true, completion: nil)
     }
@@ -124,21 +127,13 @@ extension ExerciseViewController: UICollectionViewDelegate, UICollectionViewData
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ExcerciseCollectionViewCell", for: indexPath) as! ExcerciseCollectionViewCell
         cell.excerciseLabel.text = self.listCanShow[indexPath.row].task_name
-        if cell.excerciseLabel.text == "PLANK"
+        if self.listCanShow[indexPath.row].task_name == "PLANK"
         {
             cell.timeLabel.text = String(self.arrId[indexPath.row].time) + "s"
-            doExTimeLabel = String(self.arrId[indexPath.row].time) + "s"
-            dataNextTimeLabel = String(self.arrId[(indexPath.row)+1].time) + "s"
         } else {
             cell.timeLabel.text =  "x" + String(self.arrId[indexPath.row].time)
-            doExTimeLabel = "x" + String(self.arrId[indexPath.row].time)
-            dataNextTimeLabel = "x" + String(self.arrId[(indexPath.row)+1].time)
         }
         cell.imageView.image = UIImage.gif(name: self.listCanShow[indexPath.row].pic_path)
-        doExImageView = self.listCanShow[indexPath.row].pic_path
-        doExNameLabel = self.listCanShow[indexPath.row].task_name
-        dataNextImageView = self.listCanShow[(indexPath.row)+1].pic_path
-        dataNextExLabel = self.listCanShow[(indexPath.row)+1].task_name
         return cell
     }
     
@@ -151,6 +146,7 @@ extension ExerciseViewController: UICollectionViewDelegate, UICollectionViewData
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        index = indexPath.row
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let reviewExerciseVC = storyboard.instantiateViewController(identifier: "ReviewExerciseViewController") as! ReviewExerciseViewController
         reviewExerciseVC.totalPage = self.listCanShow.count
