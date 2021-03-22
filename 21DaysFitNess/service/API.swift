@@ -1,13 +1,11 @@
 //
-//  APIService.swift
-//  Bai1LamQuenJSON
+//  API.swift
+//  21DaysFitNess
 //
-//  Created by hehehe on 6/23/20.
-//  Copyright © 2020 hehehe. All rights reserved.
+//  Created by Nguyen Vu on 22/03/2021.
 //
 
-import UIKit
-
+import Foundation
 typealias ApiCompletion = (_ data: Any?, _ error: Error?) -> ()
 
 typealias ApiParam = [String: Any]

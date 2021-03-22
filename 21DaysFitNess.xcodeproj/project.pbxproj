@@ -25,6 +25,7 @@
 		E72678A125F9CCF200CA1EF4 /* WeekModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72678A025F9CCF200CA1EF4 /* WeekModel.swift */; };
 		E72678A425F9E04900CA1EF4 /* DoExercise2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72678A325F9E04900CA1EF4 /* DoExercise2ViewController.swift */; };
 		E72678C325FF1C0600CA1EF4 /* GCProgressView in Frameworks */ = {isa = PBXBuildFile; productRef = E72678C225FF1C0600CA1EF4 /* GCProgressView */; };
+		E72678CF2608A30600CA1EF4 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72678CE2608A30600CA1EF4 /* API.swift */; };
 		E72719C825CAA0F100D5FA54 /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72719C725CAA0F100D5FA54 /* ReminderViewController.swift */; };
 		E72719CB25CAB57400D5FA54 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72719CA25CAB57400D5FA54 /* TimerViewController.swift */; };
 		E73DE11C25F0C38800D27ECF /* 21.gif in Resources */ = {isa = PBXBuildFile; fileRef = E73DE0F525F0C38800D27ECF /* 21.gif */; };
@@ -74,7 +75,6 @@
 		E77C9D7425E620B3003D9277 /* ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77C9D7325E620B3003D9277 /* ExerciseViewController.swift */; };
 		E77C9D7E25E6274A003D9277 /* ExcerciseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77C9D7C25E6274A003D9277 /* ExcerciseCollectionViewCell.swift */; };
 		E77C9D7F25E6274A003D9277 /* ExcerciseCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E77C9D7D25E6274A003D9277 /* ExcerciseCollectionViewCell.xib */; };
-		E77C9E1B25E64AAF003D9277 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77C9E1A25E64AAE003D9277 /* APIService.swift */; };
 		E77C9E2025E64E24003D9277 /* plan_FAT_BURNING_EXERCISE.json in Resources */ = {isa = PBXBuildFile; fileRef = E77C9E1F25E64E24003D9277 /* plan_FAT_BURNING_EXERCISE.json */; };
 		E77C9E2425E8A7E2003D9277 /* plan_WAIST_EXERCISE.json in Resources */ = {isa = PBXBuildFile; fileRef = E77C9E2325E8A7E2003D9277 /* plan_WAIST_EXERCISE.json */; };
 		E77C9E2725E8A807003D9277 /* plan_HIP_EXERCISE.json in Resources */ = {isa = PBXBuildFile; fileRef = E77C9E2625E8A807003D9277 /* plan_HIP_EXERCISE.json */; };
@@ -107,6 +107,7 @@
 		E726789C25F9CA8D00CA1EF4 /* PlanCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlanCollectionViewCell.xib; sourceTree = "<group>"; };
 		E72678A025F9CCF200CA1EF4 /* WeekModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekModel.swift; sourceTree = "<group>"; };
 		E72678A325F9E04900CA1EF4 /* DoExercise2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoExercise2ViewController.swift; sourceTree = "<group>"; };
+		E72678CE2608A30600CA1EF4 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		E72719C725CAA0F100D5FA54 /* ReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
 		E72719CA25CAB57400D5FA54 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		E73DE0F525F0C38800D27ECF /* 21.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 21.gif; sourceTree = "<group>"; };
@@ -156,7 +157,6 @@
 		E77C9D7325E620B3003D9277 /* ExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewController.swift; sourceTree = "<group>"; };
 		E77C9D7C25E6274A003D9277 /* ExcerciseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcerciseCollectionViewCell.swift; sourceTree = "<group>"; };
 		E77C9D7D25E6274A003D9277 /* ExcerciseCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExcerciseCollectionViewCell.xib; sourceTree = "<group>"; };
-		E77C9E1A25E64AAE003D9277 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		E77C9E1F25E64E24003D9277 /* plan_FAT_BURNING_EXERCISE.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = plan_FAT_BURNING_EXERCISE.json; sourceTree = "<group>"; };
 		E77C9E2325E8A7E2003D9277 /* plan_WAIST_EXERCISE.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = plan_WAIST_EXERCISE.json; sourceTree = "<group>"; };
 		E77C9E2625E8A807003D9277 /* plan_HIP_EXERCISE.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = plan_HIP_EXERCISE.json; sourceTree = "<group>"; };
@@ -308,7 +308,7 @@
 		E77C9E1525E6492E003D9277 /* service */ = {
 			isa = PBXGroup;
 			children = (
-				E77C9E1A25E64AAE003D9277 /* APIService.swift */,
+				E72678CE2608A30600CA1EF4 /* API.swift */,
 			);
 			path = service;
 			sourceTree = "<group>";
@@ -522,12 +522,12 @@
 				E7FD5C8525ABF67300CFFB1E /* ViewController.swift in Sources */,
 				E71F884025AC0B8E000C38E0 /* MainViewController.swift in Sources */,
 				E71F884925BE7C1A000C38E0 /* ProgramViewController.swift in Sources */,
-				E77C9E1B25E64AAF003D9277 /* APIService.swift in Sources */,
 				E77C9D7E25E6274A003D9277 /* ExcerciseCollectionViewCell.swift in Sources */,
 				E73DE14725F0C4BF00D27ECF /* ReviewExerciseViewController.swift in Sources */,
 				E72719C825CAA0F100D5FA54 /* ReminderViewController.swift in Sources */,
 				E71F887F25C12C95000C38E0 /* MenuTableViewCell.swift in Sources */,
 				E71F887625C1299B000C38E0 /* MenuViewController.swift in Sources */,
+				E72678CF2608A30600CA1EF4 /* API.swift in Sources */,
 				E726788C25F8B3A700CA1EF4 /* ProgramData.swift in Sources */,
 				E76DE19925CB974D00A373BD /* ChallengerViewController.swift in Sources */,
 				E71F888325C1333B000C38E0 /* MenuData.swift in Sources */,
